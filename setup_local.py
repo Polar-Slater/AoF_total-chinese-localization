@@ -7,14 +7,13 @@ import argparse
 import hashlib
 import json
 from pathlib import Path
-import shutil
 import zipfile
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--game', type=Path, required=True, help='AOFTOTAL installation directory')
-    parser.add_argument('--font', type=Path, help='Local SimHei TTF for testing (not redistributed)')
+    parser.add_argument('--font', type=Path, help='Local Noto Sans SC TTF matching the configured test font (not redistributed)')
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     archives = [args.game / 'aof.jar', args.game / 'aof-data.zip', *sorted((args.game / 'data').glob('*.zip'))]
@@ -37,9 +36,9 @@ def main():
                                      'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()})
     (root / 'source/manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
     if args.font:
-        target = root / 'pilot-mod/com/aof/resource/text/font/simhei.ttf'
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(args.font, target)
+        from prepare_font import prepare_font
+        target = root / 'pilot-mod/com/aof/resource/text/font/noto-sans-sc.ttf'
+        prepare_font(args.font, target)
     print(f'Extracted {len(manifest)} reference files. Next: python build_translation.py')
 
 

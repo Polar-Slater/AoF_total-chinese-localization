@@ -2,9 +2,9 @@
 
 Version **0.1.0** · locale `zh` · work in progress · tested against game v11.0.5.
 
-481 Phase 1 entries translate menus, settings, tooltips and battle controls. The runtime includes 489 UI entries and 14 campaign/conversation sample entries. Most story and detailed gameplay text still falls back to English. This repository is a development project, not a ready-to-install Workshop release.
+481 Phase 1 entries translate menus, settings, tooltips and battle controls. The following batches added 320, 396 and 1,027 entries. Coverage now includes all 326 object names, the 73-label race/group section, 450 item/resource names and name templates, 538 labels in the main skill/attribute/condition block, nine crafting professions and 30 item-set labels. Object descriptions remain at 28/326. The runtime includes 2,232 main entries (including six metadata entries) and 14 retained campaign/conversation sample entries. Another 1,989 main keys still fall back to English: text-entry coverage is 2,226 / 4,215 (52.8%). This is entry coverage, not word coverage; many long descriptions remain. The core terminology baseline is established, with review continuing as gameplay descriptions are translated. Shared events and campaign stories follow, starting with the Undead campaign. See [LOCALIZATION-PLAN.md](LOCALIZATION-PLAN.md), [TERMINOLOGY.md](TERMINOLOGY.md) and [MAIN-TEXT-BATCH3.md](MAIN-TEXT-BATCH3.md). This is a development project, not a ready-to-install Workshop release.
 
-Read [AI-HANDOFF.md](AI-HANDOFF.md) for technical context, [PHASE1-NOTES.md](PHASE1-NOTES.md) for scope and terminology, and [CHANGELOG.md](CHANGELOG.md) for version history. This README supersedes historical setup instructions in the pilot notes.
+Read [AI-HANDOFF.md](AI-HANDOFF.md) for technical context, [PHASE1-NOTES.md](PHASE1-NOTES.md) and [MAIN-TEXT-NOTES.md](MAIN-TEXT-NOTES.md) for scope and terminology, and [CHANGELOG.md](CHANGELOG.md) for version history. This README supersedes historical setup instructions in the pilot notes.
 
 ## Setup on Windows
 
@@ -15,11 +15,11 @@ git clone https://github.com/Polar-Slater/AoF_total-chinese-localization.git
 cd AoF_total-chinese-localization
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe setup_local.py --game 'D:\Software\Steam\steamapps\common\AOFTOTAL' --font 'C:\Windows\Fonts\simhei.ttf'
+.\.venv\Scripts\python.exe setup_local.py --game 'D:\Software\Steam\steamapps\common\AOFTOTAL' --font 'C:\Windows\Fonts\NotoSansSC-VF.ttf'
 .\.venv\Scripts\python.exe build_translation.py
 ```
 
-Replace the game path with your installation. `--font` is optional for text-only work. It supplies a locally available SimHei font for local testing; no font is included in Git. Do not distribute this local font without appropriate permission. Original English text is extracted locally into ignored `source/`; game-version differences may require reviewing the build's source-block coverage checks. The extraction refreshes local reference files, so review source changes when changing game versions.
+Replace the game/font paths with your installation. `--font` is optional for text-only work. Supply a locally available Noto Sans SC TTF (regular or variable); `prepare_font.py` converts variable fonts into static regular weight 400 for the Java renderer and saves `noto-sans-sc.ttf`. No font is included in Git; release packaging still needs its appropriate license materials. To prepare only the font, run `.\.venv\Scripts\python.exe prepare_font.py 'C:\path\to\NotoSansSC-VF.ttf'`. Original English text is extracted locally into ignored `source/`; game-version differences may require reviewing source-block coverage checks. The extraction refreshes local references, so review changes when changing game versions.
 
 ## Files to edit
 
@@ -39,12 +39,14 @@ Create your own local item in the game's Workshop Manager first. Use its directo
 
 ```powershell
 .\.venv\Scripts\python.exe prepare_workshop.py --item 'D:\path\to\your\workshop\item' --owner-id 'YOUR_OWNER_ID'
-& 'D:\Software\Steam\steamapps\common\AOFTOTAL\jre\windows64\bin\java.exe' '-Djava.awt.headless=true' inspection/CheckPilot.java workshop-package
+& 'D:\Software\Steam\steamapps\common\AOFTOTAL\jre\windows64\bin\java.exe' '-Djava.awt.headless=true' inspection/CheckPilot.java workshop-package source/aof/messages-en.properties
 ```
 
 Packaging backs up the local item and stages `workshop-package/`; it does not install or upload. Test through Workshop Manager and Steam. Use your own ownership metadata. For local description updates, the PowerShell helper takes `-ItemConfig '...\config.xml' -OwnerId 'YOUR_OWNER_ID'`. It updates local files only.
 
 Full layout review is pending, and `Could not load conversations [UXX_Please_review_us]` remains unresolved. Passing build checks does not establish complete in-game validation.
+
+SimHei lacked U+00A0 and U+2022 used by engine-generated tooltip prefixes. All four font settings now use a static regular Noto Sans SC resource. The expanded Java check verifies configured fonts in plain/bold/italic/bold-italic, those engine symbols, all translated values and (with argument 2) remaining English main text. It reproduced the legacy font failure and passes with the replacement. A Swing HTML preview is available through `inspection/RenderFontSample.java`; actual game layout still needs testing after restart.
 
 ## Collaboration and versions
 
