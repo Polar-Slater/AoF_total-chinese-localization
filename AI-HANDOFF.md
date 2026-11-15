@@ -2,6 +2,42 @@
 
 Last updated: 2026-11-15. Read this before continuing the project. This document records prior work, not authorization to publish or change another person's Steam account.
 
+## Latest user direction: restored translation order
+
+Terminology preference: translate “Main text” as “正文” in Chinese descriptions and progress labels (for example, `#1 正文`).
+
+The user has restored the original order: establish consistent terminology for units, stats, items and skills; then translate gameplay descriptions, shared events and campaign stories, starting with the Undead campaign. This supersedes the earlier campaign-deferral direction. Follow `LOCALIZATION-PLAN.md`. The core terminology baseline is now established in `TERMINOLOGY.md`; continue reviewing context and provisional names while moving into gameplay descriptions. Keep all completed translation batches.
+
+A later screenshot showed square prefixes in the Swamp tooltip. Inspection confirmed the engine inserts `&nbsp;` and U+2022, while SimHei lacks U+00A0/U+2022. The earlier validator only checked translation values. This is now addressed with a local static regular Noto Sans SC font and expanded checks; confirm actual game appearance after restart.
+
+## Latest upload issue: description byte limit
+
+Subsequent user preference: remove English explanatory text from the Workshop description, but retain all campaign names. The current description is Chinese with all 32 bilingual campaign/expansion names preserved, plus the English game title and exact menu/language labels needed for setup. Source, staged package and installed config match at 4,134 UTF-8 bytes. The previous 7,062-byte version below is historical. Local config was backed up before this update; no upload was performed.
+
+The user's Workshop Manager upload returned `InvalidParam` on 2026-11-15. Steam's workshop log at 17:30 shows content/preview transfer followed by Invalid Parameter. The description was 6,381 characters but 8,341 UTF-8 bytes; Steam documents an 8,000-byte maximum (https://partner.steamgames.com/doc/api/ISteamRemoteStorage#constants). This is a likely cause, not yet confirmed by a successful retry. Both packaging and the local PowerShell helper now enforce a conservative 7,999-byte maximum before writes. The original description and 8,000/8,001-byte cases are rejected by both scripts; normal packaging passes. Repeated open-campaign and expansion status table rows were compacted into lists without dropping campaign names. Source, package and installed descriptions are now 7,062 bytes. Local metadata was backed up and updated; user should reopen Workshop Manager and retry. No assistant upload was performed. Original description text is backed up at `backups/workshop-description-before-byte-limit-fix.txt`.
+
+## Terminology batch 3 (current, unreleased)
+
+Added `item-name-terms.properties` (449 entries) and `skill-attribute-terms.properties` (578 entries): 1,027 new main keys. Total main entries: 2,232 including six metadata keys; content coverage 2,226/4,215 (52.8%), with 1,989 remaining. All runtime files together: 2,246 entries. Existing 1,205 deployed main values are preserved; campaign samples unchanged. Glossary: 1,528 keys.
+
+Completed source blocks: ACIDBLOOD..ANCIENTCOAL_ITEM (937 keys: 399 item names/templates, 538 other labels); LIVERWORM_ITEM..WHITEYARROW_ITEM (51 materials); CRAFTINGBLACKSMITH..CRAFTINGJEWELER (9 professions); all 30 GROUP_SET_ labels. The correct item/resource name/template count is 450; earlier 455 counts included five UI prompts whose keys also end in `_ITEM`. Do not claim 450 distinct physical items or full effect-description coverage. See `MAIN-TEXT-BATCH3.md` for decisions, validation and next tests.
+
+Source display names take precedence over IDs: HEADHUNTER=Executioner, CRITICALHIT=Precision, STEALTHATTACK=Infravision. Regrowth is 复生 (post-battle recovery), distinct from Regeneration/再生 and Resurrection/复活术. Shitanto is a two-handed item, provisionally 希坦刀, not 短刀. Slow has separate UI-speed and spell meanings; Elemental has separate creature and set-name meanings. Next work: gameplay effect descriptions, item/skill tooltips, remaining bestiary descriptions and tutorials; keep the same font and validate engine symbols as before.
+
+## Terminology batch 2 (historical, unreleased)
+
+Added `unit-race-terms.properties` (368 entries: 298 names and 70 race labels) and `battlefield-terms.properties` (28 entries), both registered in the build. All 326 unit/scenery name keys and the 73-label base race/group section are covered. Main runtime: 1,205 keys including six metadata keys; 3,016 keys still use English fallback. All three runtime files: 1,219 entries. Object descriptions remain at 28/326. The glossary now has 501 keyed entries; item and skill terminology remains incomplete. Campaign source/runtime samples are unchanged.
+
+All four font settings use `noto-sans-sc.ttf`, prepared from the local `NotoSansSC-VF.ttf` with `prepare_font.py` (fontTools, regular weight 400, no variable axes). Direct use of the variable font rendered too thin in Java. Font binaries remain ignored. `setup_local.py --font` now calls this preparation helper; packaging checks the configured font filenames. `CheckPilot.java package-root source/aof/messages-en.properties` checks four font styles, engine NBSP/bullet, all translated entries and remaining English main entries. Legacy SimHei failed as expected; the static replacement passes. `RenderFontSample.java` creates a headless Swing HTML sample, not an in-game screenshot. Do not claim complete layout validation.
+
+See `MAIN-TEXT-BATCH2.md` for terminology decisions and test checklist. These totals and font instructions supersede the historical SimHei/503-entry/823-entry notes below.
+
+## Main-text continuation (unreleased)
+
+The first new batch, completed while campaigns were deferred, adds 320 entries across `translation/gameplay-basics.properties`, `translation/bestiary-basics.properties` and `translation/combat-log-basics.properties`. `build_translation.py` registers these files and reports their counts separately from the original 481 Phase 1 entries. Runtime totals are now 809 main-text entries (including metadata) and 823 entries across all three runtime files; 3,412 of the current main source's 4,221 keys remain untranslated.
+
+See `MAIN-TEXT-NOTES.md` for scope, terminology and the test checklist. The user supplied screenshots confirming Chinese labels in the status monitor, story-screen buttons and bestiary; those screenshots predate this batch and do not validate its layout. Preserve the existing campaign samples. Focus subsequent batches on remaining unit, skill, item, tutorial and combat text in `messages-en.properties`. The historical counts and continuation order below are superseded by this update.
+
 ## Repository handoff update (0.1.0)
 
 The public collaboration repository is https://github.com/Polar-Slater/AoF_total-chinese-localization. Follow README.md for current fresh-checkout instructions and CONTRIBUTING.md for branches and pull requests. VERSION and CHANGELOG.md track translation milestones.
