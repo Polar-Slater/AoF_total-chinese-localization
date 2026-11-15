@@ -1,0 +1,19 @@
+# Local game resources and materials (recreate from your own installation).
+/source/
+/AOFModdingGuide.pdf
+/inspection/*-bytecode.txt
+*.ttf
+*.otf
+# Generated deployment package and personal runtime state.
+/workshop-package/
+/pilot-home/
+/backups/
+/launch-chinese-test.bat
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db

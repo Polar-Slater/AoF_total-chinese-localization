@@ -1,0 +1,19 @@
+{
+  "phase1_entries": 481,
+  "total_ui_entries_including_metadata": 489,
+  "button_and_tab_keys_covered": 135,
+  "settings_section_keys_covered": 197,
+  "checks": [
+    "unique keys",
+    "English-source key existence",
+    "placeholder counts",
+    "balanced HTML",
+    "complete button/tab and settings section coverage",
+    "ASCII runtime encoding"
+  ],
+  "in_game_layout": "Pending user test",
+  "known_source_issues": [
+    "Proxy username/password labels swapped in English source; preserved pending UI review.",
+    "AI animation label and tooltip disagree in English source; preserved pending behavior review."
+  ]
+}

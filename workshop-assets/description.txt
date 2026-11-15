@@ -1,0 +1,93 @@
+[h1]Age of Fear: Total — 简体中文汉化 / Simplified Chinese Translation[/h1]
+[b]开发中 · 部分汉化 / Work in progress · Partial translation[/b]
+本模组旨在逐步汉化游戏界面、玩法说明、共享事件及全部战役。目前已完成第一阶段界面翻译，非完整汉化。
+This mod aims to translate the interface, gameplay descriptions, shared events and all campaigns into Simplified Chinese. The first interface batch is complete; this is not yet a complete localization.
+本模组开发依赖大量AI翻译，并由人工校对。
+This mod development extensively depends on AI and proofread by human.
+
+[h2]使用方法 / How to use[/h2]
+[olist]
+[*]订阅本创意工坊模组并重新启动游戏。 / Subscribe this Workshop mod and restart the game.
+[*]打开 Options → Screen → Language。 / Open Options → Screen → Language.
+[*]选择 [b]Chinese (Simplified) - Test[/b]。
+[/olist]
+语言选项保留英文名称，以避免切换语言前显示方框。未翻译内容会显示英文。
+The language option deliberately uses an English name to avoid missing-glyph boxes before switching languages. Untranslated content falls back to English.
+
+[h2]总体进度 / Overall progress[/h2]
+[list]
+[*][b]界面第一阶段 / Interface Phase 1:[/b] 已翻译 481 条文本 / 481 translated entries.
+[*]菜单、按钮与选项卡 / Menus, buttons and tabs.
+[*]设置及说明提示 / Settings and explanatory tooltips.
+[*]战斗操作、快捷键及触屏帮助 / Battle controls, keyboard shortcuts and touch help.
+[*]存档、读档、难度及多人游戏设置 / Save/load dialogs, difficulty selection and multiplayer setup.
+[*][b]待继续 / Still to do:[/b] 大部分单位、物品、技能说明、教程及详细战斗日志 / Most unit, item and skill descriptions, tutorials and detailed combat logs.
+[*][b]共享事件与对话 / Shared events and conversations:[/b] 尚未开始 / Not started.
+[/list]
+编码、占位符、HTML 结构及字体字符覆盖检查已通过；仍需进一步检查游戏内文字排版。
+Encoding, placeholders, HTML structure and font coverage checks passed. Further in-game layout testing is still needed.
+
+[h2]剧情战役 / Story campaigns[/h2]
+进度仅指各战役专属文本，不包含共用界面。中文战役名称为暂定译名。
+Progress refers to campaign-specific text, excluding the shared interface. Chinese campaign names are provisional.
+
+[table]
+[tr][th]战役 / Campaign[/th][th]翻译进度 / Translation progress[/th][/tr]
+[tr][td]I. Rise of The Necromancer / 死灵法师的崛起[/td][td]测试样例：标题、简介及少量对话（10 条）；主体剧情未译 / Pilot: title, description and a few dialogue entries (10 entries); main story untranslated[/td][/tr]
+[tr][td]II. The Tale of Sir Edward / 爱德华爵士传[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]III. The Demon's Lover / 恶魔的恋人[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]IV. The Horde / 部落[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]V. Nature of the Monster / 怪物的本性[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]VI. The Legend of Gilrock / 吉尔洛克传奇[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]VII. Mystery of the Iron Killer / 钢铁杀手之谜[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]VIII. The Day of the Rat / 鼠人之日[/td][td]尚未开始 / Not started[/td][/tr]
+[/table]
+
+[h2]开放战役 / Open campaigns[/h2]
+以下为独立的开放战役，各自文本均尚未开始翻译。共用界面汉化可在这些模式中使用。
+These are separate open campaigns. Their campaign-specific text is not yet translated; the shared interface translation is available in these modes.
+
+[table]
+[tr][th]战役 / Campaign[/th][th]翻译进度 / Translation progress[/th][/tr]
+[tr][td]Human Kingdom (Open) / 人类王国[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Undead Legion (Open) / 亡灵军团[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Chaos Demons (Open) / 混沌恶魔[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Greenskins Horde (Open) / 绿皮部落[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Forest Folk (Open) / 森林族群[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Dwarves (Open) / 矮人[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Sea People (Open) / 海族[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Ratmen (Open) / 鼠人[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Cyclops Tribe (Open) / 独眼巨人部落[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Elementals (Open) / 元素生物[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Ikeus (Open) / 伊凯乌斯[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Giants (Open) / 巨人[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Marines (Open) / 海军陆战队[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Pirates (Open) / 海盗[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Shinobi (Open) / 忍者[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Sandworm (Open) / 沙虫[/td][td]尚未开始 / Not started[/td][/tr]
+[/table]
+
+[h2]扩展剧情 / Expansion storylines[/h2]
+扩展剧情可整合在主战役或共享地点中，并非全部作为独立战役显示。
+Expansion storylines may be integrated into main campaigns or shared locations rather than appearing as standalone campaigns.
+
+[table]
+[tr][th]扩展剧情 / Expansion[/th][th]翻译进度 / Translation progress[/th][/tr]
+[tr][td]The Quest for Immortality / 永生之旅[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]Pirates! / 海盗！[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]The Elementalist / 元素使[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]The Blood and Moon / 血与月[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]The Victor's Experiment / 维克多的实验[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]The Storm Mountain / 风暴山[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]The Quick and The Dead / 生者与死者[/td][td]尚未开始 / Not started[/td][/tr]
+[tr][td]War Machine / 战争机器[/td][td]尚未开始 / Not started[/td][/tr]
+[/table]
+
+[h2]后续计划与反馈 / Next steps and feedback[/h2]
+先统一单位、属性、物品与技能术语，再翻译玩法说明、共享事件及战役剧情；剧情计划从亡灵战役开始。
+Next: establish consistent terminology for units, stats, items and skills, then translate gameplay descriptions, shared events and campaign stories, starting with the Undead campaign.
+
+如发现错译、方框或文字截断，请提供截图、所在界面及所选战役。
+Please report mistranslations, missing-glyph boxes or clipped text with a screenshot, the affected screen and the selected campaign.
+
+[i]进度截至 / Progress as of: 2026-11-15. 战役清单依据当前安装版本资源整理 / Campaign list checked against the currently installed game resources.[/i]
