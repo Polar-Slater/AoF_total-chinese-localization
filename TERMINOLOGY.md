@@ -2,11 +2,14 @@
 
 当前阶段：先统一术语，再推进玩法说明、共享事件及战役剧情；剧情从亡灵战役开始。
 
-这份表收录当前已采用的 **1528 个文本键**，包括同一术语的不同界面用法。它是项目工作基线，不代表用户逐项审定，也不代表全部术语已经完成。这里的英文短名称用于定位术语；完整英文资源仍保留在 Git 忽略的 `source/` 中。
+这份表收录当前已采用的 **1630 个文本键**，包括同一术语的不同界面用法。它是项目工作基线，不代表用户逐项审定，也不代表全部术语已经完成。这里的英文短名称用于定位术语；完整英文资源仍保留在 Git 忽略的 `source/` 中。
 
-当前主文本包含 **326 个单位与场景对象名称键**、**450 个物品／材料名称及名称模板键**；技能、特性及状态另行整理。本批已覆盖全部 326 个单位／场景对象名称，以及基础种族分组段的 73 个标签；对象说明仍仅有 28 条。本批还覆盖主名称段中的 538 个技能／属性／条件标签、450 个物品与材料名称／模板、9 个制作职业和30个套装标签。原来的455统计按 `_ITEM` 后缀计数，误包含5条界面提示，已修正。长篇效果说明仍需翻译。
+当前主文本包含 **326 个单位与场景对象名称键**、**450 个物品／材料名称及名称模板键**；技能、特性及状态另行整理。本批已覆盖全部 326 个单位／场景对象名称，以及基础种族分组段的 73 个标签；全部326条对象说明现已译完。本批还覆盖主名称段中的 538 个技能／属性／条件标签、450 个物品与材料名称／模板、9 个制作职业和30个套装标签。原来的455统计按 `_ITEM` 后缀计数，误包含5条界面提示，已修正。主消息文件中的效果说明现已全部补译，仍需游戏内校对。
 
 ## 使用规则
+
+- 地名采用“中文名 (English)”格式，保留原文拼写和大小写，使用半角括号，例如用户给出的“斯托斯 (Storrs)”。该示例仅用于说明格式，不据此新增游戏条目。后续地点标签、叙述和对话中的地名均采用此格式。
+- 用户偏好自然、贴近原意的表达，避免刻意添加方言或过度口语化。例如已确认“这个乞丐在浪费我们的时间，我们走吧。”；角色特色仍应依据原文保留。
 
 - 单位、物品和技能的显示名称以本表为基线；将来的描述、战斗日志、共享事件及剧情复用同一译名。
 - 原有通用术语继续沿用：Campaign＝战役、Battle＝战斗、Turn＝回合、Unit＝单位、Team＝队伍、Faction＝阵营、Skill＝技能、Trait＝特性、Evolve＝进阶、Items Cache＝物品仓库。
@@ -16,6 +19,10 @@
 - 未确定的词保留为待定项，结合单位说明、技能效果或游戏画面核对，不把英文回退计作已翻译。
 
 ## 容易混淆的含义
+
+- **Affinity / alignment＝阵营倾向**：指邪恶、神圣或中立，区别于队伍所属的 Faction／阵营。
+- **Prestige＝资历**：对应正规／老兵／精英；Evolve＝进阶，指兵种进阶。界面按钮沿用“进阶”“解散”“技能”。
+- **Minor hero＝次要英雄；serious wound＝重伤**。重伤需要战外治疗；不要与普通生命值损失混为一谈。
 
 - **unblockable＝不受牵制限制**：相邻敌军使多数法术与远程攻击无法使用时，此行动仍可使用；它不是“无法格挡”。
 - **Raise Dead＝唤起亡者，Resurrection＝复活术**：保留两种不同技能的区别。
@@ -1600,14 +1607,171 @@
 | Attack ({0}) | 攻击（{0}） | `ATTACK_S` |
 | turns left: {0} | 剩余回合：{0} | `TURNS_LEFT_S` |
 | {0} targets | {0}个目标 | `S_TARGETS` |
+| {0} Slayer | {0}杀手 | `S_SLAYER` |
+
+## 第7批补充：控制类型与作用对象
+
+| English | 中文 | 文本键 |
+| --- | --- | --- |
+| Command | 统御 | `COMMAND` |
+| Greenskins | 绿皮 | `GREENSKINS` |
+| Heroes | 英雄 | `HEROES` |
+| Paladins | 圣骑士 | `PALADINS` |
+| Black Knights | 黑骑士 | `BLACK_KNIGHTS` |
+| Black Guards | 黑卫士 | `BLACK_GUARDS` |
+| Witches | 女巫 | `WITCHES` |
+| Rat Brute | 鼠人蛮兵 | `RATMAN_BRUTE` |
+| Succubi | 魅魔 | `SUCCUBI` |
+| Mancubi | 曼库魔 | `MANCUBI` |
+| spellcasters | 施法者 | `SPELLCASTERS` |
+| archers | 弓箭手 | `ARCHERS` |
+| Vampire Hunters | 吸血鬼猎人 | `VAMPIRE_HUNTERS` |
+| Skeleton Mages | 骷髅法师 | `SKELETON_MAGES` |
+
+## 第8批补充：人物与阵营
+
+专名为当前暂定译法，剧情翻译时结合上下文复核；共享界面及战役名称沿用现有译名。
+
+| English | 中文 | 文本键 |
+| --- | --- | --- |
+| Adventurers | 冒险者 | `ADVENTURERS` |
+| Animals | 动物 | `ANIMALS` |
+| Announcer | 播报员 | `ANNOUNCER` |
+| Aurora | 奥萝拉 | `AURORA` |
+| Bandits | 强盗 | `BANDITS` |
+| Balbus | 巴尔布斯 | `BALBUS` |
+| Barbarians | 野蛮人 | `BARBARIANS` |
+| Blademaster | 剑术大师 | `BLADEMASTER` |
+| Barbarian King | 蛮王 | `BARBARIAN_KING` |
+| Cave Dwellers | 洞穴居民 | `CAVE_DWELLERS` |
+| Chaos | 混沌 | `CHAOS` |
+| Chaos Demons | 混沌恶魔 | `CHAOS_DEMONS` |
+| Cheese | 奶酪 | `CHEESE` |
+| Chimeras | 奇美拉 | `CHIMERAS` |
+| City Guards | 城市卫兵 | `CITY_GUARDS` |
+| Casino Guards | 赌场卫兵 | `CASINO_GUARDS` |
+| Conclave | 秘会 | `CONCLAVE` |
+| Corrupted Forest | 腐化森林 | `CORRUPTED_FOREST` |
+| Crusaders | 十字军 | `CRUSADERS` |
+| Crab God | 蟹神 | `CRAB_GOD` |
+| Cultists | 邪教徒 | `CULTISTS` |
+| Cursed | 受诅咒者 | `CURSED` |
+| Defenders | 防守者 | `DEFENDERS` |
+| Dummies | 训练假人 | `DUMMIES` |
+| Dwarven Miners | 矮人矿工 | `DWARVEN_MINERS` |
+| Dwarven Mutants | 变异矮人 | `DWARVEN_MUTANTS` |
+| Earth Defence Force | 地球防卫军 | `EARTH_DEFENCE_FORCE` |
+| Forest Dwellers | 森林居民 | `FOREST_DWELLERS` |
+| Forest Creatures | 森林生物 | `FOREST_CREATURES` |
+| Night Creatures | 暗夜生物 | `NIGHT_CREATURES` |
+| Father Jonat | 乔纳特神父 | `FATHER_JONAT` |
+| Forest Folk | 森林族群 | `FOREST_FOLK` |
+| Greenskins Horde | 绿皮部落 | `GREENSKINS_HORDE` |
+| Ghost Dragon | 幽灵龙 | `GHOST_DRAGON` |
+| Graverobbers | 盗墓贼 | `GRAVEROBBERS` |
+| Guardians | 守护者 | `GUARDIANS` |
+| Guards | 卫兵 | `GUARDS` |
+| Helna | 赫尔娜 | `HELNA` |
+| Hive Defenders | 虫巢守卫 | `HIVE_DEFENDERS` |
+| Holy Church | 圣教会 | `HOLY_CHURCH` |
+| Human Defenders | 人类守军 | `HUMAN_DEFENDERS` |
+| Human Kingdom | 人类王国 | `HUMAN_KINGDOM` |
+| Hunters | 猎人 | `HUNTERS` |
+| Hydra | 多头蛇 | `HYDRA` |
+| Invaders | 入侵者 | `INVADERS` |
+| Indulf | 因杜尔夫 | `INDULF` |
+| Ikeus | 伊凯乌斯 | `IKEUS` |
+| Iron Killer | 钢铁杀手 | `IRON_KILLER` |
+| Kingdom Patrol | 王国巡逻队 | `KINGDOM_PATROL` |
+| King William | 威廉国王 | `KING_WILLIAM` |
+| Knight | 骑士 | `KNIGHT` |
+| Mad Mage | 疯狂法师 | `MAD_MAGE` |
+| Mages Guild | 法师公会 | `MAGES_GUILD` |
+| Shinobi | 忍者 | `SHINOBI` |
+| Marines | 海军陆战队 | `MARINES` |
+| Moonshine Gang | 私酒帮 | `MOONSHINE_GANG` |
+| Monstrosities | 怪物 | `MONSTROSITIES` |
+| Mercs | 雇佣兵 | `MERCS` |
+| Necromancer | 死灵法师 | `NECROMANCER` |
+| Neutrals | 中立者 | `NEUTRALS` |
+| Ninja | 忍者 | `NINJA` |
+| Ogre | 食人魔 | `OGRE` |
+| Portal Guardians | 传送门守卫 | `PORTAL_GUARDIANS` |
+| Prisoners | 囚犯 | `PRISONERS` |
+| Rats | 老鼠 | `RATS` |
+| Rurora | 露萝拉 | `RURORA` |
+| Sewer Dwellers | 下水道居民 | `SEWER_DWELLERS` |
+| Sandworm | 沙虫 | `SANDWORM` |
+| Sea People | 海族 | `SEA_PEOPLE` |
+| Sea Creatures | 海洋生物 | `SEA_CREATURES` |
+| Shades | 暗影幽魂 | `SHADES` |
+| Sidra | 希德拉 | `SIDRA` |
+| Sir Galad | 加拉德爵士 | `SIR_GALAD` |
+| Souls Collector | 灵魂收集器 | `SOULS_COLLECTOR` |
+| Spiders | 蜘蛛 | `SPIDERS` |
+| Swamp Beasts | 沼泽野兽 | `SWAMP_BEASTS` |
+| Swamp Dwellers | 沼泽居民 | `SWAMP_DWELLERS` |
+| Swamp Witch | 沼泽女巫 | `SWAMP_WITCH` |
+| Tavern Keeper | 酒馆老板 | `TAVERN_KEEPER` |
+| Tunnel Dwellers | 地道居民 | `TUNNEL_DWELLERS` |
+| Yazgut | 亚兹古特 | `YAZGUT` |
+| Undead Altar | 亡灵祭坛 | `UNDEAD_ALTAR` |
+| Undead King | 亡灵之王 | `UNDEAD_KING` |
+| Undead Legion | 亡灵军团 | `UNDEAD_LEGION` |
+| Villagers | 村民 | `VILLAGERS` |
+| Waste Golems | 废料魔像 | `WASTE_GOLEMS` |
+| Brutes | 蛮兵 | `BRUTES` |
 
 ## 新增机制用语
+
+- 数字词按数值翻译：million＝百万、billion＝十亿。引擎仍以空格及千进位分组拼接，例如10,000显示“十 千”；不将million误译成“万”。属性加成中的“for {2}”已核实为持续时间时，统一用“持续{2}”。
+- 控制效果类型 Command＝统御，替换第5批的“指挥”；心灵控制与统御并列时统一使用该译名。
+- Mark of Death 的效果说明沿用游戏实际名称“痛苦印记”；Mark of Hunted 沿用“死亡印记”。已核对对应属性类的显示名称来源，避免按旧说明名称误配技能。
+
+- Slayer＝杀手：击杀特定类型敌人后可能获得对应的攻击加成；与刺客兵种区别。
+- 招架／还击说明中的 “Backstab attacks are ignored” 表示效果不适用于背刺攻击，不是免疫背刺。
 
 - Regeneration＝再生；Regrowth＝复生（单位阵亡后在战斗结束时恢复）；Resurrection＝复活术。
 - Battle Frenzy＝战斗狂乱；Battle Rage＝战斗狂怒；Bloodlust＝嗜血。
 - Resistance＝抗性；Immunity＝免疫；Vulnerability＝易伤。无敌配剂保留原名称意象，其实际防护仅适用于物理攻击，后续说明不得宣称全伤害免疫。
 - 内部键 HEADHUNTER 实际显示 Executioner（刽子手）；CRITICALHIT 实际显示 Precision（精准）；STEALTHATTACK 实际显示 Infravision（红外视觉）。
 - Shitanto 已核对为双手武器，暂译希坦刀，不称短刀；装备效果与类型以游戏资料为准。
+
+## 共享地点与玩法用语（50%里程碑）
+
+- 阵营据点：混沌之门 (Chaos Portal)、兽人村落 (Orcs Village)、矮人堡垒 (Dwarven Fortress)、巨石阵 (Stonehenge)、海滨村落 (Coast Village)、地下巢穴 (Underground Nest)、骑士领地 (Knight's Estate)、废墟 (Ruins)。地点和具名设施均保留原英文；建筑名的大小写与原文一致。
+- 银色森林 (Silver Forest)、索罗顿 (Sorodon)、人类王国 (Human Kingdom)、冥界 (Underworld) 沿用中文加英文的格式。
+- Fin＝芬、Taz＝塔兹，暂定音译；Darius 沿用达里乌斯。
+- Regular／Veteran／Elite 为单位资历：正规／老兵／精英。Sea Diver 沿用潜海者；Rat Grenadier＝鼠人掷弹兵；Master Assassin＝鼠人刺客大师。
+- 据点英文旧称 Plague Cannon 对应实际显示 Acid Cannon，沿用酸液炮。Lamp of Blood＝鲜血之灯；Ancestors Helmet＝先祖头盔；Endless Purse＝无尽钱袋。
+- Pirate Rum＝海盗朗姆酒；Idol of Happiness＝幸福神像；Regretful＝懊悔；Shade＝暗影幽魂；Mermaid＝美人鱼；Siren＝海妖。
+- 小游戏中的奖金／奖池与净收益区分；按实际脚本说明牌型及钓鱼机制。脚本直接赋值的英文动态片段不冒充已汉化；杯子结果附顺序对照，换牌结果用中性标签承接。
+- `Dis artis, dan oute. Grotta, de feruam infera!` 为虚构咒语，保留原文，不杜撰字面含义。
+
+## 共享事件人物与叙事用语
+
+- IKEUS FURNITURE＝伊凯乌斯家具 (IKEUS FURNITURE)：仓库招牌按地点／店铺名保留原文大写；店主姓名仍为伊凯乌斯。
+- Blood Sisters＝鲜血姐妹；Windmill＝风车磨坊 (Windmill)（与共享地点的地图标签一致）；Oracle＝神谕者。
+- 兵种沿用骸骨投石车、骸骨魔像、复生亡灵、特斯拉炮手、骷髅骑兵、瘟疫僵尸；名为 Warlock 的单位沿用“术士”，叙事中泛称 shaman 时译作“萨满”。
+
+- Holy Council＝神圣议会；Elsa＝艾尔莎；Isabelle＝伊莎贝尔。第4批暂定译名，后续剧情沿用并复核。
+- Three Devils＝三魔峰 (Three Devils)；Iceland＝冰原 (Iceland)，原文为 Icelands 时写作冰原 (Icelands)。依据本机森林、绿皮战役文本，前者是南方火山区域，后者是北方积雪地区；不是现实国家名称。
+- Count Passionfruit＝多情的百香果伯爵：狼人取笑吸血鬼的绰号，兼顾水果名称与 passion 的感情双关；不是正式爵号。“bird”在同段指姑娘。
+- 僧侣的拉丁文祷词按含义译为“我信全能的天父，天地的创造者……”。
+
+- Prime Source＝原初之源：第3批中的不稳定魔法源头，暂定译名；区别于技能 Magic Source＝魔力源泉。
+- Bartolome＝巴托洛梅：蛇杖传说中的圣者，暂定音译；Gnomish＝侏儒的，区别于矮人。
+- Warg＝座狼；Will-o’-Wisp＝鬼火；Dryad＝林妖；Mana Shard＝魔力碎片；永久创伤沿用界面术语。
+
+- Lexa＝莱克莎：爱情药剂事件中的女巫，暂定音译；后续剧情需继续沿用并复核。
+- 矮人符文事件的 Runemaster 指单位 `dwarfrunemaster`，沿用“符文锻造师”；制作职业 Runemaster 仍为“符文大师”。
+- 迷失幽灵选项原文称 Ancient Banshee，实际奖励为 `bansheeancient`，沿用单位显示名“高等报丧女妖”。
+- Brute’s Brew＝蛮力药液；Bone Candle＝骨烛；Love Potion＝爱情药剂；Die Hard＝顽强不屈。事件叙述与正文名称保持一致。
+
+- Darius＝达里乌斯；Tayah＝泰娅。用于吟游诗人与驯兽师互动，暂定音译，后续对话继续沿用。
+- Lord of the Ales＝麦酒之王：喝酒比赛中的荣誉称号，不擅自解释为新增属性。
+- Note＝提示：系统叙述的说话者标签，不把标签混入人物台词。
+- 兽人的口吻粗豪直接，吟游诗人的表白夸张抒情，泰娅的回应简短强硬。
 
 ## 后续术语整理
 

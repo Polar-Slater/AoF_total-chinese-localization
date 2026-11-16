@@ -19,8 +19,8 @@ public class CheckPilot {
     }
 
     public static void main(String[] args) throws Exception {
-        if (args.length < 1 || args.length > 2) {
-            throw new IllegalArgumentException("Usage: CheckPilot.java package-root [English-main-properties]");
+        if (args.length < 1) {
+            throw new IllegalArgumentException("Usage: CheckPilot.java package-root [English-properties ...]");
         }
         Path root = Path.of(args[0]);
         Path resources = root.resolve("com/aof/resource/text");
@@ -62,22 +62,31 @@ public class CheckPilot {
             }
         }
         int fallbackCount = 0;
-        if (args.length == 2) {
+        for (int sourceIndex = 1; sourceIndex < args.length; sourceIndex++) {
+            Path sourcePath = Path.of(args[sourceIndex]);
+            String sourceName = sourcePath.getFileName().toString();
+            if (!sourceName.endsWith("-en.properties")) throw new IllegalArgumentException("Expected English resource: " + sourcePath);
+            Path localPath = resources.resolve("i18n").resolve(sourceName.replace("-en.properties", "-zh.properties"));
+            Properties localized = new Properties();
+            try (InputStream input = Files.newInputStream(localPath)) { localized.load(input); }
             Properties english = new Properties();
             // Extracted English reference uses Windows-1252, as documented by the game guide.
-            try (Reader input = Files.newBufferedReader(Path.of(args[1]), Charset.forName("windows-1252"))) {
+            try (Reader input = Files.newBufferedReader(sourcePath, Charset.forName("windows-1252"))) {
                 english.load(input);
             }
+            int resourceFallbackCount = 0;
             for (String key : english.stringPropertyNames()) {
-                if (!ui.containsKey(key)) {
-                    for (Font font : styles) checkGlyphs(font, english.getProperty(key), "English fallback:" + key);
+                if (!localized.containsKey(key)) {
+                    for (Font font : styles) checkGlyphs(font, english.getProperty(key), sourceName + " English fallback:" + key);
                     fallbackCount++;
+                    resourceFallbackCount++;
                 }
             }
+            System.out.println("PASS: " + sourceName + ": " + resourceFallbackCount + " English fallback entries checked.");
         }
         System.out.println("PASS: Java Properties decoded " + count + " entries; " + fonts.keySet()
             + " cover translated text and engine tooltip symbols in plain/bold/italic/bold-italic.");
-        System.out.println(args.length == 2 ? "PASS: " + fallbackCount + " English main fallback entries checked."
-            : "NOTE: English fallback not checked; supply the extracted English main file as argument 2.");
+        System.out.println(args.length > 1 ? "PASS: " + fallbackCount + " English fallback entries checked across supplied resources."
+            : "NOTE: English fallback not checked; supply extracted English resource files as additional arguments.");
     }
 }
