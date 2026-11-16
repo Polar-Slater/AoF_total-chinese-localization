@@ -1,0 +1,16 @@
+{
+  "new_shared_conversation_keys": 8,
+  "new_shared_level_keys": 45,
+  "previous_shared_runtime_entries_preserved": 2020,
+  "previous_editable_translations_unchanged": true,
+  "main_and_campaign_runtime_byte_identical": true,
+  "four_plant_costs_and_unit_rewards_checked": true,
+  "nine_sacrifice_callbacks_rewards_and_cancellation_guards_checked": true,
+  "separate_one_time_flags_checked": 9,
+  "external_campaign_conversations": 28,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 4848,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

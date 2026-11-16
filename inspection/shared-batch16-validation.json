@@ -1,0 +1,22 @@
+{
+  "new_shared_conversation_keys": 18,
+  "new_shared_level_keys": 87,
+  "previous_shared_runtime_entries_preserved": 2073,
+  "previous_editable_translations_unchanged": true,
+  "main_and_campaign_runtime_byte_identical": true,
+  "pearl_trade_cost_daily_reset_and_black_pearl_reward_checked": true,
+  "cleansing_menus_and_costs_checked": 36,
+  "known_source_target_mismatches": [
+    {
+      "trigger": "on-select-42",
+      "menu_hero_index": 107,
+      "command": "unequip-items-cursed ${hero-17-id}"
+    }
+  ],
+  "source_script_modified": false,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 4929,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

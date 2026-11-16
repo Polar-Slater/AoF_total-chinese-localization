@@ -1,0 +1,17 @@
+{
+  "new_shared_conversation_keys": 28,
+  "new_shared_level_keys": 61,
+  "previous_shared_runtime_entries_preserved": 1874,
+  "main_and_campaign_runtime_byte_identical": true,
+  "campaign_translation_and_coverage_unchanged": true,
+  "smith_item_names_costs_and_materials_checked": true,
+  "helmet_source_price_and_input_corrected_from_xml": true,
+  "shared_daily_transmutation_flag_and_limits_checked": true,
+  "talnes_permanent_departure_and_potion_flag_checked": true,
+  "three_new_campaign_entry_dependencies_recorded": true,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 4563,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}
