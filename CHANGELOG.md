@@ -4,6 +4,20 @@ Project versions describe translation milestones, not game versions.
 
 ## [Unreleased]
 
+### Google Fonts Noto Sans SC package
+- Prepared the supplied static Regular font without altering its bytes, retaining the existing runtime filename. Included the matching OFL copyright/license and a provenance notice in build staging and the Workshop package.
+- Moved obsolete local SimHei test fonts out of staging into a backup, and excluded the downloaded ZIP from Git. Java decoding and four-style glyph checks passed for 6,633 runtime entries and 1,491 English fallback entries.
+- Installed the new static font, OFL license and provenance notice into the local Workshop mod at the user's request, after a verified full backup. Removed the unused installed SimHei font; hash checks confirmed all other files unchanged. Java checks passed against the installed folder. No Steam upload.
+
+### Concise, spoiler-free Workshop description
+- Replaced detailed event and campaign summaries with category-level progress counts; removed story, recruitment, reward and location details while preserving bilingual campaign names and setup instructions.
+- Added a spoiler-free description rule to project instructions. Updated local installed and staged descriptions with metadata backups; no Steam upload.
+
+### Local Workshop sync through Undead batch 4
+- Installed the two campaign resources and updated description at the user's request. Installed content now includes 2,198 shared and 206 Undead content entries, with 6,633 total runtime entries.
+- Verified a full backup, staged Java decoding and four-style font coverage, and SHA-256 matches after installation. All other installed files, including shared resources, main messages, font, preview and non-description ownership metadata, were preserved.
+- Installed description is 4,970 UTF-8 bytes after newline normalization and trimming. No Steam upload or new in-game test; earlier batch notes retain their historical pre-installation state.
+
 ### Merge parallel shared and campaign work
 - Combined shared batches through 17 (2,198/3,163 content entries) with Undead batches through 4 (206/732), preserving both workstreams' editable translations and runtime resources.
 - Resolved progress, batch-index and testing-history conflicts per resource section; retained both changelog histories. Replaced chat-relative assignments with neutral workstream instructions and documented the merge rules in CONTRIBUTING.md.

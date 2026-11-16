@@ -35,7 +35,8 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 - `prepare_workshop.py` requires the local item path and its actual owner ID. Preserve ownership checks; never hardcode personal account details.
 - Back up before an authorized local installation and verify changed files against staging. Packaging does not install or upload automatically.
 - Keep Workshop descriptions below the project's 7,999 UTF-8 byte limit and preserve bilingual campaign names and the selected preview.
-- Publishing, uploading and pushing require corresponding user authorization. The shared collaborator recorded a local installation through shared batch 17 and the 45-key Undead opening batch, with backups and hash verification. Campaign batches 2–4 remain uninstalled. This merge does not install or upload anything; in-game review remains pending.
+- Keep the public Workshop description concise and spoiler-free: show broad categories and progress counts only. Do not list story locations, encounters, rewards, recruitable characters or plot outcomes; keep detailed scope in internal batch notes.
+- Publishing, uploading and pushing require corresponding user authorization. The local Workshop mod is installed through shared batch 17 and Undead batch 4 (206 campaign content keys), with a full backup and hash verification. Subsequent local updates installed a concise, spoiler-free description and the supplied static Noto Sans SC Regular font with its license; the unused SimHei font was removed after backup. No Steam upload was performed for these updates; in-game review remains pending.
 
 ## Privacy and local state
 
