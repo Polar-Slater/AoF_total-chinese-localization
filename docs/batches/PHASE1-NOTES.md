@@ -1,6 +1,6 @@
 # Phase 1: menus, settings and battle controls
 
-Workshop item: **3840511924**. Language: **Chinese (Simplified) - Test**.
+Language: **Chinese (Simplified) - Test**.
 
 ## Delivered
 

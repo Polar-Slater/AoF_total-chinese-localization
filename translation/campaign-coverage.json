@@ -1,0 +1,7 @@
+{
+  "undeadcampaign": {
+    "source_directory": "aof-undead",
+    "levels": ["Level00", "Level00b", "Level01a", "Level01b", "Level02", "Level03a"],
+    "conversation_families": ["U00_Krill_turn", "U01_Goblin_panic", "U01_Goblin_raise", "U01_TreasureChest_death"]
+  }
+}

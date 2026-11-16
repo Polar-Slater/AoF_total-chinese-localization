@@ -1,4 +1,5 @@
 from pathlib import Path
+import argparse
 import hashlib
 import json
 import re
@@ -6,7 +7,9 @@ import shutil
 import zipfile
 
 ROOT = Path(__file__).resolve().parent
-GAME = Path(r'D:\Software\Steam\steamapps\common\AOFTOTAL')
+parser = argparse.ArgumentParser(description='Historical pilot bootstrap; prefer setup_local.py and build_translation.py for current work.')
+parser.add_argument('--game', type=Path, required=True, help='Local AOFTOTAL installation directory')
+GAME = parser.parse_args().game
 RESOURCE = 'com/aof/resource/text/i18n/'
 manifest = []
 for archive in [GAME / 'aof.jar', GAME / 'aof-data.zip', *sorted((GAME / 'data').glob('*.zip'))]:

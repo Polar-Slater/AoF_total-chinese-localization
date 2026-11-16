@@ -1,6 +1,6 @@
 # Contributing
 
-Read README.md and AI-HANDOFF.md before making changes. Coordinate file/batch assignments with the other translator, and follow the glossary in PHASE1-NOTES.md.
+Read README.md and AGENTS.md before making changes. Coordinate file/batch assignments with the other translator, and follow the glossary in docs/TERMINOLOGY.md.
 
 ```powershell
 git switch main

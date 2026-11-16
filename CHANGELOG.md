@@ -4,6 +4,30 @@ Project versions describe translation milestones, not game versions.
 
 ## [Unreleased]
 
+### Documentation layout
+- Simplified the main README and replaced the old pilot README with current setup and testing guides.
+- Grouped the plan, glossary and batch notes under docs/; added a documentation index and updated references.
+- Moved the local modding guide into ignored source/reference/. Build scripts and translation resource paths are unchanged.
+
+
+### Project instructions and privacy
+- Consolidated current agent instructions into AGENTS.md and removed the historical handoff file. Updated documentation references.
+- Removed personal account/item identifiers and installation-specific paths from tracked documentation; setup examples use placeholders. Historical backup paths are omitted.
+- The legacy pilot bootstrap now requires an explicit --game argument instead of a machine-specific installation path.
+
+
+### Undead campaign opening and work split
+- Assigned shared events/conversations to the user's friend; campaign stories are now our active work. Renamed Chinese labels to 通用事件 / 通用对话 while preserving technical names.
+- Added 35 opening story/dialogue entries; Undead coverage is 45/732 (6.1%), excluding metadata. Existing sample translations preserved.
+- Added declared campaign coverage and source/placeholder/HTML/namespace checks to the build; both campaign runtime files now regenerate. Total runtime entries: 5,856.
+- Updated editable Workshop description and progress documentation. No installation or upload; game layout review pending.
+
+
+### Description helper review
+- Added `-WhatIf` support and a missing-description check; prepare output directories before updating installed metadata.
+- Back up both existing configs and restore them on save failure. Document explicit item/owner arguments.
+- Tested Windows PowerShell with isolated fixtures: Chinese/Steam markup/XML round trip, wrong owner, oversized UTF-8 description, no-write dry run, missing package folder and repeated updates. Checked the actual target with `-WhatIf` only; no installed metadata changed.
+
 ### 创意工坊简介：按文件展示进度
 - Replaced batch history in 总体进度 with the main message file and two shared resource files, including source/Chinese filenames, scope and per-file counts. Shared total remains 50.0%.
 - Preserved all campaign sections and names. Description is 4,699 UTF-8 bytes; backed up and synced to local/staged config, with all other metadata and mod files unchanged. No Steam upload.
@@ -13,40 +37,40 @@ Project versions describe translation milestones, not game versions.
 - Includes desertion, cards, cups, dice, fishing, roulette, Windmill, weather invocations and common prompts. Preserved established terminology and bilingual place names; checked fishing and card rules against scripts.
 - Extended branch checks across the game's data archives, recording 22 referenced campaign-resource conversations outside shared coverage and remaining script-supplied English fragments.
 - Updated the description to 6,164 UTF-8 bytes without changing campaign names. Previous batch 5 was uploaded and tested successfully by the user. New batches have automated validation and local installation only; no new Steam upload or game test.
-- See `SHARED-TEXT-50-PERCENT.md` for scope, validation and installation details.
+- See `docs/batches/SHARED-TEXT-50-PERCENT.md` for scope, validation and installation details.
 
-### 共享事件 batch 5 — global-event text milestone
+### 通用事件 batch 5 — global-event text milestone
 - Added 264 keys across the remaining 40 SGE travel-event families and the gambler event. Cumulative shared coverage: 902/3,163 (28.5%); 5,141 runtime entries.
 - Completed all 487 `SGE_` conversation keys and 410 `LevelGlobalEvent*` keys. Shared locations, generic shops and longer side stories remain pending.
 - Preserved natural phrasing and bilingual place names; documented the Drunken Dwarf source probability mismatch. Extended branch checking to recursive trigger callbacks and explicitly declared battles with no text.
-- Passed source, build, XML, decoding, font and preservation checks. Updated `#5 共享事件` description (5,776 UTF-8 bytes), preserved campaign names, backed up and installed two shared files plus config with hash verification. Game tests remain deferred; no publication.
+- Passed source, build, XML, decoding, font and preservation checks. Updated `#5 通用事件` description (5,776 UTF-8 bytes), preserved campaign names, backed up and installed two shared files plus config with hash verification. Game tests remain deferred; no publication.
 
 ### 地名格式
 - Adopted the user's `中文名 (English)` convention for place names. Updated 三魔峰 (Three Devils) and 冰原 (Iceland) in the shared volcanic-event narration and recorded the rule for future translation.
 
-### 共享事件 batch 4
+### 通用事件 batch 4
 - Added 156 content keys in 31 event families: 122 conversation keys and 34 choice/follow-up keys. Shared coverage reaches 638/3,163 (20.2%); 4,877 total runtime entries.
 - Translated knight rivalry, Vampire/Werewolf dialogue, Orc encounters, Blademaster training and short travel events. Preserved the user's approved natural wording for the batch-3 beggar option and recorded new provisional names.
 - Extended XML checking through the Orc feast's manual-unit-selection callback. Passed text, branch, Java decoding, font and preservation checks.
-- Updated `#4 共享事件` description (5,578 UTF-8 bytes), preserving campaign names. Backed up and installed two shared resources plus config with hash verification. Game testing remains deferred; no Git or Steam publication.
+- Updated `#4 通用事件` description (5,578 UTF-8 bytes), preserving campaign names. Backed up and installed two shared resources plus config with hash verification. Game testing remains deferred; no Git or Steam publication.
 
-### 共享事件 batch 3
+### 通用事件 batch 3
 - Added 226 content keys in 20 event families: 142 conversation keys and 84 choice/follow-up keys. Shared coverage reaches 482/3,163 (15.2%); 4,721 total runtime entries.
 - Includes recruitment encounters, Dryad/bear and Unicorn/Undead interactions, stolen gold, archery wagers, old monastery, Prime Source and Undead altar. Preserves linked choices and battle introductions, source costs and established unit/item terminology.
-- Passed text, XML branch, Java decoding, four-style font and preservation checks. Updated `#3 共享事件` description to 5,423 UTF-8 bytes with campaign names intact; backed up and installed two shared resources plus config with hash verification.
+- Passed text, XML branch, Java decoding, four-style font and preservation checks. Updated `#3 通用事件` description to 5,423 UTF-8 bytes with campaign names intact; backed up and installed two shared resources plus config with hash verification.
 - User requested prioritizing translation and deferring in-game testing. No game test, Git publication or Steam upload was performed.
 
-### 共享事件 batch 2
+### 通用事件 batch 2
 - Added 179 content keys across 13 travel-event families: 91 conversation keys and 88 linked choice/description keys. Cumulative shared coverage is 256/3,163 (8.1%), with 4,495 total runtime entries.
 - Included caravan encounters, candles, crows, Dwarven runes, ghosts, potions, Troll encounters and the wounded Ogre. Extended XML checking to random-battle opening conversations and documented context-specific unit terminology.
 - Passed source/markup/placeholders, 53 conversation groups and 51 XML-linked choices, Java decoding, four-style font coverage and preservation checks. All previous main/campaign/shared translations remain unchanged.
-- Updated the description to `#2 共享事件` (5,243 UTF-8 bytes), retaining all campaign names. Backed up and installed only two shared resources and config, verifying hashes and all other files unchanged. In-game review remains pending; no publication was performed.
+- Updated the description to `#2 通用事件` (5,243 UTF-8 bytes), retaining all campaign names. Backed up and installed only two shared resources and config, verifying hashes and all other files unchanged. In-game review remains pending; no publication was performed.
 
-### 共享事件 batch 1
+### 通用事件 batch 1
 - Added 77 shared content keys across 13 event families: 61 conversation keys and 16 linked choice/follow-up keys. Includes the ancient temple, drinking contest, acid rain and party interactions. Shared coverage: 77/3,163 (2.4%); 4,316 total runtime entries including metadata.
 - Added two shared runtime resources, source coverage declarations, shared metadata/namespace validation and an XML-based choice/outcome check. Preserved variables, placeholders, HTML and `=BR=` markers; added regression checks for rejected malformed input.
 - Extended Java font checking to multiple English resources. All 4,316 runtime entries and 3,086 remaining shared fallback entries pass in four styles. Main text and campaign samples remain unchanged.
-- Updated the Workshop description to include `#1 共享事件` (5,063 UTF-8 bytes), retaining all campaign names. Backed up config and installed the two shared resources plus config with hash verification. In-game review remains pending; no publication was performed.
+- Updated the Workshop description to include `#1 通用事件` (5,063 UTF-8 bytes), retaining all campaign names. Backed up config and installed the two shared resources plus config with hash verification. In-game review remains pending; no publication was performed.
 
 ### 正文 batch 8 — main messages complete
 - Added the remaining 1,065 main entries, including 298 object descriptions, remaining interface/help, effect fragments, combat logs and faction/person names. Main coverage is 4,215/4,215 content keys, plus six metadata keys; 4,235 runtime entries including retained campaign samples. All 326 object descriptions are covered.

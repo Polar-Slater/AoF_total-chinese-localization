@@ -1,6 +1,6 @@
 # Main text: batch 1 (unreleased)
 
-This batch covers shared interface and gameplay text in `messages-en.properties`; existing campaign samples are retained. The user subsequently restored the wider order: terminology, gameplay descriptions, shared events, then campaigns starting with the Undead campaign. Current work is terminology review; see `LOCALIZATION-PLAN.md` and `TERMINOLOGY.md`.
+This batch covers shared interface and gameplay text in `messages-en.properties`; existing campaign samples are retained. The user subsequently restored the wider order: terminology, gameplay descriptions, shared events, then campaigns starting with the Undead campaign. Current work is terminology review; see `docs/LOCALIZATION-PLAN.md` and `docs/TERMINOLOGY.md`.
 
 ## Scope
 
@@ -17,7 +17,7 @@ The current main source contains 4,221 keys. The built main file supplies 809 ke
 
 ## Terminology
 
-`TERMINOLOGY.md` consolidates the working baseline. Retain the initial glossary in `PHASE1-NOTES.md`, with these batch additions:
+`docs/TERMINOLOGY.md` consolidates the working baseline. Retain the initial glossary in `docs/batches/PHASE1-NOTES.md`, with these batch additions:
 
 | English | Chinese |
 | --- | --- |
@@ -59,4 +59,4 @@ In-game checks still required for this batch:
 
 The previously reported `UXX_Please_review_us` conversation validation warning has not been diagnosed by this batch. Passing text and font checks does not establish that all dialogs fit in game.
 
-Subsequent screenshot review confirmed missing tooltip-prefix glyphs in SimHei. Batch 2 replaces it with static regular Noto Sans SC and expands validation to engine symbols and English fallback; actual game confirmation is pending. See `MAIN-TEXT-BATCH2.md` for current totals and testing; the counts above describe batch 1.
+Subsequent screenshot review confirmed missing tooltip-prefix glyphs in SimHei. Batch 2 replaces it with static regular Noto Sans SC and expands validation to engine symbols and English fallback; actual game confirmation is pending. See `docs/batches/MAIN-TEXT-BATCH2.md` for current totals and testing; the counts above describe batch 1.

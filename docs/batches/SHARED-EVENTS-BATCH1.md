@@ -1,4 +1,4 @@
-# 第1批：共享事件
+# 第1批：通用事件
 
 Date: 2026-11-15. Continues on `codex/gameplay-descriptions`, retaining all main-text batches and campaign samples.
 
@@ -27,7 +27,7 @@ The build validates source keys, duplicate keys, `${gold}` and numeric placehold
 
 All checks passed. The XML checker verified 16 standalone conversation groups, seven linked choices and their immediate outcomes, and matched the English reference bytes to the installed archive. Java decoded 4,316 runtime entries and verified translated text plus 3,086 remaining shared English entries in all four font styles. Main messages remain byte-identical to the installed batch 8 version. Campaign samples match HEAD and installed text; their existing CRLF/LF difference was accounted for, and they were not redeployed.
 
-Workshop description is 5,063 UTF-8 bytes with balanced BBCode and all 32 bilingual campaign names unchanged. Backed up config and an inventory of original hashes at `backups/workshop-3840511924-before-shared-batch1-54240407`. The manifest records that the two new shared resource files did not previously exist. Installed those two files and config, verified all three against staging by SHA-256, and verified every other installed mod file is unchanged. No Git commit, GitHub push or Steam upload was performed. The pre-existing untracked `items.xlsx` was left untouched.
+Workshop description is 5,063 UTF-8 bytes with balanced BBCode and all 32 bilingual campaign names unchanged. Backed up config and an inventory of original hashes at the local installation backup (path omitted). The manifest records that the two new shared resource files did not previously exist. Installed those two files and config, verified all three against staging by SHA-256, and verified every other installed mod file is unchanged. No Git commit, GitHub push or Steam upload was performed. The pre-existing untracked `items.xlsx` was left untouched.
 
 Real in-game review of these events remains pending, as does the separate `UXX_Please_review_us` warning. No campaign story translation is included in this batch.
 

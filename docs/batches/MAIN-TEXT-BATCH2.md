@@ -11,7 +11,7 @@ All 326 object names and the 73-label source race/group section are supplied. Ex
 
 ## Terminology review
 
-The 501-key `TERMINOLOGY.md` is the working baseline. Identical short English terms were checked for consistent Chinese labels. Vase was normalized from 空花瓶 to 花瓶. Examples checked against English descriptions:
+The 501-key `docs/TERMINOLOGY.md` is the working baseline. Identical short English terms were checked for consistent Chinese labels. Vase was normalized from 空花瓶 to 花瓶. Examples checked against English descriptions:
 
 - Turtle roams dunes and oases: 乌龟, not 海龟.
 - Fire Archer shoots burning arrows: 烈焰弓箭手, avoiding the modern rocket reading of 火箭射手.
@@ -40,4 +40,4 @@ Font files are local and ignored. A future distributable release still needs the
 
 The `UXX_Please_review_us` validation warning remains unresolved. No Steam upload or GitHub push is part of this batch.
 
-The main runtime file, configured Noto font and local description were installed into item 3840511924 after a fresh backup (`backups/workshop-3840511924-before-terminology-batch2-8eddd52b`). Each installed file matched the package by SHA-256. Other installed files were retained.
+The main runtime file, configured Noto font and local description were installed into the local Workshop item after a fresh backup (the local installation backup (path omitted)). Each installed file matched the package by SHA-256. Other installed files were retained.
