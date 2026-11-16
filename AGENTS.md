@@ -5,8 +5,9 @@
 Build a complete Simplified Chinese localization of Age of Fear: Total, using locale `zh`. Read README.md, docs/LOCALIZATION-PLAN.md, docs/TERMINOLOGY.md and the latest batch notes before editing. Historical batch notes describe earlier states; current instructions take precedence.
 
 - Main messages: 4,215/4,215 content keys translated.
-- 通用事件 and 通用对话: 1,582/3,163 content keys translated. Another collaborator continues these resources; keep campaign work separate from their translation files.
-- Our active work is campaign stories, starting with Rise of The Necromancer. Undead batches 1–4 cover 206/732 content keys: opening through Level13, U00–U04 dialogue groups and linked UXX groups. Haunted Church shop, rewards, base unlock and later bone-dragon departure have been checked. Continue with Level15 Kingdom Patrol, Level15b shop, Level16 battle and Level17 aftermath / U05 dialogue, checking UXX_Vision_1a and defeat-route dependencies. The base-upgrade campaign dialogue remains a separate follow-up; shared base files belong to the collaborator. See docs/batches/UNDEAD-CAMPAIGN-BATCH4.md.
+- 通用事件 and 通用对话: 2,198/3,163 content keys translated.
+- Campaign work starts with Rise of The Necromancer. Undead batches 1–4 cover 206/732 content keys: opening through Level13, U00–U04 dialogue groups and linked UXX groups. Haunted Church shop, rewards, base unlock and later bone-dragon departure have been checked. Continue with Level15 Kingdom Patrol, Level15b shop, Level16 battle and Level17 aftermath / U05 dialogue, checking UXX_Vision_1a and defeat-route dependencies. The base-upgrade campaign dialogue remains a separate follow-up; shared base files belong to the shared-resource workstream. See docs/batches/UNDEAD-CAMPAIGN-BATCH4.md.
+- Shared resources and campaign stories are separate workstreams. Follow the current user assignment and preserve the other workstream; do not infer ownership from which chat or branch is active.
 - Counts measure resource entries, not words or whole-game completion. A long story page can occupy one key.
 
 ## Translation rules
@@ -34,7 +35,7 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 - `prepare_workshop.py` requires the local item path and its actual owner ID. Preserve ownership checks; never hardcode personal account details.
 - Back up before an authorized local installation and verify changed files against staging. Packaging does not install or upload automatically.
 - Keep Workshop descriptions below the project's 7,999 UTF-8 byte limit and preserve bilingual campaign names and the selected preview.
-- Publishing, uploading and pushing require corresponding user authorization. Current campaign batch outputs have not been installed or uploaded.
+- Publishing, uploading and pushing require corresponding user authorization. The shared collaborator recorded a local installation through shared batch 17 and the 45-key Undead opening batch, with backups and hash verification. Campaign batches 2–4 remain uninstalled. This merge does not install or upload anything; in-game review remains pending.
 
 ## Privacy and local state
 

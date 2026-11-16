@@ -1,17 +1,17 @@
 {
   "shared": {
-    "translated_content_entries": 883,
+    "translated_content_entries": 1208,
     "global_event_content_entries_covered": 410,
     "source_content_entries": 2144,
-    "untranslated_content_entries": 1261,
-    "complete_conversation_groups": 14
+    "untranslated_content_entries": 936,
+    "complete_conversation_groups": 18
   },
   "shared-conversations": {
-    "translated_content_entries": 699,
+    "translated_content_entries": 990,
     "global_event_content_entries_covered": 487,
     "source_content_entries": 1019,
-    "untranslated_content_entries": 320,
-    "complete_conversation_groups": 258
+    "untranslated_content_entries": 29,
+    "complete_conversation_groups": 302
   },
   "selected_event_families": [
     "SGE_AcidRain",
@@ -148,11 +148,29 @@
     "SXX_Cow",
     "SXX_EndlessPurse",
     "SXX_Windmill",
-    "SPL_Invoke"
+    "SPL_Invoke",
+    "SXX_Beastmaster",
+    "SXX_DjinLamp",
+    "SXX_BardQuest",
+    "SXX_BlackDragon",
+    "SXX_DarkCastle",
+    "SXX_DemonCity",
+    "SXX_RuneSmith",
+    "SXX_TransmuterLab",
+    "SXX_MoonWell",
+    "SXX_ManaObelisks",
+    "SXX_ManaSource",
+    "SXX_WorldTree",
+    "SXX_TranquilGrove",
+    "SXX_SoulsWell",
+    "SXX_PearlMermaid",
+    "SXX_ShamanHut",
+    "SXX_CrystalMine",
+    "SXX_CursedWights"
   ],
-  "total_translated_content_entries": 1582,
+  "total_translated_content_entries": 2198,
   "total_source_content_entries": 3163,
-  "total_runtime_entries_all_files": 6017,
+  "total_runtime_entries_all_files": 6633,
   "checks": [
     "complete selected event families and declared choices",
     "placeholder multiplicities",

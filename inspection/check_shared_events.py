@@ -63,7 +63,26 @@ with ZipFile(args.game / 'aof-data.zip') as archive:
         assert prefix.endswith('.') and prefix[:-1] in indexed, ('Unknown follow-up level', prefix)
     for prefix in manifest.get('textless_level_prefixes', []):
         assert not indexed[prefix[:-1]].findall('conversations'), ('Textless level contains dialogue', prefix)
+    # Battle victories may queue their outcome for the world map rather than
+    # open it from a visible choice (for example, the Beastmaster recruitment).
+    followup_conversations = set()
+    lifecycle_prefixes = manifest['level_prefixes'] + manifest.get('textless_level_prefixes', [])
+    for prefix in lifecycle_prefixes:
+        for trigger in indexed[prefix[:-1]].findall('triggers'):
+            for command in trigger.findall('commands'):
+                words = (command.text or '').strip().split()
+                if words and words[0] in ('play-conversation', 'play-conversation-on-world-map'):
+                    check_conversation(words[1], prefix)
+                    followup_conversations.add(words[1])
     pending = list(references)
+    # Story pages, textless shops and battles can advance the quest from
+    # on-init/on-exit/on-win triggers without any visible choice.
+    lifecycle_triggers = {
+        f"{prefix}triggers.{node.attrib['type']}."
+        for prefix in lifecycle_prefixes
+        for node in indexed[prefix[:-1]].findall('triggers')
+    }
+    pending.extend(lifecycle_triggers)
     location_choices = set()
     for prefix in manifest.get('location_prefixes', []):
         for node in indexed[prefix[:-1]].findall('triggers'):
@@ -85,7 +104,7 @@ with ZipFile(args.game / 'aof-data.zip') as archive:
                 assert prefix + field in shared, ('Missing referenced choice field', prefix, field)
         for command in node.findall('commands'):
             words = (command.text or '').strip().split()
-            if words and words[0] == 'play-conversation':
+            if words and words[0] in ('play-conversation', 'play-conversation-on-world-map'):
                 check_conversation(words[1], prefix)
             if words and words[0] == 'goto':
                 target = words[1]
@@ -136,6 +155,8 @@ print(f'PASS: {len(location_choices)} location choices checked; {len(external_co
 (ROOT / 'inspection/shared-xml-validation.json').write_text(json.dumps({
     'conversation_groups': len(groups), 'conversation_linked_choices': len(references),
     'location_choices': len(location_choices), 'callback_targets': sorted(callbacks),
+    'followup_level_conversations': sorted(followup_conversations),
+    'followup_level_triggers': sorted(lifecycle_triggers),
     'external_campaign_conversations': sorted(external_conversations),
     'navigation_or_textless_targets': sorted(navigation_targets),
     'in_game_test': 'Not performed for new translations'

@@ -1750,6 +1750,47 @@
 
 ## 通用事件人物与叙事用语
 
+- 第17批：Haunted Mine＝闹鬼矿场 (Haunted Mine)，Crystal Mine＝水晶矿场 (Crystal Mine)；原文为 Crystal Mines 时保留复数形式。Cursed Wights＝受诅咒的尸妖 (Cursed Wights)，Wight 沿用尸妖，不能混作巫妖。
+- 矿场的 duty 在此译为“上缴收益”，金额按当前队伍有无矮人决定；原文雇用矿工的说法保留为叙事，不额外添加不存在的雇佣选项。
+
+- 第16批：Pearl Mermaid＝珍珠美人鱼 (Pearl Mermaid)，Shaman's Hut＝萨满小屋 (Shaman's Hut)。Crab God 沿用蟹神，Black Pearl 沿用黑珍珠。
+- 萨满的 cleanse ritual 译为“净化仪式”，实际服务说明用“卸下诅咒物品”，不表示将物品变为无诅咒装备，也不表示销毁物品；任务物品除外。普通珍珠交易每日一次，黑珍珠事件是独立的一次性事件。
+
+- 第15批：Tranquil Grove＝宁静林地 (Tranquil Grove)，Well of Souls＝灵魂之井 (Well of Souls)；原文写作 Souls Well 时保留该英文形式。Dream Forest 暂译梦境森林 (Dream Forest)。
+- Seedling＝幼苗，是培育材料；Saproling＝幼树人，是单位。Mandrake Root、Fungusoid、Swamp Ivy 沿用曼德拉草根、菌人、沼泽藤蔓。
+- 灵魂之井的 Offer 译为“献祭”，与月亮井献上物品供奉区分。Priest 使用种族分组“祭司”，不窄化为具体的僧侣单位；九类献祭分别限一次。Death Warrior Armor／Helmet 沿用实际物品显示名“死亡战士护甲／头盔”。
+
+- 第14批：地点 Magic Source＝魔力源泉 (Magic Source)，World Tree＝世界树 (World Tree)。Golden Apple 沿用“金苹果”；世界树叙述中的 spirits 译为“树灵”，区别于精灵族单位。三处魔力源泉分别每日刷新；世界树的金苹果不按每日刷新机制描述。
+
+- 第13批：Temple of The Moon＝月之神殿 (Temple of The Moon)，Moon Well＝月亮井 (Moon Well)，Four Obelisks＝四座方尖碑 (Four Obelisks)；“魔力方尖碑”作为事件统称，不改写原始地图标签。
+- Moon Key 沿用“月之钥”，Mana Shard 沿用“魔力碎片”，Sapphire 沿用“蓝宝石”。月亮井的 offering 译为“供品／献上”，避免把物品供奉说成献祭单位。
+- 方尖碑结果对话中的 crystal amulet 是外观叙述，译为“水晶护符”；实际奖励 `AmuletOfCrystalMagicItem` 的物品显示名仍为“原始魔力护符”。
+
+
+- 第12批：Runesmith's Foundry＝符文锻造坊 (Runesmith's Foundry)；Transmuter's Laboratory＝转化实验室 (Transmuter's Laboratory)，原文缩写为 Transmuter's Lab 时保留该拼写。Transmuter＝转化师；符文锻造师沿用既有单位译名。
+- Talnes 暂译“塔尔尼斯”，Lord Azil 暂译“阿齐尔领主”；Sir Edward 沿用爱德华爵士。后续战役出现时复核并保持一致。
+- 本批材料沿用物品表中的金锭、银锭、龙鳞、贝壳、红宝石、钻石与珍珠。品质装备使用“精制”，升级产物严格对应脚本物品，不将头盔误写成护甲。
+- 转化实验室的“每日一次”是所有转化共用的次数，不是每种各一次。让塔尔尼斯留下的选项明确写“该英雄将永久离队”，不暗示可以随时召回。
+
+
+- 第11批：Mephistopheles 暂译“梅菲斯托费勒”；Fiend 沿用“凶魔”，Demon Heart 沿用物品名“恶魔之心”，Demon Pact 沿用“恶魔契约”。
+- Demon City＝恶魔城 (Demon City)，用于地图标签、地点叙述和招募提示。Underworld Conclave＝冥界秘会，是组织名称，沿用 Conclave＝秘会；区别于地名 Underworld＝冥界 (Underworld)。
+- 契约选项原文“lose -1 base HP”按扣减含义译为“基础生命值永久减少1点”，不把双重负号解释成增加，也不改成一次性受伤。
+
+
+- 第10批：Vladamir＝弗拉达米尔，Lady Willsama＝威尔萨玛夫人，Igor＝伊戈尔，均为本批暂定人名；后续战役出现时沿用并复核原文拼写，不将 Vladamir 自动改为 Vladimir。
+- Dark Castle＝黑暗城堡 (Dark Castle)，用于地图标签及具名地点叙述。委托中的 Goblin／Dwarf／Knight 沿用地精／矮人／骑士；脚本按种族分组选择，不能将“矮人”窄化为“矮人战士”。
+- 保留威尔萨玛夫人礼貌措辞中的黑色幽默；伊戈尔用短句和停顿表现迟缓语气，地精惊慌、矮人愤怒，不额外添加方言。
+
+
+- 第9批：Darius' Love 作为地图地点标签译为“达里乌斯的爱情 (Darius' Love)”；Black Dragon 的地图标签为“黑龙 (Black Dragon)”，对话中的单位名称仍为“黑龙”。
+- Ballad of the Swords 暂译《剑之歌》，为达里乌斯拟写的作品；Maiden 是角色标签，译为“姑娘”，不将图像资源文件名中的外貌描述加进姓名。保留达里乌斯夸张、抒情的语气以及救援结局的反讽。
+
+
+- 第8批沿用 Djinn＝灯神、Beastmaster＝驯兽师、Tayah＝泰娅；indestructible 在灯神愿望与石化结局中均译为“坚不可摧”，保留字面实现愿望的反讽，不改成“无敌”。
+- 灯神的 meta-wishing 指用愿望要求更多愿望，说明中译作“用愿望换取愿望”，手册暂译《灯神法则与追加许愿规则》。“神意与命运变更委员会”是虚构机构，不是地点。
+
+
 - IKEUS FURNITURE＝伊凯乌斯家具 (IKEUS FURNITURE)：仓库招牌按地点／店铺名保留原文大写；店主姓名仍为伊凯乌斯。
 - Blood Sisters＝鲜血姐妹；Windmill＝风车磨坊 (Windmill)（与共享地点的地图标签一致）；Oracle＝神谕者。
 - 兵种沿用骸骨投石车、骸骨魔像、复生亡灵、特斯拉炮手、骷髅骑兵、瘟疫僵尸；名为 Warlock 的单位沿用“术士”，叙事中泛称 shaman 时译作“萨满”。
