@@ -30,7 +30,7 @@ Validation passed: exact 1,065-key addition, full 4,221-key main-source coverage
 
 Workshop description is 4,899 UTF-8 bytes with balanced BBCode; the complete section containing all 32 bilingual campaign/expansion names is unchanged. Package owner is preserved. `git diff --check` passed.
 
-Backed up and installed the main runtime and config locally. Backup: `backups/workshop-3840511924-before-gameplay-batch8-224ac56d`. Both installed files match the staged package by SHA-256; all other mod files are unchanged. No Steam upload, Git commit or GitHub push was performed.
+Backed up and installed the main runtime and config locally. Backup: the local installation backup (path omitted). Both installed files match the staged package by SHA-256; all other mod files are unchanged. No Steam upload, Git commit or GitHub push was performed.
 
 User feedback covers the version through batch 5. Batches 6–8 need in-game review, particularly dense bestiary descriptions, long multiplayer/help dialogs, formatted effects and generated numbers. The separate `UXX_Please_review_us` warning remains unresolved.
 

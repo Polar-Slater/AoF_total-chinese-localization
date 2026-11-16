@@ -21,7 +21,7 @@ The correct item/resource name/template total is 450, including a generated scro
 
 ## Context decisions
 
-`TERMINOLOGY.md` now contains 1,528 keyed entries. Existing translations were retained. Meaning is taken from displayed English text and relevant descriptions or engine inspection:
+`docs/TERMINOLOGY.md` now contains 1,528 keyed entries. Existing translations were retained. Meaning is taken from displayed English text and relevant descriptions or engine inspection:
 
 | Source | Chinese | Reason |
 | --- | --- | --- |
@@ -46,4 +46,4 @@ The next content stage is gameplay explanations and tooltips, using this glossar
 
 Completed checks: build/placeholder/HTML coverage; Java decoding of all 2,246 runtime entries; configured-font glyph coverage in four styles, engine symbols and 1,989 English fallback entries; all 1,528 glossary rows matched the English source and generated Chinese runtime. The 1,205 previous main values, campaign files and font were retained.
 
-Installed the main runtime file and local description into item 3840511924 after a fresh backup (`backups/workshop-3840511924-before-terminology-batch3-26bef6fd`). Both installed files matched the package by SHA-256. Actual game layout and wording review remain pending.
+Installed the main runtime file and local description into the local Workshop item after a fresh backup (the local installation backup (path omitted)). Both installed files matched the package by SHA-256. Actual game layout and wording review remain pending.

@@ -1,4 +1,4 @@
-# 第5批：共享事件
+# 第5批：通用事件
 
 Date: 2026-11-15. Continues on `codex/gameplay-descriptions`. In-game testing remains deferred; natural Chinese and bilingual place names remain user requirements.
 
@@ -28,6 +28,6 @@ Passed exact 264-key checks, preservation of every previous runtime value, build
 
 Java decoded 5,141 entries and checked translated text, engine symbols and 2,261 remaining English fallback entries in four font styles. The final Windmill suffix adds only already-covered Latin letters; rebuilt and verified staging/installed bytes after that wording update. Main messages and campaign samples remain byte-identical to the pre-batch snapshot.
 
-Workshop description includes `#5 共享事件`, 5,776 UTF-8 bytes, balanced BBCode, and all 32 bilingual campaign/expansion names preserved. Backup: `backups/workshop-3840511924-before-shared-batch5-e8f18176`; an additional pre-suffix snapshot is in `backups/before-windmill-place-label`. Installed only both shared resources and config. Final SHA-256 hashes match staging; all other installed mod files are unchanged.
+Workshop description includes `#5 通用事件`, 5,776 UTF-8 bytes, balanced BBCode, and all 32 bilingual campaign/expansion names preserved. Backup: the local installation backup (path omitted); an additional pre-suffix snapshot is in `backups/before-windmill-place-label`. Installed only both shared resources and config. Final SHA-256 hashes match staging; all other installed mod files are unchanged.
 
 No game test, Git commit/push or Steam upload was performed. `items.xlsx` remains untouched. Next: shared locations and longer side stories, then the Undead campaign; deferred game review does not block translation.

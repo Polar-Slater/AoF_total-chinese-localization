@@ -21,7 +21,7 @@ Main runtime: 3,156 entries including six metadata entries. Content coverage: 3,
 
 Validation passed: exact 297-key selection and placeholder multiplicities, build/markup/coverage checks, Java decoding of 3,170 runtime entries and four-style font coverage including 1,065 English fallbacks. All 2,859 prior main keys remain; COMMAND is the only changed prior value. Campaign samples are unchanged. All 32 campaign names are retained; the balanced Workshop description is 4,671 UTF-8 bytes. Glossary and staged runtime comparisons passed, as did `git diff --check`.
 
-Backed up and installed the main runtime and config locally. Backup: `backups/workshop-3840511924-before-gameplay-batch7-2956908c`. Both installed files match the staged package by SHA-256, and the backed-up main file matches the pre-batch snapshot. Batches 4–7 remain uncommitted/unpublished; no Steam upload was performed.
+Backed up and installed the main runtime and config locally. Backup: the local installation backup (path omitted). Both installed files match the staged package by SHA-256, and the backed-up main file matches the pre-batch snapshot. Batches 4–7 remain uncommitted/unpublished; no Steam upload was performed.
 
 User feedback confirms normal appearance through batch 5. Batches 6–7 still require in-game review, especially composed status tooltips, target lists, control immunity and paired duration/count tags. The `UXX_Please_review_us` warning remains unresolved.
 

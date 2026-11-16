@@ -1,4 +1,4 @@
-# 第4批：共享事件
+# 第4批：通用事件
 
 Date: 2026-11-15. Continues on `codex/gameplay-descriptions`. In-game testing remains deferred at the user's request. The user prefers natural, faithful Chinese over added dialect or forced colloquial phrasing; their approved beggar option from batch 3 is preserved.
 
@@ -27,6 +27,6 @@ Village looting can yield gold or trigger combat, while the Necromancer option r
 
 Passed exact 156-key source-set checks, build validation, variables, HTML, `=BR=` markers and namespace/coverage checks. XML validation covers all 136 standalone groups and 107 choices, including one manual-unit-selection callback. Java decoded 4,877 runtime entries and checked translated text, engine symbols and 2,525 English fallback entries in four font styles. All previous runtime values are preserved, including the user's approved batch-3 beggar wording; main/campaign files remain byte-identical to the pre-batch snapshot.
 
-Description includes `#4 共享事件`, uses 5,578 UTF-8 bytes and preserves all 32 bilingual campaign/expansion names. BBCode is balanced. Backup: `backups/workshop-3840511924-before-shared-batch4-e681802c`. Installed only both shared resources and config, verified against staging by SHA-256; every other installed mod file is unchanged.
+Description includes `#4 通用事件`, uses 5,578 UTF-8 bytes and preserves all 32 bilingual campaign/expansion names. BBCode is balanced. Backup: the local installation backup (path omitted). Installed only both shared resources and config, verified against staging by SHA-256; every other installed mod file is unchanged.
 
 No game test, Git commit/push or Steam upload was performed. `items.xlsx` remains untouched. Continue remaining shared travel events and locations, then longer shared stories and the Undead campaign. Deferred game review and the unrelated `UXX_Please_review_us` warning do not block translation.

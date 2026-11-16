@@ -1,4 +1,4 @@
-# 第3批：共享事件
+# 第3批：通用事件
 
 Date: 2026-11-15. Continues on `codex/gameplay-descriptions`. The user explicitly deferred in-game testing to prioritize translation. Automated text/resource checks continue; no game session was launched.
 
@@ -25,8 +25,8 @@ Retained source distinctions without inventing gameplay changes: the Dryad conve
 
 Passed exact new-key coverage, placeholders, `=BR=` preservation, HTML, metadata/namespaces and XML-linked branch checks. Java decoded 4,721 runtime entries and verified translated text, engine tooltip symbols and 2,681 remaining English fallback entries in four font styles. Every previous runtime value is preserved; main messages and both campaign samples are byte-identical to the pre-batch snapshot.
 
-Updated the Workshop description with `#3 共享事件`, cumulative progress and deferred game-review status. Balanced BBCode, 5,423 UTF-8 bytes, all 32 bilingual campaign/expansion names unchanged. The staged resources match the validated build.
+Updated the Workshop description with `#3 通用事件`, cumulative progress and deferred game-review status. Balanced BBCode, 5,423 UTF-8 bytes, all 32 bilingual campaign/expansion names unchanged. The staged resources match the validated build.
 
-Backup: `backups/workshop-3840511924-before-shared-batch3-f1b6a75a`. Installed only both shared runtime resources and config. Verified SHA-256 against staging and every other installed mod file unchanged. No Git commit/push or Steam upload. The unrelated untracked `items.xlsx` remains untouched.
+Backup: the local installation backup (path omitted). Installed only both shared runtime resources and config. Verified SHA-256 against staging and every other installed mod file unchanged. No Git commit/push or Steam upload. The unrelated untracked `items.xlsx` remains untouched.
 
 In-game testing is deferred at the user's request, not a prerequisite for the next translation batch. Main batches 6–8 and shared batches 1–3 remain unreviewed in game; the separate `UXX_Please_review_us` warning remains unresolved. Continue remaining complete shared travel events, then shared locations and longer side stories, followed by the Undead campaign.
