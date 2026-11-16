@@ -1,26 +1,52 @@
 {
   "undeadcampaign": {
-    "translated_content_entries": 35,
+    "translated_content_entries": 94,
     "source_content_entries": 344,
-    "untranslated_content_entries": 309,
+    "untranslated_content_entries": 250,
     "complete_groups": [
       "Level00",
       "Level00b",
       "Level01a",
       "Level01b",
       "Level02",
-      "Level03a"
+      "Level03a",
+      "Level05",
+      "Level06",
+      "Level07",
+      "Level09",
+      "Level10",
+      "Level11",
+      "Level11b",
+      "Level13"
     ]
   },
   "undeadcampaign-conversations": {
-    "translated_content_entries": 10,
+    "translated_content_entries": 112,
     "source_content_entries": 388,
-    "untranslated_content_entries": 378,
+    "untranslated_content_entries": 276,
     "complete_groups": [
       "U00_Krill_turn",
       "U01_Goblin_panic",
       "U01_Goblin_raise",
-      "U01_TreasureChest_death"
+      "U01_TreasureChest_death",
+      "U02_Abomination_raise",
+      "U02_Footman_death",
+      "U02_Footman_raise",
+      "U02_Shop_enter",
+      "U02_Zombie_impatient",
+      "U02_Zombie_raise",
+      "UXX_Krill_impatient",
+      "UXX_PlayerUnit_death",
+      "UXX_Vision_1",
+      "U03_Goblin_raise",
+      "U03_Orc_death",
+      "U04_Banshee_damage",
+      "U04_BoneDragon_raise",
+      "UXX_Base_unlocked",
+      "UXX_BoneDragon_remove",
+      "UXX_Krill_damage",
+      "UXX_Noea_damage",
+      "UXX_PlagueZombie_detonate"
     ]
   }
 }

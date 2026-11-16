@@ -22,4 +22,12 @@ Add any other intentionally changed scripts/docs explicitly. Open a pull request
 
 Do not add game resources, font files, saves, account credentials, backups or personal environment files. Workshop publishing is a separate action from GitHub collaboration.
 
+## Combining parallel work
+
+Shared resources and campaign stories are separate workstreams. Keep assignments neutral in tracked instructions: use resource names rather than "this chat", "our work" or "the friend". Follow the user's assignment for the current task.
+
+When merging, preserve the latest changes for each section: shared translations/progress from the shared workstream, and campaign translations/progress from the campaign workstream. Retain both sets of changelog entries and batch notes. Do not accept an entire file solely because its commit is newer; its other sections may be stale. If both contributors changed the same translation key, review its meaning before choosing a value.
+
+Rebuild runtime files and coverage reports with build_translation.py after combining editable sources and coverage declarations. Run the documented validation checks, verify that both sets of translations survive, and update combined progress totals. Keep installation history separate from current repository coverage. This workflow reduces conflicts but does not make shared documentation conflict-free.
+
 Use VERSION as the translation project version, independent of the game version. Record work under Unreleased in CHANGELOG.md; increment the version for agreed milestones. Patch versions cover fixes, minor versions cover translation batches/features, and 1.0.0 is reserved for the agreed complete release.

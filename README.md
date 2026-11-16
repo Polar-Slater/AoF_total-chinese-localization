@@ -11,12 +11,12 @@ Simplified Chinese translations for the interface, gameplay text, events and cam
 | 界面与正文 | 4,215 / 4,215 | 100% |
 | 通用事件 | 1,208 / 2,144 | 56.3% |
 | 通用对话 | 990 / 1,019 | 97.2% |
-| 亡灵战役：死灵法师的崛起 | 45 / 732 | 6.1% |
+| 亡灵战役：死灵法师的崛起 | 206 / 732 | 28.1% |
 | Other campaigns | Not started | — |
 
 Counts exclude metadata and measure entries, not words. One entry may contain a full story page.
 
-通用事件 / 通用对话 and campaign stories are being translated in parallel. The current branch handles shared resources; the other collaborator continues the Undead story. See the [work plan](docs/LOCALIZATION-PLAN.md).
+通用事件 / 通用对话 and campaign stories are being translated in parallel. Each collaborator edits their assigned resources and preserves the other section. See the [work plan](docs/LOCALIZATION-PLAN.md).
 
 ## Get started
 

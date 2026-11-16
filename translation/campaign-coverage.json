@@ -1,7 +1,7 @@
 {
   "undeadcampaign": {
     "source_directory": "aof-undead",
-    "levels": ["Level00", "Level00b", "Level01a", "Level01b", "Level02", "Level03a"],
-    "conversation_families": ["U00_Krill_turn", "U01_Goblin_panic", "U01_Goblin_raise", "U01_TreasureChest_death"]
+    "levels": ["Level00", "Level00b", "Level01a", "Level01b", "Level02", "Level03a", "Level05", "Level06", "Level07", "Level09", "Level10", "Level11", "Level11b", "Level13"],
+    "conversation_families": ["U00_Krill_turn", "U01_Goblin_panic", "U01_Goblin_raise", "U01_TreasureChest_death", "U02_Abomination_raise", "U02_Footman_death", "U02_Footman_raise", "U02_Shop_enter", "U02_Zombie_impatient", "U02_Zombie_raise", "UXX_Krill_impatient", "UXX_PlayerUnit_death", "UXX_Vision_1", "U03_Goblin_raise", "U03_Orc_death", "U04_Banshee_damage", "U04_BoneDragon_raise", "UXX_Base_unlocked", "UXX_BoneDragon_remove", "UXX_Krill_damage", "UXX_Noea_damage", "UXX_PlagueZombie_detonate"]
   }
 }

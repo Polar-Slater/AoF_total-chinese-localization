@@ -170,7 +170,7 @@
   ],
   "total_translated_content_entries": 2198,
   "total_source_content_entries": 3163,
-  "total_runtime_entries_all_files": 6472,
+  "total_runtime_entries_all_files": 6633,
   "checks": [
     "complete selected event families and declared choices",
     "placeholder multiplicities",
