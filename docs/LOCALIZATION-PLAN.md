@@ -1,6 +1,6 @@
 # 汉化推进计划 / Localization plan
 
-Updated: 2026-11-15. This records the user's current division of work; it is not a timed automation or a publication instruction.
+Updated: 2026-11-16. This records the user's current division of work; it is not a timed automation or a publication instruction.
 
 ## 1. 统一术语 / Establish terminology — 核心基线已建立，持续复核
 
@@ -22,7 +22,7 @@ Updated: 2026-11-15. This records the user's current division of work; it is not
 
 ## 4. 战役剧情 / Campaign stories — 当前工作
 
-从亡灵战役（死灵法师的崛起）开始，再推进其他战役。已接入战役／对话构建校验，保留原有试译。首批新增35条，累计45/732条（6.1%），覆盖Level00至Level03a及U00/U01关联对话。下一批从骨河桥与雾磨镇段落继续；详见UNDEAD-CAMPAIGN-BATCH1.md。人物、种族、物品和技能名沿用术语表，保留人物语气和故事上下文。
+从亡灵战役（死灵法师的崛起）开始，再推进其他战役。已接入战役／对话构建校验，保留原有试译。第4批新增89条，累计206/732条（28.1%），覆盖开场至Level13、U00至U04对话及关联UXX对话。已核对闹鬼教堂、Level12商店、新英雄、奖励条件及据点解锁，并补译骨龙在Level16的离队对话；不据此宣称Level16已完成。据点升级触发的战役对话仍需另批补译，通用据点文件继续由朋友负责。下一批从Level15王国巡逻队 (Kingdom Patrol)、Level15b商店、Level16战斗与Level17战后／U05系列继续，核对UXX_Vision_1a及失败支线；详见batches/UNDEAD-CAMPAIGN-BATCH4.md。人物、种族、物品和技能名沿用术语表，保留人物语气和故事上下文。
 
 ## 测试与修复 / Validation and fixes
 

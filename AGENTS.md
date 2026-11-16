@@ -6,7 +6,7 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 
 - Main messages: 4,215/4,215 content keys translated.
 - 通用事件 and 通用对话: 1,582/3,163 content keys translated. Another collaborator continues these resources; keep campaign work separate from their translation files.
-- Our active work is campaign stories, starting with Rise of The Necromancer. Undead batch 1 covers 45/732 content keys: Level00 through Level03a and four U00/U01 dialogue groups. Continue with the Bone River/Mistmill sequence and U02 dialogue, checking Level04 shop dependencies. See docs/batches/UNDEAD-CAMPAIGN-BATCH1.md.
+- Our active work is campaign stories, starting with Rise of The Necromancer. Undead batches 1–4 cover 206/732 content keys: opening through Level13, U00–U04 dialogue groups and linked UXX groups. Haunted Church shop, rewards, base unlock and later bone-dragon departure have been checked. Continue with Level15 Kingdom Patrol, Level15b shop, Level16 battle and Level17 aftermath / U05 dialogue, checking UXX_Vision_1a and defeat-route dependencies. The base-upgrade campaign dialogue remains a separate follow-up; shared base files belong to the collaborator. See docs/batches/UNDEAD-CAMPAIGN-BATCH4.md.
 - Counts measure resource entries, not words or whole-game completion. A long story page can occupy one key.
 
 ## Translation rules

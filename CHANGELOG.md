@@ -4,6 +4,24 @@ Project versions describe translation milestones, not game versions.
 
 ## [Unreleased]
 
+### Undead campaign: Haunted Church
+- Added 89 content entries: Level11b/Level13 (27), both U04 dialogue groups (22), and five linked UXX groups (40). Campaign coverage is 206/732 (28.1%).
+- Checked the textless Level12 shop, Noea's recruitment, both reward conditions, serialized battle-board dialogue references and the base unlock. Included the bone dragon's later Level16 departure dialogue without counting that level as translated; base-upgrade campaign dialogue remains pending.
+- Build and Java decoding/four-style font checks passed: 6,017 runtime entries and 2,107 English fallback entries. All previous translations, including uncommitted batches 2–3, preserved; main/shared translation and runtime files unchanged. New entries preserve source HTML tag structure.
+- Updated glossary, coverage/progress records and local Workshop description. No installation, upload, commit or push; in-game layout testing remains deferred. See docs/batches/UNDEAD-CAMPAIGN-BATCH4.md.
+
+### Undead campaign: Night Assault
+- Added 22 content entries: Level09–Level11 (18) and both U03 dialogue groups (4). Campaign coverage is 117/732 (16.0%).
+- Checked the Level09b shop, battle-board dialogue references, all three reward conditions and the route to Haunted Church. Turn limits follow the inclusive script conditions; existing recurring dialogue is reused.
+- Build, Java decoding and four font-style checks passed: 5,928 runtime entries and 2,196 English fallback entries. All previous translations, including uncommitted batch 2, preserved; main/shared translation and runtime files unchanged.
+- Updated local coverage/progress records. No installation, upload, commit or push; in-game layout testing remains deferred. See docs/batches/UNDEAD-CAMPAIGN-BATCH3.md.
+
+### Undead campaign: Bone River / Mistmill
+- Added 50 content entries: Level05–Level07 (14), all six U02 dialogue groups (26), and three linked UXX groups (10). Campaign coverage is 95/732 (13.0%).
+- Checked the legacy Level04 shop, current Level05b shop, battle-board dialogue references, reward condition and post-battle vision against local game resources. The objective wording reflects the script’s inclusive turn-10 limit.
+- Build and Java properties/font checks passed: 5,906 runtime entries and 2,218 English fallback entries. Previous translations preserved; main/shared resources unchanged.
+- Updated coverage reports and local progress documentation. No installation, upload, commit or push; in-game layout review remains deferred. See docs/batches/UNDEAD-CAMPAIGN-BATCH2.md.
+
 ### Documentation layout
 - Simplified the main README and replaced the old pilot README with current setup and testing guides.
 - Grouped the plan, glossary and batch notes under docs/; added a documentation index and updated references.

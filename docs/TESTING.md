@@ -17,7 +17,7 @@ Use `workshop-package` instead of `pilot-mod` to check a staged package. The Jav
 
 After local installation, launch through Steam and select **Options → Screen → Language → Chinese (Simplified) - Test**. Check story pages, dialogue, choices and long tooltips for missing glyphs, clipping and awkward wording.
 
-The version through shared batch 5 had a successful smoke test. Shared batches 6–7 and Undead batch 1 have automated validation but await in-game review. Translation may continue while game testing is deferred.
+The version through shared batch 5 had a successful smoke test. Shared batches 6–7 and Undead batches 1–4 have automated validation but await in-game review. Translation may continue while game testing is deferred.
 
 ## Known issues
 
