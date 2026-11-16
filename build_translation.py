@@ -109,8 +109,8 @@ for category, entries in shared_coverage.items():
     assert entries and len(entries) == len(set(entries)), ('Empty or duplicate coverage declarations', category)
 shared_report = {}
 for stem, marker, files in [
-    ('shared', 'CAMPAIGN', ['shared-events-1.properties', 'shared-events-2.properties', 'shared-events-3.properties', 'shared-events-4.properties', 'shared-events-5.properties', 'shared-bases-6.properties', 'shared-systems-7.properties']),
-    ('shared-conversations', 'CONVERSATIONS', ['shared-conversations-1.properties', 'shared-conversations-2.properties', 'shared-conversations-3.properties', 'shared-conversations-4.properties', 'shared-conversations-5.properties', 'shared-conversations-7.properties']),
+    ('shared', 'CAMPAIGN', ['shared-events-1.properties', 'shared-events-2.properties', 'shared-events-3.properties', 'shared-events-4.properties', 'shared-events-5.properties', 'shared-bases-6.properties', 'shared-systems-7.properties', 'shared-events-8.properties', 'shared-events-9.properties', 'shared-events-10.properties', 'shared-events-11.properties', 'shared-events-12.properties', 'shared-events-13.properties', 'shared-events-14.properties', 'shared-events-15.properties', 'shared-events-16.properties', 'shared-events-17.properties']),
+    ('shared-conversations', 'CONVERSATIONS', ['shared-conversations-1.properties', 'shared-conversations-2.properties', 'shared-conversations-3.properties', 'shared-conversations-4.properties', 'shared-conversations-5.properties', 'shared-conversations-7.properties', 'shared-conversations-8.properties', 'shared-conversations-9.properties', 'shared-conversations-10.properties', 'shared-conversations-11.properties', 'shared-conversations-12.properties', 'shared-conversations-13.properties', 'shared-conversations-14.properties', 'shared-conversations-15.properties', 'shared-conversations-16.properties', 'shared-conversations-17.properties']),
 ]:
     reference = read_properties(ROOT / f'source/aof-data/{stem}-en.properties', 'cp1252')
     translated = {marker: 'shared', 'LOCALE': 'zh'}

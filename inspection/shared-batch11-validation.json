@@ -1,0 +1,14 @@
+{
+  "new_shared_conversation_keys": 31,
+  "new_shared_level_keys": 12,
+  "previous_shared_runtime_entries_preserved": 1831,
+  "main_and_campaign_runtime_byte_identical": true,
+  "campaign_translation_and_coverage_unchanged": true,
+  "pact_delay_accept_reject_commands_checked": true,
+  "chaos_campaign_entry_recorded_as_external": true,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 4501,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

@@ -1,0 +1,14 @@
+{
+  "new_shared_conversation_keys": 76,
+  "new_shared_level_keys": 13,
+  "previous_shared_runtime_entries_preserved": 1742,
+  "main_and_campaign_runtime_byte_identical": true,
+  "campaign_translation_and_coverage_unchanged": true,
+  "three_delivery_callbacks_and_cancel_guards_checked": true,
+  "debug_option_remains_script_gated": true,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 4465,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}
