@@ -6,3 +6,5 @@
 *.ps1 text eol=crlf
 *.png binary
 *.jpg binary
+# Preserve upstream license text, including its original trailing whitespace.
+pilot-mod/licenses/NotoSansSC/OFL.txt whitespace=-blank-at-eol

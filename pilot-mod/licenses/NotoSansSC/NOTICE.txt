@@ -1,0 +1,5 @@
+Noto Sans SC Regular
+Source: user-provided Google Fonts Noto Sans SC archive, static/NotoSansSC-Regular.ttf.
+Packaged as com/aof/resource/text/font/noto-sans-sc.ttf; font bytes are unchanged.
+License: SIL Open Font License 1.1; see OFL.txt for copyright and full terms.
+SHA-256: d45f67f0a7c0ca3f256950777ce6a61cc7ce5f9696d02900cbbaac25f8aa7d16

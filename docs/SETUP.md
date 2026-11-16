@@ -14,6 +14,8 @@ To prepare the configured Noto Sans SC font:
 
 This produces a static regular-weight font for Java. Fonts are optional for text-only editing, but required for font checks and packaging. Font binaries stay local; include the appropriate license materials before distributing them.
 
+The Google Fonts Noto Sans SC ZIP also includes `static/NotoSansSC-Regular.ttf`. This static weight-400 font can be copied unchanged to `pilot-mod/com/aof/resource/text/font/noto-sans-sc.ttf`, without conversion. The current local package uses this option. Its matching `OFL.txt` and a provenance notice are included under `pilot-mod/licenses/NotoSansSC/` and copied into the Workshop package. Preserve these files when distributing the font. Keep the downloaded ZIP out of Git and remove obsolete test fonts from staging before packaging.
+
 ## Build translations
 
 ```powershell

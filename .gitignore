@@ -4,6 +4,7 @@
 /inspection/*-bytecode.txt
 *.ttf
 *.otf
+/Noto_Sans_SC.zip
 # Generated deployment package and personal runtime state.
 /workshop-package/
 /pilot-home/
