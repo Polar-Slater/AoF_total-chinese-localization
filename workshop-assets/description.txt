@@ -26,7 +26,7 @@
 
 [table]
 [tr][th]战役[/th][th]翻译进度[/th][/tr]
-[tr][td]I. Rise of The Necromancer / 死灵法师的崛起[/td][td]已译206/732条（28.1%）[/td][/tr]
+[tr][td]I. Rise of The Necromancer / 死灵法师的崛起[/td][td]已译251/732条（34.3%）[/td][/tr]
 [tr][td]II. The Tale of Sir Edward / 爱德华爵士传[/td][td]尚未开始[/td][/tr]
 [tr][td]III. The Demon's Lover / 恶魔的恋人[/td][td]尚未开始[/td][/tr]
 [tr][td]IV. The Horde / 部落[/td][td]尚未开始[/td][/tr]

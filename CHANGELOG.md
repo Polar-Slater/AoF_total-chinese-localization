@@ -4,6 +4,18 @@ Project versions describe translation milestones, not game versions.
 
 ## [Unreleased]
 
+### Workspace cleanup
+- Removed the obsolete pilot bootstrap, standalone launcher and pilot home. Current setup remains setup_local.py, followed by build_translation.py and optional Workshop packaging.
+- Removed disposable Workshop staging after verifying every file was an exact duplicate of the installed mod, reclaiming approximately 11.4 MB. Moved the original font ZIP under source/reference/ without changing it.
+- With explicit user approval, removed 25 superseded backup/helper items, reclaiming another 79.6 MB. Retained the latest full rollback backup and active campaign batch recovery snapshot; hash checks verified all 81 protected translation, runtime, asset and retained-backup files unchanged.
+- Preserved uncommitted campaign work, runtime/font/license inputs, original archive-separated English references and batch history. The installed game mod is unaffected.
+
+### Undead campaign: Kingdom Patrol
+- Added 45 content entries: Level15/Level16/Level17 and the immediate LevelSecret01b defeat-route continuation (15), all three U05 groups (26), UXX_Vision_1a (2) and UXX_Krill_wight (2). Campaign coverage is 251/732 (34.3%).
+- Checked the textless Level15b shop, battle-board dialogue references, inclusive turn-12 reward condition, victory and defeat routes, conditional vision, and reused bone-dragon departure dialogue. Downstream branches remain outside this batch.
+- Build, source-HTML comparisons, prior-translation preservation and Java four-style font checks passed: 6,678 runtime entries and 1,446 English fallback entries. Main/shared translation and runtime files remain unchanged.
+- Updated progress, glossary, coverage reports and the spoiler-free description count. This batch is not installed, committed, pushed or uploaded; in-game review remains deferred. See docs/batches/UNDEAD-CAMPAIGN-BATCH5.md.
+
 ### Google Fonts Noto Sans SC package
 - Prepared the supplied static Regular font without altering its bytes, retaining the existing runtime filename. Included the matching OFL copyright/license and a provenance notice in build staging and the Workshop package.
 - Moved obsolete local SimHei test fonts out of staging into a backup, and excluded the downloaded ZIP from Git. Java decoding and four-style glyph checks passed for 6,633 runtime entries and 1,491 English fallback entries.

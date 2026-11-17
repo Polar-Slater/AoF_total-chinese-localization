@@ -6,7 +6,7 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 
 - Main messages: 4,215/4,215 content keys translated.
 - 通用事件 and 通用对话: 2,198/3,163 content keys translated.
-- Campaign work starts with Rise of The Necromancer. Undead batches 1–4 cover 206/732 content keys: opening through Level13, U00–U04 dialogue groups and linked UXX groups. Haunted Church shop, rewards, base unlock and later bone-dragon departure have been checked. Continue with Level15 Kingdom Patrol, Level15b shop, Level16 battle and Level17 aftermath / U05 dialogue, checking UXX_Vision_1a and defeat-route dependencies. The base-upgrade campaign dialogue remains a separate follow-up; shared base files belong to the shared-resource workstream. See docs/batches/UNDEAD-CAMPAIGN-BATCH4.md.
+- Campaign work starts with Rise of The Necromancer. Undead batches 1–5 cover 251/732 content keys: main-route opening through Level17, the immediate LevelSecret01b defeat-route continuation, U00–U05 dialogue and linked UXX groups. Kingdom Patrol shop, reward, victory/defeat branches and conditional vision have been checked. Continue with Level19, Level19b shop and Level20 / U06 dialogue, checking UXX_Vision_2a and Stonehenge dependencies. Other unlocked main/defeat-route branches and base-upgrade campaign dialogue remain separate follow-ups. See docs/batches/UNDEAD-CAMPAIGN-BATCH5.md.
 - Shared resources and campaign stories are separate workstreams. Follow the current user assignment and preserve the other workstream; do not infer ownership from which chat or branch is active.
 - Counts measure resource entries, not words or whole-game completion. A long story page can occupy one key.
 
@@ -36,12 +36,13 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 - Back up before an authorized local installation and verify changed files against staging. Packaging does not install or upload automatically.
 - Keep Workshop descriptions below the project's 7,999 UTF-8 byte limit and preserve bilingual campaign names and the selected preview.
 - Keep the public Workshop description concise and spoiler-free: show broad categories and progress counts only. Do not list story locations, encounters, rewards, recruitable characters or plot outcomes; keep detailed scope in internal batch notes.
-- Publishing, uploading and pushing require corresponding user authorization. The local Workshop mod is installed through shared batch 17 and Undead batch 4 (206 campaign content keys), with a full backup and hash verification. Subsequent local updates installed a concise, spoiler-free description and the supplied static Noto Sans SC Regular font with its license; the unused SimHei font was removed after backup. No Steam upload was performed for these updates; in-game review remains pending.
+- Publishing, uploading and pushing require corresponding user authorization. The local Workshop mod is installed through shared batch 17 and Undead batch 4 (206 campaign content keys), with a full backup and hash verification. Subsequent local updates installed a concise, spoiler-free description and the supplied static Noto Sans SC Regular font with its license; the unused SimHei font was removed after backup. No Steam upload was performed for these updates; in-game review remains pending. Campaign batch 5 is built locally but not installed.
 
 ## Privacy and local state
 
 - Do not include personal names, account handles, owner IDs, personal Workshop item IDs, email addresses or user-specific absolute paths in tracked files or documentation. Use generic placeholders and explicit command arguments.
 - Keep local source archives, extraction manifests, game binaries, fonts, backups, deployment packages, credentials and personal runtime state out of Git. Do not copy local identities into examples or generated reports.
+- Keep the workspace lean: original downloads go under source/reference/; retain the latest rollback backup and active uncommitted-work snapshots, and prune obsolete helpers and superseded backups after verification. Generate workshop-package/ when needed. Preserve translation sources, runtime/font/license inputs and archive-separated English references.
 - Use an available local Python interpreter; a Windows Store alias may be unusable. Do not record the interpreter's personal absolute path in project documentation.
 
 ## Known limits
