@@ -9,14 +9,14 @@ Simplified Chinese translations for the interface, gameplay text, events and cam
 | Resource | Translated | Coverage |
 | --- | ---: | ---: |
 | 界面与正文 | 4,215 / 4,215 | 100% |
-| 通用事件 | 1,208 / 2,144 | 56.3% |
-| 通用对话 | 990 / 1,019 | 97.2% |
-| 亡灵战役：死灵法师的崛起 | 251 / 732 | 34.3% |
+| 通用事件 | 2,144 / 2,144 | 100% |
+| 通用对话 | 1,019 / 1,019 | 100% |
+| 亡灵战役：死灵法师的崛起 | 206 / 732 | 28.1% |
 | Other campaigns | Not started | — |
 
-Counts exclude metadata and measure entries, not words. One entry may contain a full story page.
+Counts exclude metadata and measure entries, not words. One entry may contain a full story page. The two shared properties files are fully covered; separate campaign/expansion dialogue and script-generated English remain outside these totals.
 
-通用事件 / 通用对话 and campaign stories are being translated in parallel. Each collaborator edits their assigned resources and preserves the other section. See the [work plan](docs/LOCALIZATION-PLAN.md).
+通用事件 / 通用对话 and campaign stories are separate workstreams. Each collaborator edits their assigned resources and preserves the other section. See the [work plan](docs/LOCALIZATION-PLAN.md).
 
 ## Get started
 

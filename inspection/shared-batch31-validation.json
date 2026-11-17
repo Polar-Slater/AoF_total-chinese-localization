@@ -1,0 +1,30 @@
+{
+  "new_shared_level_keys": 4,
+  "shared_event_content_entries": 2144,
+  "shared_conversation_content_entries": 1019,
+  "shared_content_total": 3163,
+  "remaining_shared_event_keys": 0,
+  "both_shared_source_key_sets_fully_covered": true,
+  "build_requires_complete_shared_source_key_sets": true,
+  "previous_shared_runtime_entries_preserved": 2142,
+  "previous_editable_translations_unchanged": true,
+  "main_shared_conversation_and_campaign_runtime_byte_identical": true,
+  "new_keys_match_remaining_source_keys": true,
+  "original_english_location_values_preserved": true,
+  "all_four_levels_included_in_xml_checks": true,
+  "new_external_campaign_conversation_references": [
+    "DXX_SmugglersDen_enter",
+    "RXX_SmugglersDen_enter"
+  ],
+  "java_decoded_runtime_entries": 7598,
+  "english_fallback_entries_checked": 526,
+  "shared_english_fallback_entries": 0,
+  "four_font_styles_checked": true,
+  "inventory_fixture_required_height": 497,
+  "inventory_fixture_available_height": 500,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 3397,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

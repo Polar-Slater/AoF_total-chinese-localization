@@ -1,0 +1,81 @@
+{
+  "new_shared_level_keys": 178,
+  "shared_event_content_entries": 2140,
+  "shared_conversation_content_entries": 1019,
+  "shared_content_total": 3159,
+  "remaining_shared_event_keys": [
+    "LevelOpenWorldBattle.location.name",
+    "LevelOpenWorldShop.location.name",
+    "LevelSlimesLair02.location.name",
+    "LevelSmugglersDen01.location.name"
+  ],
+  "all_pirates_shared_keys_covered": 178,
+  "previous_shared_runtime_entries_preserved": 1964,
+  "previous_editable_translations_unchanged": true,
+  "main_shared_conversation_and_campaign_runtime_byte_identical": true,
+  "new_keys_match_selected_source_groups": true,
+  "html_tag_sequence_matches_source": true,
+  "all_twenty_four_levels_included_in_xml_checks": true,
+  "opening_battle_win_loss_restore_routes_reviewed": true,
+  "tavern_state_and_purchase_conditions_reviewed": true,
+  "jungle_one_time_rewards_and_treasure_reviewed": true,
+  "eight_battle_tasks_reviewed": true,
+  "night_raid_target_mismatch_logged_as": "BUG-003",
+  "night_raid_condition": "(${battle-enemy-race-Elementals-count}=='0')AND(${battle-turn-number}LESS_EQUAL_8)",
+  "external_executioner_choice_trigger_refs_verified": [
+    {
+      "type": "on-select-1",
+      "level": "LevelPiratesExecutioner01"
+    },
+    {
+      "type": "on-select-2",
+      "level": "LevelPiratesExecutioner01"
+    }
+  ],
+  "external_pirates_conversations_still_untranslated": [
+    "PXX_Congratulations",
+    "PXX_Executioner_select",
+    "PXX_Human_intro",
+    "PXX_Human_postgame",
+    "PXX_Human_treasure",
+    "PXX_IslandSearch_failure",
+    "PXX_IslandSearch_success",
+    "PXX_MerchantShip_enter",
+    "PXX_Tavern_drunkard",
+    "PXX_Tavern_round",
+    "PXX_Undead_intro",
+    "PXX_Undead_postgame",
+    "PXX_Undead_treasure",
+    "PXX_Welcome"
+  ],
+  "selected_dlc_overlapping_keys": 170,
+  "selected_dlc_differing_values": 29,
+  "selected_dlc_differences_beyond_markup_and_whitespace": [
+    "LevelPirates07.conversations.0.name",
+    "LevelPirates07.conversations.10.name",
+    "LevelPirates07.conversations.11.name",
+    "LevelPirates07.conversations.13.name",
+    "LevelPirates07.conversations.14.name",
+    "LevelPirates07.conversations.2.name",
+    "LevelPirates07.conversations.3.name",
+    "LevelPirates07.conversations.5.name",
+    "LevelPirates07.conversations.6.name",
+    "LevelPirates07.conversations.8.name",
+    "LevelPiratesExecutioner02.conversations.0.name",
+    "LevelPiratesExecutioner02.conversations.0.text",
+    "LevelPiratesExecutioner02.conversations.1.name",
+    "LevelPiratesExecutioner02.conversations.1.text",
+    "LevelPiratesExecutioner02.conversations.2.name",
+    "LevelPiratesExecutioner02.conversations.2.text"
+  ],
+  "java_decoded_runtime_entries": 7594,
+  "english_fallback_entries_checked": 530,
+  "four_font_styles_checked": true,
+  "inventory_fixture_required_height": 497,
+  "inventory_fixture_available_height": 500,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 3315,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

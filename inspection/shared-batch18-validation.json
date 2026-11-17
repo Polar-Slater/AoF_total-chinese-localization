@@ -1,0 +1,20 @@
+{
+  "new_shared_conversation_keys": 4,
+  "new_shared_level_keys": 20,
+  "shared_content_total": 2222,
+  "previous_shared_runtime_entries_preserved": 2202,
+  "previous_editable_translations_unchanged": true,
+  "main_and_campaign_runtime_byte_identical": true,
+  "new_keys_match_selected_source_groups": true,
+  "pyramid_entry_search_shop_and_victory_defeat_navigation_checked": true,
+  "bazaar_random_daily_opening_and_external_campaign_dependencies_checked": true,
+  "all_six_levels_included_in_xml_trigger_checks": true,
+  "java_decoded_runtime_entries": 6657,
+  "english_fallback_entries_checked": 1467,
+  "four_font_styles_checked": true,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 3329,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

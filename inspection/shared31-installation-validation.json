@@ -1,0 +1,27 @@
+{
+  "installed_shared_batch": 31,
+  "new_shared_content_entries": 936,
+  "previous_actual_shared_content_entries": 2227,
+  "previous_description_shared_content_entries": 2310,
+  "previous_shared_discrepancy_cause": "unknown",
+  "shared_content_entries": 3163,
+  "shared_event_content_entries": 2144,
+  "shared_conversation_content_entries": 1019,
+  "preserved_installed_campaign_content_entries": 251,
+  "installed_runtime_entries": 7643,
+  "english_fallback_entries_checked": 481,
+  "updated_files": [
+    "com/aof/resource/text/i18n/shared-zh.properties",
+    "config.xml"
+  ],
+  "full_backup_hash_verified": true,
+  "installed_files_match_verified_stage": true,
+  "all_other_files_unchanged": true,
+  "non_description_config_metadata_unchanged": true,
+  "installed_campaign_description_preserved": true,
+  "description_utf8_bytes": 3396,
+  "four_font_styles_checked": true,
+  "inventory_layout_fixture_passed": true,
+  "steam_uploaded": false,
+  "in_game_test": false
+}

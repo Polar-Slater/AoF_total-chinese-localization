@@ -16,6 +16,16 @@ This produces a static regular-weight font for Java. Fonts are optional for text
 
 The Google Fonts Noto Sans SC ZIP also includes `static/NotoSansSC-Regular.ttf`. This static weight-400 font can be copied unchanged to `pilot-mod/com/aof/resource/text/font/noto-sans-sc.ttf`, without conversion. The current local package uses this option. Its matching `OFL.txt` and a provenance notice are included under `pilot-mod/licenses/NotoSansSC/` and copied into the Workshop package. Preserve these files when distributing the font. Keep the downloaded ZIP out of Git and remove obsolete test fonts from staging before packaging.
 
+## Compact button font
+
+The inventory has a fixed 500-pixel content area. Unmodified Noto Sans SC makes its bordered 18-point treasure label 35 pixels high; with the 467-pixel item panel this exceeds the available height and causes Swing to shrink both columns. Generate the compact button-only derivative before packaging:
+
+```powershell
+.\.venv\Scripts\python.exe prepare_ui_font.py 'C:\path\to\NotoSansSC-Regular.ttf'
+```
+
+This creates `aof-han-ui.ttf`, selected by `BUTTONTEXT_FONT`. It changes line metrics and the font family name; glyph outlines and advance widths are retained. Keep `noto-sans-sc.ttf` for the other three font roles and distribute the original OFL plus the derivative notice. Do not point all four roles at the compact font. Restart the game after installing it, since fonts are cached.
+
 ## Build translations
 
 ```powershell

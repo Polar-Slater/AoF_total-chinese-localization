@@ -1,0 +1,25 @@
+{
+  "font_role_changed": "BUTTONTEXT_FONT",
+  "original_line_height_18pt_bold": 27,
+  "fixed_line_height_18pt_bold": 22,
+  "original_required_height": 502,
+  "fixed_required_height": 497,
+  "container_height": 500,
+  "fixed_item_panel_size": [
+    590,
+    467
+  ],
+  "treasure_values_checked": [
+    0,
+    623,
+    123456789
+  ],
+  "original_collapse_reproduced": true,
+  "glyph_outlines_mappings_advances_and_shaping_preserved": true,
+  "installed_runtime_entries_checked": 6678,
+  "installed_english_fallback_entries_checked": 1446,
+  "all_four_font_styles_passed": true,
+  "installed_files": 3,
+  "other_installed_files_unchanged": true,
+  "in_game_visual_confirmation": false
+}
