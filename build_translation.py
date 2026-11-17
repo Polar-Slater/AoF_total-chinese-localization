@@ -109,8 +109,8 @@ for category, entries in shared_coverage.items():
     assert entries and len(entries) == len(set(entries)), ('Empty or duplicate coverage declarations', category)
 shared_report = {}
 for stem, marker, files in [
-    ('shared', 'CAMPAIGN', ['shared-events-1.properties', 'shared-events-2.properties', 'shared-events-3.properties', 'shared-events-4.properties', 'shared-events-5.properties', 'shared-bases-6.properties', 'shared-systems-7.properties', 'shared-events-8.properties', 'shared-events-9.properties', 'shared-events-10.properties', 'shared-events-11.properties', 'shared-events-12.properties', 'shared-events-13.properties', 'shared-events-14.properties', 'shared-events-15.properties', 'shared-events-16.properties', 'shared-events-17.properties']),
-    ('shared-conversations', 'CONVERSATIONS', ['shared-conversations-1.properties', 'shared-conversations-2.properties', 'shared-conversations-3.properties', 'shared-conversations-4.properties', 'shared-conversations-5.properties', 'shared-conversations-7.properties', 'shared-conversations-8.properties', 'shared-conversations-9.properties', 'shared-conversations-10.properties', 'shared-conversations-11.properties', 'shared-conversations-12.properties', 'shared-conversations-13.properties', 'shared-conversations-14.properties', 'shared-conversations-15.properties', 'shared-conversations-16.properties', 'shared-conversations-17.properties']),
+    ('shared', 'CAMPAIGN', ['shared-events-1.properties', 'shared-events-2.properties', 'shared-events-3.properties', 'shared-events-4.properties', 'shared-events-5.properties', 'shared-bases-6.properties', 'shared-systems-7.properties', 'shared-events-8.properties', 'shared-events-9.properties', 'shared-events-10.properties', 'shared-events-11.properties', 'shared-events-12.properties', 'shared-events-13.properties', 'shared-events-14.properties', 'shared-events-15.properties', 'shared-events-16.properties', 'shared-events-17.properties', 'shared-events-18.properties', 'shared-events-19.properties', 'shared-events-20.properties', 'shared-events-21.properties', 'shared-events-22.properties', 'shared-events-23.properties', 'shared-events-24.properties', 'shared-events-25.properties', 'shared-events-26.properties', 'shared-events-27.properties', 'shared-events-28.properties', 'shared-events-29.properties', 'shared-events-30.properties', 'shared-events-31.properties']),
+    ('shared-conversations', 'CONVERSATIONS', ['shared-conversations-1.properties', 'shared-conversations-2.properties', 'shared-conversations-3.properties', 'shared-conversations-4.properties', 'shared-conversations-5.properties', 'shared-conversations-7.properties', 'shared-conversations-8.properties', 'shared-conversations-9.properties', 'shared-conversations-10.properties', 'shared-conversations-11.properties', 'shared-conversations-12.properties', 'shared-conversations-13.properties', 'shared-conversations-14.properties', 'shared-conversations-15.properties', 'shared-conversations-16.properties', 'shared-conversations-17.properties', 'shared-conversations-18.properties', 'shared-conversations-19.properties', 'shared-conversations-20.properties', 'shared-conversations-21.properties']),
 ]:
     reference = read_properties(ROOT / f'source/aof-data/{stem}-en.properties', 'cp1252')
     translated = {marker: 'shared', 'LOCALE': 'zh'}
@@ -119,6 +119,7 @@ for stem, marker, files in [
         assert not part.keys() & translated.keys(), ('Duplicate shared keys', filename)
         translated.update(part)
     validate_values(reference, translated)
+    assert reference.keys() == translated.keys(), ('Incomplete shared resource', stem, reference.keys() - translated.keys(), translated.keys() - reference.keys())
     if stem == 'shared-conversations':
         for family in shared_coverage['event_families']:
             assert any(k.startswith(family + '.') or k.startswith(family + '_') for k in reference), ('Unknown event family', family)
@@ -183,7 +184,7 @@ shared_report['selected_event_families'] = shared_coverage['event_families']
 shared_report['total_translated_content_entries'] = sum(shared_report[s]['translated_content_entries'] for s in ('shared', 'shared-conversations'))
 shared_report['total_source_content_entries'] = sum(shared_report[s]['source_content_entries'] for s in ('shared', 'shared-conversations'))
 shared_report['total_runtime_entries_all_files'] = sum(map(len, runtime_values.values()))
-shared_report['checks'] = ['complete selected event families and declared choices', 'placeholder multiplicities', 'engine =BR= markers', 'balanced HTML', 'locale/type markers', 'no effective runtime key collisions', 'ASCII Java properties']
+shared_report['checks'] = ['complete shared events and shared conversations', 'complete selected event families and declared choices', 'placeholder multiplicities', 'engine =BR= markers', 'balanced HTML', 'locale/type markers', 'no effective runtime key collisions', 'ASCII Java properties']
 shared_report['in_game_layout'] = 'Pending user test'
 (ROOT / 'inspection/shared-validation.json').write_text(json.dumps(shared_report, indent=2), encoding='utf-8', newline='\n')
 report = {'phase1_entries': sum(batch_counts[name] for name in phase1_files),

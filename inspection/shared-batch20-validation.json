@@ -1,0 +1,22 @@
+{
+  "new_shared_conversation_keys": 8,
+  "new_shared_level_keys": 26,
+  "shared_content_total": 2287,
+  "previous_shared_runtime_entries_preserved": 2257,
+  "previous_editable_translations_unchanged": true,
+  "main_and_campaign_runtime_byte_identical": true,
+  "new_keys_match_selected_source_groups": true,
+  "html_tag_sequence_matches_source": true,
+  "three_item_gates_and_entry_locks_checked": true,
+  "hero_only_cache_commands_and_three_shop_exits_checked": true,
+  "all_six_victory_defeat_returns_checked": true,
+  "all_seven_levels_included_in_xml_trigger_checks": true,
+  "java_decoded_runtime_entries": 6722,
+  "english_fallback_entries_checked": 1402,
+  "four_font_styles_checked": true,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 3331,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

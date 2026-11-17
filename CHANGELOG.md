@@ -4,6 +4,105 @@ Project versions describe translation milestones, not game versions.
 
 ## [Unreleased]
 
+### 通用事件第31批（2026-11-17）
+- 补齐开放世界商店、开放世界战斗、史莱姆巢穴和走私者窝点四条标签。通用事件2,144/2,144、通用对话1,019/1,019，合计3,163/3,163（100%）。这仅指两个通用文件，不代表全游戏或独立战役／扩展对白完成。
+- 构建校验现要求两个通用资源与英文基线的键集合完全一致，防止后续漏键。新增四个关卡检查及两组外部战役对白引用。
+- 旧译文与战役文件不变；Java解码7,598条，两个通用文件英文回退均为零，四种字体样式和物品页布局检查通过。
+- 简介更新进度及完成范围；随后按用户要求同步至本地模组，保留较新的251条战役内容、字体及配置。安装前实际通用内容为2,227条，比旧简介标注少83条；本次补齐936条至3,163条，原因未确定。完整备份、安装后哈希、Java字体及物品页布局检查通过。未提交、推送或上传。
+
+### 通用事件第30批（2026-11-17）
+- 完成海盗支线的全部178条通用关卡文本；事件覆盖2,140/2,144（99.8%），通用内容合计3,159/3,163（99.9%），剩余四条地点标签。
+- 覆盖酒馆、海战、越狱、寻宝、夜袭及刽子手支线；核对队伍恢复、一次性奖励、任务条件及独立对白中的选择引用。十四组独立扩展对白仍待翻译。
+- 新增BUG-003：夜袭任务提示要求消灭潜海者，XML却检查元素生物计数。保留原文目标与脚本，未实测奖励触发。
+- 已有译文与战役文件保持不变；Java解码7,594条，四种字体样式和530条英文回退检查通过，物品页布局检查仍为497/500。
+- 简介及进度记录已更新；第22–30批尚未安装、提交、推送或上传。
+
+### 通用事件第29批（2026-11-17）
+- 完成炼金术士支线的全部181条通用关卡文本；事件覆盖1,962/2,144（91.5%），通用内容合计2,981/3,163（94.2%），剩余182条事件文本。
+- 覆盖许愿井、矿洞探索、巨龙雕像、海上传送门、两种结局和失败页；核对投币与物品消耗、矿洞进度、封印合成和仪式选择。十四组独立扩展对白仍待翻译，不宣称整个扩展完成。
+- 已有译文与战役文件保持不变；Java解码7,416条，四种字体样式和708条英文回退检查通过，物品页布局检查仍为497/500。
+- 简介及进度记录已更新；第22–29批尚未安装、提交、推送或上传。
+
+### 通用事件第28批（2026-11-17）
+- 完成狼人支线最终战斗、战后叙述与招募结局，新增96条；事件覆盖1,781/2,144（83.1%），通用内容合计2,800/3,163（88.5%），剩余363条事件文本。
+- 通用源文件的251条狼人文本已全覆盖；七组独立扩展对白仍待翻译，未据此宣称整个扩展完成。核对两条战斗分支、四项任务及接受／拒绝招募的结果。
+- 已有译文与战役文件保持不变；Java解码7,235条，四种字体样式和889条英文回退检查通过，物品页布局检查仍为497/500。
+- 简介及进度记录已更新；第22–28批尚未安装、提交、推送或上传。
+
+### 通用事件第27批（2026-11-17）
+- 完成染血的信与绑匪的踪迹，新增101条；事件覆盖1,685/2,144（78.6%），通用内容合计2,704/3,163（85.5%），剩余459条事件文本。
+- 补齐矮人／森林两条战斗对白及后续审问，核对任务奖励、队伍暂存与恢复、娜迦战斗胜败汇入同一后续剧情的路线；四组独立扩展战后提示仍未译入。
+- 已有译文与战役文件保持不变；Java解码7,139条，四种字体样式和985条英文回退检查通过，物品页布局检查仍为497/500。
+- 简介及进度记录已更新；第22–27批尚未安装、提交、推送或上传。
+
+### 通用事件第26批（2026-11-17）
+- 完成血与月开场、困境中的狼和关联失败文本，新增54条；事件覆盖1,584/2,144（73.9%），通用内容合计2,603/3,163（82.3%），剩余560条事件文本。
+- 核对两个阶段的九个关卡、队伍暂存与恢复、任务奖励及失败路线；三组独立扩展对白仍未译入。后续从染血的信继续，不据本批宣称整条狼人支线完成。
+- 旧译文与战役文件保持不变；Java解码7,038条，四种字体样式及1,086条英文回退检查通过，物品页布局检查仍为497/500。
+- 简介与进度已更新；第22–26批尚未安装、提交、推送或上传。
+
+### 通用事件第25批（2026-11-17）
+- 完成元素使的通用关卡文本与炼金工匠商店，新增67条；事件覆盖1,530/2,144（71.4%），通用内容合计2,549/3,163（80.6%），剩余614条事件文本。
+- 核对谜题、五场战斗的任务奖励与回合条件、商店和胜败跳转；新增21个关联关卡检查。三组EXX对白属于独立扩展资源，未计入完成量。
+- 保留已有译文、战役文件及占位符；Java解码6,984条，四种字体样式及1,140条英文回退检查通过。
+- 更新简介进度并说明扩展剧情与通用文本的边界；第22–25批尚未安装、提交、推送或上传。
+
+### 通用事件第24批（2026-11-17）
+- 完成死灵法师公会与隐世修道院，新增107条；事件覆盖1,463/2,144（68.2%），通用内容合计2,482/3,163（78.5%），剩余681条事件文本。
+- 核对公会两条人物对白分支与商店解锁、修道院时间条件、战前商店及战后结局；新增人物暂定译名，保留相互讥讽的原文语气。
+- 在问题日志登记祈祷入口与草药店伏击叙述不一致，未改动原脚本或以译文掩盖。构建、XML、Java与字体检查通过，既有译文保持不变。
+- 简介进度已更新；第22–24批尚未安装、提交、推送或上传。
+
+### 通用事件第23批（2026-11-17）
+- 完成训练假人的复仇与暗影之境，新增22条；通用事件1,356/2,144（63.2%），通用内容合计2,375/3,163（75.1%）。通用对话保持100%，剩余788条事件文本。
+- 保留假人的谷粒笑话；核对解锁条件、战斗胜败、奖励与传送门封闭，登记两个独立战役入场对白依赖。
+- 构建、XML关联、Java解码与字体检查通过，旧译文及战役文件不变；简介进度已更新。第22–23批尚未安装、提交、推送或上传。
+
+### 通用事件第22批（2026-11-17）
+- 完成蛮王陵墓与幸福之泉，新增43条通用事件文本；事件覆盖1,334/2,144（62.2%），通用内容合计2,353/3,163（74.4%）。通用对话保持100%，剩余810条事件文本。
+- 核对祷词选项、尝试计数、战斗返回与结局，以及喷泉费用和奖励；登记矮人战役专属修复对白依赖，未改动战役译文。
+- 构建、XML关联、Java解码及字体检查通过，既有译文保持不变；简介仅更新分类进度。
+- 第22批尚未安装、提交、推送或上传，安装版本仍截至通用第21批。
+
+### Local sync through shared batch 21 (2026-11-17)
+- Installed shared batches 18–21 at the user’s request: 112 new entries, bringing shared content to 2,310 and shared conversations to 1,019/1,019. Updated the installed description’s shared counts and date.
+- Preserved all 251 installed campaign content entries and their description progress, which are newer than the repository baseline; main messages, fonts, preview and ownership metadata remain unchanged.
+- Verified a full backup, staged Java decoding of 6,790 entries, four-style font coverage, inventory layout fixture and installed SHA-256 matches. Only the two shared properties files and description in config.xml changed. No Steam upload or new in-game test.
+
+### 通用对话补齐第21批（2026-11-17）
+- 补齐7条系列介绍及2条调试文本，通用对话达到1,019/1,019（100%）；同时补译介绍页共用的14条按钮与说明。
+- 通用事件累计1,291/2,144，通用内容合计2,310/3,163（73.0%）；剩余853条均来自通用事件文件，不包含独立战役或脚本直接生成的英文。
+- 构建新增通用对话全键覆盖检查，核对8个共用选项与10个宣传触发关卡；保留调试变量、链接、显隐条件及关闭逻辑。
+- 自动检查通过，旧译文及主消息／战役运行时不变；更新简介与术语。第18–21批尚未安装，本批未提交、推送或上传。
+
+### 通用事件与通用对话第20批（2026-11-17）
+- 完成世界之结三项挑战的入口、提示及胜败返回对白，新增34条（8条通用对话、26条地点／选项与提示）。累计2,287/3,163（72.3%），通用对话1,010/1,019（99.1%）。
+- 核对三组物品条件、进入时锁定挑战、队伍缓存、三个战前商店及六条胜败返回分支；保留原文一次性挑战和仅英雄进入的说明。
+- 更新术语、简介进度及覆盖报告；自动校验通过，旧译文、正文及战役资源保持不变。
+- 第18–20批尚未安装；本批未提交、推送或上传，游戏内测试继续暂缓。
+
+### 通用事件与通用对话第19批（2026-11-17）
+- 完成马戏团舞者与沙虫遭遇，新增31条：8条通用对话、23条地点／选项及叙述。累计通用内容2,253/3,163（71.2%），通用对话剩余17条。
+- 核对演出费用、钻石条件、取回／赠送分支、舞者入队及沙虫战斗的胜败跳转；不修改脚本，不计入沙虫开放战役。
+- 构建、XML关联、Java解码与四种字体样式检查通过，旧译文及主消息／战役运行时保留；简介仅更新分类进度。
+- 本批尚未安装、提交、推送或上传，游戏内测试继续暂缓。
+
+### 通用事件与通用对话第18批（2026-11-17）
+- 完成丛林金字塔与法师集市，新增24条：4条通用对话、20条地点／选项及叙述。累计通用内容2,222/3,163（70.2%）。
+- 核对探索、木乃伊入口条件、战前商店、胜败跳转与集市随机开市；独立战役入场对话继续留给战役工作流。
+- 构建、XML关联、Java解码与四种字体样式检查通过，旧译文及主消息／战役运行时内容保留。简介仅更新进度与日期，保留双语战役名。
+- 本批尚未安装、提交、推送或上传，游戏内排版待集中检查。
+
+### User-approved terminology (2026-11-17)
+- Changed the funds display and its recruitment tutorial reference from 财宝 to 资金. Treasure item categories and story text retain their contextual wording.
+- Standardized Regular as 正规军 in its label, prestige explanations, effects and shared recruitment text; updated the glossary.
+- Rebuilt and validated 22 changed entries, then installed the two affected runtime resources after backup and hash verification. Other mod files, including newer campaign translations and the inventory font fix, remain unchanged.
+
+### Inventory layout font fix (2026-11-17)
+- Fixed the reproduced inventory layout overflow by selecting a compact-line-height AoF Han UI derivative for button text. The treasure row and item list now require 497 pixels instead of 502 inside the fixed 500-pixel container. Other font roles and translation content are unchanged.
+- Added a reproducible font preparation script, derivative license notice and Swing layout regression check. Original glyph outlines, character mappings, advance widths and shaping tables are preserved.
+- Installed the three-file fix after a full backup and SHA-256 verification, preserving all other mod files, including newer campaign translations. Game restart and visual confirmation remain pending; no upload or Git publication.
+
 ### Google Fonts Noto Sans SC package
 - Prepared the supplied static Regular font without altering its bytes, retaining the existing runtime filename. Included the matching OFL copyright/license and a provenance notice in build staging and the Workshop package.
 - Moved obsolete local SimHei test fonts out of staging into a backup, and excluded the downloaded ZIP from Git. Java decoding and four-style glyph checks passed for 6,633 runtime entries and 1,491 English fallback entries.

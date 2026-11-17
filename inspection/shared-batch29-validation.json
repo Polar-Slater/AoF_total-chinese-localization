@@ -1,0 +1,68 @@
+{
+  "new_shared_level_keys": 181,
+  "shared_event_content_entries": 1962,
+  "shared_conversation_content_entries": 1019,
+  "shared_content_total": 2981,
+  "remaining_shared_event_keys": 182,
+  "remaining_event_groups": {
+    "other": 4,
+    "pirates": 178
+  },
+  "all_alchemist_shared_keys_covered": 181,
+  "previous_shared_runtime_entries_preserved": 1783,
+  "previous_editable_translations_unchanged": true,
+  "main_shared_conversation_and_campaign_runtime_byte_identical": true,
+  "new_keys_match_selected_source_groups": true,
+  "html_tag_sequence_matches_source": true,
+  "all_twenty_five_levels_included_in_xml_checks": true,
+  "well_coin_counter_and_item_consumption_reviewed": true,
+  "mine_progress_and_return_routes_reviewed": true,
+  "seal_combination_and_crab_rewards_reviewed": true,
+  "external_ritual_choice_trigger_refs_verified": [
+    {
+      "type": "on-select-1",
+      "level": "LevelAlchemist16b"
+    },
+    {
+      "type": "on-select-2",
+      "level": "LevelAlchemist16b"
+    }
+  ],
+  "rescue_and_sacrifice_outcomes_reviewed": true,
+  "external_alchemist_conversations_still_untranslated": [
+    "AXX_DragonStatueSeal_whole",
+    "AXX_DragonStatueVsTalnes_select",
+    "AXX_DragonStatue_base",
+    "AXX_DragonStatue_fail",
+    "AXX_DragonStatue_intro",
+    "AXX_ForgottenMine_intro",
+    "AXX_Human_intro",
+    "AXX_RedCrab_exit",
+    "AXX_SeaPortal_intro",
+    "AXX_Undead_intro",
+    "AXX_Welcome",
+    "AXX_WellOfWishes_intro",
+    "AXX_Well_intro",
+    "AXX_Well_lost"
+  ],
+  "selected_dlc_overlapping_keys": 181,
+  "selected_dlc_differing_values": 24,
+  "selected_dlc_differences_beyond_markup_and_whitespace": [
+    "LevelAlchemist01.text",
+    "LevelAlchemist04.conversations.4.text",
+    "LevelAlchemist04.conversations.6.text",
+    "LevelAlchemist13.conversations.2.name",
+    "LevelAlchemist13.conversations.4.name",
+    "LevelAlchemist13.conversations.6.name"
+  ],
+  "java_decoded_runtime_entries": 7416,
+  "english_fallback_entries_checked": 708,
+  "four_font_styles_checked": true,
+  "inventory_fixture_required_height": 497,
+  "inventory_fixture_available_height": 500,
+  "bilingual_campaign_sections_unchanged": true,
+  "description_bytes": 3315,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false
+}

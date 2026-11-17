@@ -1,0 +1,24 @@
+{
+  "installed_shared_batch": 21,
+  "new_shared_content_entries": 112,
+  "shared_content_entries": 2310,
+  "shared_conversation_content_entries": 1019,
+  "preserved_installed_campaign_content_entries": 251,
+  "installed_runtime_entries": 6790,
+  "english_fallback_entries_checked": 1334,
+  "updated_files": [
+    "com/aof/resource/text/i18n/shared-zh.properties",
+    "com/aof/resource/text/i18n/shared-conversations-zh.properties",
+    "config.xml"
+  ],
+  "full_backup_hash_verified": true,
+  "installed_files_match_verified_stage": true,
+  "all_other_files_unchanged": true,
+  "non_description_config_metadata_unchanged": true,
+  "installed_campaign_description_preserved": true,
+  "description_utf8_bytes": 3248,
+  "four_font_styles_checked": true,
+  "inventory_layout_fixture_passed": true,
+  "steam_uploaded": false,
+  "in_game_test": false
+}

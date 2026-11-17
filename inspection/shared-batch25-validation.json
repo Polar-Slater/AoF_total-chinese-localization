@@ -1,0 +1,32 @@
+{
+  "new_shared_level_keys": 67,
+  "shared_event_content_entries": 1530,
+  "shared_conversation_content_entries": 1019,
+  "shared_content_total": 2549,
+  "remaining_shared_event_keys": 614,
+  "previous_shared_runtime_entries_preserved": 1465,
+  "previous_editable_translations_unchanged": true,
+  "main_shared_conversation_and_campaign_runtime_byte_identical": true,
+  "new_keys_match_selected_source_groups": true,
+  "html_tag_sequence_matches_source": true,
+  "elementalist_riddle_routes_and_ten_battle_tasks_reviewed": true,
+  "artificer_unlock_shop_and_exit_reviewed": true,
+  "external_elementalist_conversations": [
+    "EXX_Welcome",
+    "EXX_IronGolemRiddle_CorrectAnswer",
+    "EXX_IronGolemRiddle_IncorrectAnswer"
+  ],
+  "elementalist_dlc_overlapping_keys_including_metadata": 56,
+  "elementalist_dlc_differing_values": 15,
+  "java_decoded_runtime_entries": 6984,
+  "english_fallback_entries_checked": 1140,
+  "four_font_styles_checked": true,
+  "inventory_fixture_required_height": 497,
+  "inventory_fixture_available_height": 500,
+  "bilingual_story_and_open_campaign_sections_unchanged": true,
+  "description_bytes": 3315,
+  "description_bbcode_balanced": true,
+  "installed": false,
+  "in_game_test": false,
+  "all_twenty_one_levels_included_in_xml_checks": true
+}

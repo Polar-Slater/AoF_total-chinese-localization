@@ -5,7 +5,7 @@
 Build a complete Simplified Chinese localization of Age of Fear: Total, using locale `zh`. Read README.md, docs/LOCALIZATION-PLAN.md, docs/TERMINOLOGY.md and the latest batch notes before editing. Historical batch notes describe earlier states; current instructions take precedence.
 
 - Main messages: 4,215/4,215 content keys translated.
-- 通用事件 and 通用对话: 2,198/3,163 content keys translated.
+- 通用事件 and 通用对话: 3,163/3,163 content keys translated (through shared batch 31; installed locally). Shared conversations are complete at 1,019/1,019; shared events are complete at 2,144/2,144. Separate campaign/expansion dialogue and script-generated English remain outside these totals; follow the user assignment for subsequent work.
 - Campaign work starts with Rise of The Necromancer. Undead batches 1–4 cover 206/732 content keys: opening through Level13, U00–U04 dialogue groups and linked UXX groups. Haunted Church shop, rewards, base unlock and later bone-dragon departure have been checked. Continue with Level15 Kingdom Patrol, Level15b shop, Level16 battle and Level17 aftermath / U05 dialogue, checking UXX_Vision_1a and defeat-route dependencies. The base-upgrade campaign dialogue remains a separate follow-up; shared base files belong to the shared-resource workstream. See docs/batches/UNDEAD-CAMPAIGN-BATCH4.md.
 - Shared resources and campaign stories are separate workstreams. Follow the current user assignment and preserve the other workstream; do not infer ownership from which chat or branch is active.
 - Counts measure resource entries, not words or whole-game completion. A long story page can occupy one key.
@@ -25,7 +25,7 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 - Run `build_translation.py` after editing. Main/shared batches are registered there; campaign scope is declared in `translation/campaign-coverage.json` and shared scope in `translation/shared-coverage.json`.
 - Runtime resources under `pilot-mod/` must use ASCII Java-properties escapes. The engine loads properties through Java `Properties.load(InputStream)`.
 - Run `inspection/CheckPilot.java` with the game's Java runtime, the build/package root and relevant English properties files. Check all four font styles, remaining English fallback and engine NBSP/bullet symbols.
-- Font configuration uses static regular Noto Sans SC. Use `prepare_font.py` for variable-font conversion. Keep local font binaries out of Git; redistribution requires appropriate license materials.
+- Font configuration uses static regular Noto Sans SC for body/story/effect text and the compact AoF Han UI derivative for button text. Run `prepare_ui_font.py` on the original regular font and `inspection/CheckInventoryLayout.java` to prevent inventory layout collapse. Use `prepare_font.py` for variable-font conversion. Keep local font binaries out of Git; redistribution requires appropriate license materials.
 - Verify previous translations are preserved and run `git diff --check`. Update coverage reports, batch notes and CHANGELOG.md accurately.
 - In-game testing is deferred while translation proceeds. Automated checks do not establish layout correctness. Do not require a new game test before continuing authorized translation.
 
@@ -36,7 +36,7 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 - Back up before an authorized local installation and verify changed files against staging. Packaging does not install or upload automatically.
 - Keep Workshop descriptions below the project's 7,999 UTF-8 byte limit and preserve bilingual campaign names and the selected preview.
 - Keep the public Workshop description concise and spoiler-free: show broad categories and progress counts only. Do not list story locations, encounters, rewards, recruitable characters or plot outcomes; keep detailed scope in internal batch notes.
-- Publishing, uploading and pushing require corresponding user authorization. The local Workshop mod is installed through shared batch 17 and Undead batch 4 (206 campaign content keys), with a full backup and hash verification. Subsequent local updates installed a concise, spoiler-free description and the supplied static Noto Sans SC Regular font with its license; the unused SimHei font was removed after backup. No Steam upload was performed for these updates; in-game review remains pending.
+- Publishing, uploading and pushing require corresponding user authorization. The local Workshop mod is installed through shared batch 31 (3,163 shared content keys), with a full backup and hash verification. Its 251 campaign content keys are newer than the repository’s 206-key campaign baseline and must be preserved; the installed description retains 251/732 while the repository description reflects repository coverage. The concise, spoiler-free description is updated; existing fonts, licenses, preview and non-description metadata are preserved. See `inspection/shared31-installation-validation.json`. No Steam upload was performed; in-game review remains pending.
 
 ## Privacy and local state
 

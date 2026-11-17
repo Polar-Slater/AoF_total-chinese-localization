@@ -1,17 +1,17 @@
 {
   "shared": {
-    "translated_content_entries": 1208,
+    "translated_content_entries": 2144,
     "global_event_content_entries_covered": 410,
     "source_content_entries": 2144,
-    "untranslated_content_entries": 936,
-    "complete_conversation_groups": 18
+    "untranslated_content_entries": 0,
+    "complete_conversation_groups": 72
   },
   "shared-conversations": {
-    "translated_content_entries": 990,
+    "translated_content_entries": 1019,
     "global_event_content_entries_covered": 487,
     "source_content_entries": 1019,
-    "untranslated_content_entries": 29,
-    "complete_conversation_groups": 302
+    "untranslated_content_entries": 0,
+    "complete_conversation_groups": 317
   },
   "selected_event_families": [
     "SGE_AcidRain",
@@ -166,12 +166,20 @@
     "SXX_PearlMermaid",
     "SXX_ShamanHut",
     "SXX_CrystalMine",
-    "SXX_CursedWights"
+    "SXX_CursedWights",
+    "SXX_JunglePyramid",
+    "SXX_MagesBazaar",
+    "SXX_DancerQuest",
+    "SXX_Sandworm",
+    "SXX_WorldKnot",
+    "SXX_AdvertDialog",
+    "SXX_Debug"
   ],
-  "total_translated_content_entries": 2198,
+  "total_translated_content_entries": 3163,
   "total_source_content_entries": 3163,
-  "total_runtime_entries_all_files": 6633,
+  "total_runtime_entries_all_files": 7598,
   "checks": [
+    "complete shared events and shared conversations",
     "complete selected event families and declared choices",
     "placeholder multiplicities",
     "engine =BR= markers",

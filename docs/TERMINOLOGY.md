@@ -20,8 +20,10 @@
 
 ## 容易混淆的含义
 
+- 用户确认（2026-11-17）：资历等级 Regular 统一译为“正规军”；资金栏 Treasure 译为“资金”，对应 `TREASURE_S_GP`。物品类别与叙事中的 Treasure 仍按语境使用“财宝”。
+
 - **Affinity / alignment＝阵营倾向**：指邪恶、神圣或中立，区别于队伍所属的 Faction／阵营。
-- **Prestige＝资历**：对应正规／老兵／精英；Evolve＝进阶，指兵种进阶。界面按钮沿用“进阶”“解散”“技能”。
+- **Prestige＝资历**：对应正规军／老兵／精英；Evolve＝进阶，指兵种进阶。界面按钮沿用“进阶”“解散”“技能”。
 - **Minor hero＝次要英雄；serious wound＝重伤**。重伤需要战外治疗；不要与普通生命值损失混为一谈。
 
 - **unblockable＝不受牵制限制**：相邻敌军使多数法术与远程攻击无法使用时，此行动仍可使用；它不是“无法格挡”。
@@ -1402,7 +1404,7 @@
 | Regeneration | 再生 | `REGENERATION` |
 | Regrowth | 复生 | `REGROWTH` |
 | Divine Intervention | 神圣干预 | `DIVINEINTERVENTION` |
-| Regular | 正规 | `REGULAR` |
+| Regular | 正规军 | `REGULAR` |
 | Reinforced | 加固 | `REINFORCED` |
 | Reinforced Ale | 烈性麦酒 | `REINFORCEDDWARVENALE_SPELL` |
 | Call Reinforcements | 呼叫援军 | `REINFORCEMENTSCALL_SPELL` |
@@ -1742,7 +1744,7 @@
 - 阵营据点：混沌之门 (Chaos Portal)、兽人村落 (Orcs Village)、矮人堡垒 (Dwarven Fortress)、巨石阵 (Stonehenge)、海滨村落 (Coast Village)、地下巢穴 (Underground Nest)、骑士领地 (Knight's Estate)、废墟 (Ruins)。地点和具名设施均保留原英文；建筑名的大小写与原文一致。
 - 银色森林 (Silver Forest)、索罗顿 (Sorodon)、人类王国 (Human Kingdom)、冥界 (Underworld) 沿用中文加英文的格式。
 - Fin＝芬、Taz＝塔兹，暂定音译；Darius 沿用达里乌斯。
-- Regular／Veteran／Elite 为单位资历：正规／老兵／精英。Sea Diver 沿用潜海者；Rat Grenadier＝鼠人掷弹兵；Master Assassin＝鼠人刺客大师。
+- Regular／Veteran／Elite 为单位资历：正规军／老兵／精英。Sea Diver 沿用潜海者；Rat Grenadier＝鼠人掷弹兵；Master Assassin＝鼠人刺客大师。
 - 据点英文旧称 Plague Cannon 对应实际显示 Acid Cannon，沿用酸液炮。Lamp of Blood＝鲜血之灯；Ancestors Helmet＝先祖头盔；Endless Purse＝无尽钱袋。
 - Pirate Rum＝海盗朗姆酒；Idol of Happiness＝幸福神像；Regretful＝懊悔；Shade＝暗影幽魂；Mermaid＝美人鱼；Siren＝海妖。
 - 小游戏中的奖金／奖池与净收益区分；按实际脚本说明牌型及钓鱼机制。脚本直接赋值的英文动态片段不冒充已汉化；杯子结果附顺序对照，换牌结果用中性标签承接。
@@ -1813,6 +1815,106 @@
 - Lord of the Ales＝麦酒之王：喝酒比赛中的荣誉称号，不擅自解释为新增属性。
 - Note＝提示：系统叙述的说话者标签，不把标签混入人物台词。
 - 兽人的口吻粗豪直接，吟游诗人的表白夸张抒情，泰娅的回应简短强硬。
+
+## 通用事件第18批补充
+
+- Jungle Pyramid＝丛林金字塔 (Jungle Pyramid)；地图短名 Pyramid＝金字塔 (Pyramid)。
+- Mages Bazaar＝法师集市 (Mages Bazaar)，不定期开市，不译为固定周期。
+- Bonepickle＝博恩皮克尔：金字塔守墓者，暂定音译，保留原文名供后续复核。
+- Mummy 沿用“木乃伊”；ancient cloth 此处为叙述中的“古老的布片”，脚本未发放物品，不套用或新增物品名。
+
+## 通用事件第19批补充
+
+- Zarah＝扎拉：马戏团舞者，暂定音译。Announcer＝报幕员；Dancer 沿用“舞者”。
+- Circus＝马戏团 (Circus)；通用遭遇的地图标记 Sandworm＝沙虫 (Sandworm)，泛指单位时仍为“沙虫”。
+- 沙虫吞下的 treasures 为叙事中的“财宝”，不同于资金栏 Treasure＝资金。
+
+## 通用事件第20批补充
+
+- World Knot／World's Knot＝世界之结；每处分别保留原文英文形式，如“世界之结 (World's Knot)”。
+- chronomancy＝时间魔法；alternate timeline＝另一条时间线／不同的时间线，按句意使用，不扩写为平行世界的额外设定。
+- Crown of The Undead＝亡灵之冠；Demon's Heart＝恶魔之心；Bloody Axe＝染血战斧，沿用正文物品表。
+
+## 通用对话第21批补充
+
+- 宣传文本沿用爱德华爵士、克里尔、吉尔洛克、因杜尔夫及莱克莎。新增暂定人物译名：Bel'Kara＝贝尔卡拉、Katzok＝卡佐克、Nairi＝奈丽、Angela＝安吉拉、Nazell＝纳泽尔，后续战役接入时共同复核。
+- 游戏商品名保留英文原名，例如 Age of Fear: Total；人物与种族说明正常翻译。Human Kingdom＝人类王国 (Human Kingdom)，Underworld＝冥界 (Underworld)；criminal underworld 指“地下犯罪世界”，不套用地名。
+- 调试标签 random／random-per-hour／random-per-day 分别译作随机值／每小时随机值／每日随机值，`${...}` 变量原样保留。
+
+## 通用事件第22批补充
+
+- Secret Tomb＝隐秘陵墓 (Secret Tomb)；Barbarian King 沿用“蛮王”，奖励物品沿用“蛮王之冠”。
+- Fountain of Happiness＝幸福之泉 (Fountain of Happiness)；Destroyed Fountain＝被毁的喷泉 (Destroyed Fountain)，奖励物品沿用“幸福神像”。
+- 祷词中的 free people＝自由子民；mother-in-law 按蛮王语境译为岳母，保留戏谑语气。脚步轻快为叙述，不增加速度属性承诺。
+
+## 通用事件第23批补充
+
+- Revenge of Training Dummies＝训练假人的复仇 (Revenge of Training Dummies)；Training Dummy 沿用“训练假人”。
+- Shadow Realm＝暗影之境 (Shadow Realm)；Shade 沿用“暗影幽魂”。
+- 假人对白用 grain／barley（谷粒／大麦）代替鲜血，保留填充物的笑话，不直接改成流血描写。
+
+## 通用事件第24批补充
+
+- Necromancer's Guild＝死灵法师公会 (Necromancer's Guild)；Secluded Monastery＝隐世修道院 (Secluded Monastery)。
+- Rurok＝鲁罗克、Misty＝米丝蒂、Balvar＝巴尔瓦，暂定音译；Fin＝芬、Gilrock＝吉尔洛克、Gil＝吉尔、Lexa＝莱克莎、Krill＝克里尔沿用既有译名或对应简称。
+- Vampire＝吸血鬼、Vampiress＝女吸血鬼，沿用单位表。礼拜堂、草药师店铺和魔法学院在此为普通场所称呼，不擅自添加命名地点。
+- carrying a torch 的爱慕含义以“心里这把火”承接，保留下一句用火光照脸的讥讽；gift horse 的牙口意象同样保留，以衔接口臭笑话。
+
+## 通用事件第25批补充
+
+- Grey Top Mountain＝灰顶山 (Grey Top Mountain)；Red Castle＝红堡 (Red Castle)；Outer Realm＝外域 (Outer Realm)。以上为本批暂定地名。
+- Elementalist 的地点标签＝元素使 (Elementalist)；Gargoyle Guardians＝石像鬼守卫 (Gargoyle Guardians)；Golems Riddle＝魔像谜题 (Golems Riddle)；Mechanical Wardens＝机械守卫 (Mechanical Wardens)；Artificer's Shop＝炼金工匠商店 (Artificer's Shop)。地点标签保留原文拼写及大小写。
+- Broken Wing＝折翼；Dhacar＝达卡尔（暂定音译）。通用源文件与当前关卡XML使用 Dhacar；扩展归档另一版本的四个人物标签写作 Lich，不据此覆盖通用源的专名。
+- Iron Golem＝钢铁魔像、Clockwork Hydra＝发条多头蛇、Lightning Ball＝闪电球，沿用单位表。Heroism Potion 对应既有 Potion of Heroism，统一为英勇药剂。
+- 谜底 FEAR＝恐惧；其他选项 BLOOD／LOVE／LUST＝鲜血／爱／色欲。bested the golems 译作“过了魔像这一关”，兼容解谜和战斗两条路线。
+- 奖励中的 Dagger／Hammer of Lighting 沿用闪电匕首／闪电战锤；原文 Lighting 的拼写与道具内部标识不作改动。回合条件为 LESS_EQUAL，提示使用“在第N回合结束前”。
+
+## 通用事件第26批补充
+
+- Blood and Moon＝血与月 (Blood and Moon)；Wolf in Distress＝困境中的狼 (Wolf in Distress)；Silent Forest＝寂静森林 (Silent Forest)。地点保留其资源中的英文拼写，入口 Blood and Moon 不补扩展正式名称中的 The。
+- Gunther＝冈瑟（暂定音译）；forester＝护林人；dire wolf＝恐狼，按本段叙述处理，不把冈瑟起初的误认写成已经确认的物种。
+- Knight／Footman／Royal Guard／Ranger 沿用骑士／步兵／皇家卫士／游侠；Healing Brew 沿用治疗药液。
+- ROAR! 译为“吼——！”。原文 Death to be beast! 按上下文译为“杀死野兽！”，不保留英文笔误。
+- 冈瑟和狼人仅参加这段冒险中的战斗，不把阶段性同行译成永久加入；女儿在本阶段是失踪，不提前解释后续去向。
+
+## 通用事件第27批补充
+
+- Bloody Letter＝染血的信 (Bloody Letter)；Kidnappers Trail＝绑匪的踪迹 (Kidnappers Trail)；Trollspire＝巨魔尖峰 (Trollspire)。信中分写且小写的 troll spire 保留为巨魔尖峰 (troll spire)。地点译名暂定。
+- Arges＝阿尔戈斯、Brontes＝布隆忒斯、Steropes＝斯忒洛佩斯、Gats＝加茨、Zellan＝泽兰，均为本批暂定人物译名；Gunther／Gilrock／Fin／Balvar 沿用冈瑟／吉尔洛克／芬／巴尔瓦。
+- Iceland 沿用冰原 (Iceland)，不是现实国家；temple ruins 为本段未命名的神庙废墟，不添加英文专名。
+- Naga Warrior＝娜迦战士，Anti-Magic Drops＝抗魔滴剂。娜迦拖长的 s 音用适量“嘶……”表现，不逐字插入拟声词。
+- 独眼巨人以粗直、短促的句子说话，保留“先吞人、隔天才拿到金币”和“拿法师火球烧菜”的笑话，不额外添加方言。加茨在审问中所说 girl 按紧接的妻子追问译为“那女的”；后句 kiddie 才指被抓走的女儿。
+
+## 通用事件第28批补充
+
+- Reunion in Death＝死亡中的重逢 (Reunion in Death)；Shadow Marshes＝暗影沼泽 (Shadow Marshes)，均为暂定地名。正文中的普通陵墓不另造专名。
+- Gul-Calh＝古尔卡尔、Shella＝谢拉，暂定人物译名；Angela／Nairi 沿用安吉拉／奈丽。
+- Purified Mana＝纯净魔力、Acid Sword＝酸蚀之剑、Holy Church＝圣教会，沿用术语表。protective asylum 在此指庇护，不译作医疗机构。
+- 芬的狗狗称呼保留调侃语气；父女告别采用直白、亲近的语气。冈瑟认为自己无法继续履行父亲职责，不写成否认亲生关系。提示中的永久加入与此前只参加支线战斗作区分。
+
+## 通用事件第29批补充
+
+- The Quest for Immortality＝永生之旅 (The Quest for Immortality)，沿用扩展标题；Well of Wishes＝许愿井 (Well of Wishes)；Forgotten Mine＝遗忘矿井 (Forgotten Mine)；Sea Portal＝海上传送门 (Sea Portal)，后三者为暂定地名。Underworld 沿用冥界 (Underworld)。
+- Talnes 沿用塔尔尼斯；Marth 暂译玛尔斯。通用原文称 Marth，独立扩展版本的三个人物标签仍为 Lich，不据此覆盖通用专名。
+- Fiend＝凶魔、Giant Spider＝巨型蜘蛛、Water Elemental＝水元素、Undead King＝亡灵之王、Dragon Statue＝巨龙雕像、Crab God＝蟹神，沿用单位表。雕像是对象名称，不按地图地名加英文。
+- Healing Brew＝治疗药液、Quality Sword＝精制长剑、Ring of Protection＝防护戒指、Silver Bar＝银锭、Magic Torc＝魔法颈环、Amulet of Health＝健康护符，沿用物品表。
+- 巨龙雕像的两块材料沿用封印碎片，合成品沿用完整封印；献祭结局另给黑龙封印。不能把仪式钥匙和结局奖励译成同一物品。animation ritual＝活化仪式，指使雕像活动，不是制作动画。
+- 本批咒语以拟音保留念错后的变化：Abudus awe＝阿布杜斯，阿维；Eta evorta＝埃塔，埃沃塔；eta evareo＝埃塔，埃瓦雷奥；eta evortoea＝埃塔，埃沃托伊阿；Evi-＝埃维——。这些仅是对白，不改任何脚本标识。
+- 塔尔尼斯把蛛网戏称为挂毯、把水元素称为水团先生；保持他的学究口吻、自信与慌乱，不额外添加方言。master's tome＝导师的典籍，按师承语境理解。
+
+## 通用事件第30批补充
+
+- Salty Dog＝咸狗酒馆 (Salty Dog)；Butterport＝巴特港 (Butterport)；King's Sea＝国王海 (King's Sea)；Black Guard Castle＝黑卫士城堡 (Black Guard Castle)，均为暂定地名。地图标签 Black Guard＝黑卫士 (Black Guard)，不擅自补上原文没有的 Castle。
+- Ahoy!＝喂，船上的！ (Ahoy!)；Treasure Hunt＝寻宝之旅 (Treasure Hunt)；Eve of Night＝夜幕降临 (Eve of Night)；Merchant's Ship＝商船 (Merchant's Ship)。具名入口保留其原英文形式。
+- Captain Red Beard＝红胡子船长；Silas＝赛拉斯、Micah＝米迦、Jameson＝詹姆森，人物译名暂定。独立扩展另一版本统称 Executioner，不覆盖当前通用源的专名及对白顺序。
+- Black Guards 沿用黑卫士；Divers 沿用潜海者；Executioner 沿用刽子手。Pirate's Parrot／Serpent Staff／Burning Axe／Pirate's Rum 沿用海盗鹦鹉／蛇之法杖／燃烧战斧／海盗朗姆酒。
+- seadog 按海盗自称或嘲讽译为老海狗；grog 按上下文译为酒，不套用奖励道具海盗朗姆酒。刑具的 girls／beauties 保留拟人化的“姑娘／美人”，不误写成真实女性角色。
+- 船长谈“脑袋开洞”的笑话在下一句继续承接；siren 指诱惑水手的海妖。娜迦嘶声沿用适量“嘶……”，不额外添加方言。
+
+## 通用事件第31批补充
+
+- Slimes Lair＝史莱姆巢穴 (Slimes Lair)；Smugglers Den＝走私者窝点 (Smugglers Den)，原英文不补撇号。
+- 开放世界模板的原始地点名称确为 LevelOpenWorldShop／LevelOpenWorldBattle，分别译作开放世界商店 (LevelOpenWorldShop)／开放世界战斗 (LevelOpenWorldBattle)。按用途解释中文，括号保留原值，不另造英文专名；资源键及关卡标识不变。这是模板标签覆盖，不证明运行时所有动态地名已汉化。
 
 ## 亡灵战役人物与地点
 
