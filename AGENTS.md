@@ -42,6 +42,7 @@ Build a complete Simplified Chinese localization of Age of Fear: Total, using lo
 
 - Do not include personal names, account handles, owner IDs, personal Workshop item IDs, email addresses or user-specific absolute paths in tracked files or documentation. Use generic placeholders and explicit command arguments.
 - Keep local source archives, extraction manifests, game binaries, fonts, backups, deployment packages, credentials and personal runtime state out of Git. Do not copy local identities into examples or generated reports.
+- Keep the workspace lean: original downloads go under source/reference/; retain the latest rollback backup and active uncommitted-work snapshots, and prune obsolete helpers and superseded backups after verification. Generate workshop-package/ when needed. Preserve translation sources, runtime/font/license inputs and archive-separated English references.
 - Use an available local Python interpreter; a Windows Store alias may be unusable. Do not record the interpreter's personal absolute path in project documentation.
 
 ## Known limits

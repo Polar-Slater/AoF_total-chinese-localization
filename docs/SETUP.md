@@ -56,6 +56,6 @@ Remove `-WhatIf` to apply it. The helper checks ownership and the 7,999 UTF-8 by
 
 ## Local files
 
-`source/`, `backups/`, `workshop-package/`, `pilot-home/` and fonts are excluded from Git. The optional game modding guide belongs in `source/reference/`. Keep account IDs and personal paths out of project documentation and reports.
+`source/`, `backups/`, `workshop-package/` and fonts are excluded from Git. Original downloads, including the font ZIP and optional game modding guide, belong in `source/reference/`. Keep account IDs and personal paths out of project documentation and reports.
 
-`prepare_pilot.py` is a historical bootstrap, not the current build workflow. Do not run it over ongoing translation work.
+`workshop-package/` is disposable and can be regenerated with `prepare_workshop.py`; it need not remain between installations. Keep `pilot-mod/`, its font/license files, and archive-separated English references: these are active build inputs, not redundant copies. The obsolete pilot bootstrap, standalone launcher and pilot home have been removed. Older backups and temporary helpers were pruned with explicit user approval; the latest full rollback backup and the active uncommitted campaign batch recovery snapshot remain in `backups/`.
