@@ -1820,6 +1820,9 @@
 - Haunted Church＝闹鬼教堂 (Haunted Church)；Ruins＝废墟 (Ruins)，沿用既有据点名。泛指普通废墟时不附英文地名。
 - Holy Church 沿用圣教会；Banshee＝报丧女妖，Bone Dragon＝骨龙，Plague Zombie＝瘟疫僵尸；两项教堂奖励沿用混沌护符和寒霜胸针。
 - 骨龙对话中的 brother 译作“兄弟”，不凭空指定长幼关系。
+- Kingdom Patrol＝王国巡逻队 (Kingdom Patrol)，作为地图节点时保留英文；Orcs' Hills＝兽人丘陵 (Orcs' Hills)，保留原文所有格拼写。Shadowmarshes沿用暗影沼泽 (Shadowmarshes)，Mistmill沿用雾磨镇 (Mistmill)。
+- Kingdom Patrol的奖励沿用灵魂之铃；Soldiers沿用士兵。Monk标签译作僧侣，克里尔台词中泛称Priest时用祭司；Wight沿用尸妖。
+- “Over my dead body”保留“从我的尸体上踏过去”的说法，以承接幽灵没有身体的笑话；脚踝对话保留原文对往日礼俗的夸张羞耻感，不添加恋情细节。
 
 ## 后续术语整理
 

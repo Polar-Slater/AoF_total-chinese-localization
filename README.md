@@ -11,7 +11,7 @@ Simplified Chinese translations for the interface, gameplay text, events and cam
 | 界面与正文 | 4,215 / 4,215 | 100% |
 | 通用事件 | 1,208 / 2,144 | 56.3% |
 | 通用对话 | 990 / 1,019 | 97.2% |
-| 亡灵战役：死灵法师的崛起 | 206 / 732 | 28.1% |
+| 亡灵战役：死灵法师的崛起 | 251 / 732 | 34.3% |
 | Other campaigns | Not started | — |
 
 Counts exclude metadata and measure entries, not words. One entry may contain a full story page.
@@ -41,9 +41,11 @@ Edit Chinese text in `translation/`, then rebuild. See [setup and packaging](doc
 | `inspection/` | Validation tools and reports |
 | `docs/` | Setup, testing, work plan and glossary |
 | `docs/batches/` | Translation batch history |
-| `source/`, `backups/`, `workshop-package/`, `pilot-home/` | Local references, backups, packages and test state; excluded from Git |
+| `source/` | Local English references, original font download and guide; excluded from Git |
+| `backups/` | Latest full rollback backup and active-work recovery snapshot; excluded from Git |
+| `workshop-package/` | Disposable package generated when needed; excluded from Git |
 
-Build and packaging scripts stay in the root folder. `prepare_pilot.py` and `launch-chinese-test.bat` are legacy tools; use the setup guide for current work.
+Build and packaging scripts stay in the root folder. Use `setup_local.py` for setup and `prepare_workshop.py` when an installable package is needed. Edit `translation/`; `pilot-mod/` contains the runtime build and packaging inputs.
 
 ## Contributing
 

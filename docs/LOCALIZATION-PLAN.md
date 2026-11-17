@@ -22,7 +22,7 @@ Updated: 2026-11-16. This records the user's current division of work; it is not
 
 ## 4. 战役剧情 / Campaign stories — 战役分工
 
-从亡灵战役（死灵法师的崛起）开始，再推进其他战役。已接入战役／对话构建校验，保留原有试译。第4批新增89条，累计206/732条（28.1%），覆盖开场至Level13、U00至U04对话及关联UXX对话。已核对闹鬼教堂、Level12商店、新英雄、奖励条件及据点解锁，并补译骨龙在Level16的离队对话；不据此宣称Level16已完成。据点升级触发的战役对话仍需另批补译，通用据点文件继续由通用资源负责人负责。下一批从Level15王国巡逻队 (Kingdom Patrol)、Level15b商店、Level16战斗与Level17战后／U05系列继续，核对UXX_Vision_1a及失败支线；详见batches/UNDEAD-CAMPAIGN-BATCH4.md。人物、种族、物品和技能名沿用术语表，保留人物语气和故事上下文。
+从亡灵战役（死灵法师的崛起）开始，再推进其他战役。已接入战役／对话构建校验，保留原有试译。第5批新增45条，累计251/732条（34.3%），覆盖主线开场至Level17、U00至U05及关联UXX对话，并包含LevelSecret01b失败路线开场及提示。已核对Level15b商店、巡逻队战斗、奖励时限、胜败分支及条件幻象；后续解锁节点不计作已译。下一批优先推进Level19、Level19b商店、Level20／U06系列，核对UXX_Vision_2a和巨石阵依赖。Level22/24、失败路线Level30/33及据点升级对白仍待另行推进。通用资源分工保持不变；详见batches/UNDEAD-CAMPAIGN-BATCH5.md。第5批尚未安装；当前安装版仍为战役第4批。
 
 ## 测试与修复 / Validation and fixes
 

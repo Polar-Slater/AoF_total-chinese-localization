@@ -1,8 +1,8 @@
 {
   "undeadcampaign": {
-    "translated_content_entries": 94,
+    "translated_content_entries": 109,
     "source_content_entries": 344,
-    "untranslated_content_entries": 250,
+    "untranslated_content_entries": 235,
     "complete_groups": [
       "Level00",
       "Level00b",
@@ -17,13 +17,17 @@
       "Level10",
       "Level11",
       "Level11b",
-      "Level13"
+      "Level13",
+      "Level15",
+      "Level16",
+      "Level17",
+      "LevelSecret01b"
     ]
   },
   "undeadcampaign-conversations": {
-    "translated_content_entries": 112,
+    "translated_content_entries": 142,
     "source_content_entries": 388,
-    "untranslated_content_entries": 276,
+    "untranslated_content_entries": 246,
     "complete_groups": [
       "U00_Krill_turn",
       "U01_Goblin_panic",
@@ -46,7 +50,12 @@
       "UXX_BoneDragon_remove",
       "UXX_Krill_damage",
       "UXX_Noea_damage",
-      "UXX_PlagueZombie_detonate"
+      "UXX_PlagueZombie_detonate",
+      "U05_Bowman_death",
+      "U05_Knight_raise",
+      "U05_Monk_death",
+      "UXX_Vision_1a",
+      "UXX_Krill_wight"
     ]
   }
 }
