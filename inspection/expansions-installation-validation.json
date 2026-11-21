@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-21",
+  "expansions_installed": 8,
+  "added_runtime_files": 12,
+  "expansion_content_entries": 2377,
+  "expansion_runtime_entries_including_metadata": 2401,
+  "file_content_counts": {
+    "alchemistdlc": {
+      "alchemistdlc-conversations-zh.properties": 275
+    },
+    "piratesdlc": {
+      "piratesdlc-conversations-zh.properties": 239
+    },
+    "elementalistdlc": {
+      "elementalistdlc-conversations-zh.properties": 18
+    },
+    "werewolfdlc": {
+      "werewolfdlc-conversations-zh.properties": 130
+    },
+    "zombiefrankydlc": {
+      "zombiefrankydlc-conversations-zh.properties": 238,
+      "zombiefrankydlc-zh.properties": 114
+    },
+    "newseapeopledlc": {
+      "newseapeopledlc-conversations-zh.properties": 118,
+      "newseapeopledlc-zh.properties": 536
+    },
+    "quickfemaleassassindlc": {
+      "quickfemaleassassindlc-conversations-zh.properties": 41,
+      "quickfemaleassassindlc-zh.properties": 293
+    },
+    "machinewardlc": {
+      "machinewardlc-conversations-zh.properties": 52,
+      "machinewardlc-zh.properties": 323
+    }
+  },
+  "total_installed_runtime_files": 17,
+  "total_installed_runtime_entries": 10044,
+  "existing_main_content_entries_preserved": 4215,
+  "existing_shared_content_entries_preserved": 3163,
+  "existing_undead_content_entries_preserved": 251,
+  "full_backup_hash_verified": true,
+  "installed_files_match_verified_stage": true,
+  "repository_and_installed_runtime_files_byte_identical": true,
+  "original_runtime_files_byte_identical": 5,
+  "all_other_existing_files_preserved": true,
+  "fonts_licenses_and_selected_preview_preserved": true,
+  "owner_check_passed": true,
+  "non_description_config_bytes_preserved": true,
+  "installed_description_matches_trimmed_repository_source": true,
+  "description_utf8_bytes": 3161,
+  "staged_java_decoded_entries": 10044,
+  "new_expansion_resource_fallback_entries": 0,
+  "english_fallback_entries_in_checked_references": 481,
+  "four_font_styles_passed": true,
+  "inventory_fixture_required_height": 497,
+  "inventory_fixture_available_height": 500,
+  "inventory_panel_size": [
+    590,
+    467
+  ],
+  "installed": true,
+  "steam_uploaded": false,
+  "github_pushed": false,
+  "in_game_test": false
+}

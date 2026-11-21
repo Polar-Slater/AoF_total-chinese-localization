@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-21",
+  "story_campaign_table_rows": 8,
+  "open_campaign_table_rows": 16,
+  "expansion_table_rows": 8,
+  "columns_per_table": 2,
+  "bilingual_names_and_progress_preserved": true,
+  "bbcode_balanced": true,
+  "description_utf8_bytes": 3773,
+  "full_backup_hash_verified": true,
+  "installed_description_matches_repository": true,
+  "all_other_files_unchanged": true,
+  "non_description_config_bytes_preserved": true,
+  "installed": true,
+  "steam_uploaded": false,
+  "rendered_workshop_review": false
+}

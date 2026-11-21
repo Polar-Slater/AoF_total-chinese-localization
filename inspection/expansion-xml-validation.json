@@ -1,0 +1,1801 @@
+{
+  "alchemistdlc-conversations": {
+    "complete_groups": [
+      "A01_ChaosSpawn_damage",
+      "A01_Fiend_death",
+      "A02_Lich_damage",
+      "A02_Skeleton_death",
+      "A02_Spider_damage",
+      "A02_WaterElemental_activation",
+      "A02_WaterElemental_death",
+      "A03_RedCrab_damage",
+      "A03_RedCrab_death",
+      "AOF1_Long_time_no_see",
+      "AOF2_Long_time_no_see",
+      "AOF3_Long_time_no_see",
+      "AOF4_Long_time_no_see",
+      "AOF5_Long_time_no_see",
+      "AOFFREE_Long_time_no_see",
+      "AOFTOTAL_Long_time_no_see",
+      "AXX_DragonStatueSeal_whole",
+      "AXX_DragonStatueVsTalnes_select",
+      "AXX_DragonStatue_base",
+      "AXX_DragonStatue_fail",
+      "AXX_DragonStatue_intro",
+      "AXX_ForgottenMine_intro",
+      "AXX_Human_intro",
+      "AXX_RedCrab_exit",
+      "AXX_SeaPortal_intro",
+      "AXX_Undead_intro",
+      "AXX_Welcome",
+      "AXX_WellOfWishes_intro",
+      "AXX_Well_intro",
+      "AXX_Well_lost"
+    ],
+    "translated_content_entries": 275,
+    "source_content_entries": 275,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [
+      "AXX_DragonStatueSeal_whole.conversations.1",
+      "AXX_DragonStatue_base.conversations.0",
+      "AXX_Human_intro.conversations.14",
+      "AXX_Undead_intro.conversations.16",
+      "AXX_WellOfWishes_intro.conversations.2"
+    ],
+    "choice_references": [
+      {
+        "group": "AXX_DragonStatueVsTalnes_select",
+        "trigger": "LevelAlchemist16b.triggers.on-select-1.",
+        "commands": [
+          "goto LevelAlchemist17"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelAlchemist17",
+            "content_entries": 13,
+            "exit_commands": [
+              "upgrade-unit [+Hero]Talnes artificer",
+              "goto-world-map"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "AXX_DragonStatueVsTalnes_select",
+        "trigger": "LevelAlchemist16b.triggers.on-select-2.",
+        "commands": [
+          "goto LevelAlchemist18"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelAlchemist18",
+            "content_entries": 11,
+            "exit_commands": [
+              "remove-units Talnes",
+              "give-item BlackDragonSealItem",
+              "goto-world-map"
+            ]
+          }
+        ]
+      }
+    ],
+    "level_choices": [],
+    "campaign_calls": [
+      {
+        "level": "LevelAlchemist01",
+        "trigger": "on-init",
+        "group": "AXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist01",
+        "trigger": "on-day",
+        "group": "AXX_Human_intro",
+        "condition": "(${campaign-name}=='humancampaign')"
+      },
+      {
+        "level": "LevelAlchemist01",
+        "trigger": "on-day",
+        "group": "AXX_Undead_intro",
+        "condition": "(${campaign-name}=='undeadcampaign')"
+      },
+      {
+        "level": "LevelAlchemist01",
+        "trigger": "on-exit",
+        "group": "AXX_WellOfWishes_intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-init",
+        "group": "AXX_Well_intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-2",
+        "group": "AXX_Well_lost",
+        "condition": "(${item-LifePotionItem-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-3",
+        "group": "AXX_Well_lost",
+        "condition": "(${item-QualitySwordItem-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-4",
+        "group": "AXX_Well_lost",
+        "condition": "(${item-RingOfProtectionItem-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-5",
+        "group": "AXX_Well_lost",
+        "condition": "(${item-SilverBarItem-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-6",
+        "group": "AXX_Well_lost",
+        "condition": "(${item-MagicTorcItem-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-7",
+        "group": "AXX_Well_lost",
+        "condition": "(${item-AmuletOfLifeItem-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist02",
+        "trigger": "on-select-20",
+        "group": "AXX_Well_lost",
+        "condition": "${aof-dlc-alchemist-well-of-wishes-counter}LESS_THAN_4"
+      },
+      {
+        "level": "LevelAlchemist06",
+        "trigger": "on-init",
+        "group": "AXX_ForgottenMine_intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist15",
+        "trigger": "on-init",
+        "group": "AXX_DragonStatue_intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist15",
+        "trigger": "on-select-3",
+        "group": "AXX_DragonStatue_fail",
+        "condition": "${item-DragonStatueSealWholeItem-count}=='0'"
+      },
+      {
+        "level": "LevelAlchemist15",
+        "trigger": "on-select-4",
+        "group": "AXX_DragonStatue_base",
+        "condition": "(${item-DragonStatueSealWholeItem-count}=='0')AND((${item-DragonStatueSealPiece1Item-count}=='0')OR(${item-DragonStatueSealPiece2Item-count}=='0'))"
+      },
+      {
+        "level": "LevelAlchemist15",
+        "trigger": "on-select-5",
+        "group": "AXX_DragonStatueSeal_whole",
+        "condition": "(${item-DragonStatueSealWholeItem-count}=='0')AND(${item-DragonStatueSealPiece1Item-count}!='0')AND(${item-DragonStatueSealPiece2Item-count}!='0')"
+      },
+      {
+        "level": "LevelAlchemist15",
+        "trigger": "on-select-6",
+        "group": "AXX_DragonStatue_fail",
+        "condition": "${item-DragonStatueSealWholeItem-count}=='0'"
+      },
+      {
+        "level": "LevelAlchemist16",
+        "trigger": "on-exit",
+        "group": "AXX_DragonStatueVsTalnes_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist20",
+        "trigger": "on-day",
+        "group": "AXX_SeaPortal_intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelAlchemist23",
+        "trigger": "on-exit",
+        "group": "AXX_RedCrab_exit",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [
+      {
+        "board": "A01_WellOfWishes",
+        "group": "A01_ChaosSpawn_damage"
+      },
+      {
+        "board": "A01_WellOfWishes",
+        "group": "A01_Fiend_death"
+      },
+      {
+        "board": "A02_ForgottenMine_I",
+        "group": "A02_Spider_damage"
+      },
+      {
+        "board": "A02_ForgottenMine_II",
+        "group": "A02_WaterElemental_activation"
+      },
+      {
+        "board": "A02_ForgottenMine_II",
+        "group": "A02_WaterElemental_death"
+      },
+      {
+        "board": "A02_ForgottenMine_III",
+        "group": "A02_Lich_damage"
+      },
+      {
+        "board": "A02_ForgottenMine_III",
+        "group": "A02_Skeleton_death"
+      },
+      {
+        "board": "A03_Crab_Cave",
+        "group": "A03_RedCrab_damage"
+      },
+      {
+        "board": "A03_Crab_Cave",
+        "group": "A03_RedCrab_death"
+      }
+    ],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {
+      "AOF1_Long_time_no_see": "aof.jar",
+      "AOF2_Long_time_no_see": "aof.jar",
+      "AOF3_Long_time_no_see": "aof.jar",
+      "AOF4_Long_time_no_see": "aof.jar",
+      "AOF5_Long_time_no_see": "aof.jar",
+      "AOFTOTAL_Long_time_no_see": "aof.jar"
+    },
+    "source_only_groups": {
+      "AOFFREE_Long_time_no_see": "Eight English resource entries exist; no matching dialogue XML found in the installed game archives. Runtime use is unverified."
+    },
+    "unlinked_groups": {},
+    "xml_checked_groups": 29,
+    "xml_checked_content_entries": 267,
+    "level_resource": null,
+    "in_game_test": false
+  },
+  "piratesdlc-conversations": {
+    "complete_groups": [
+      "P02_Pikeman_death",
+      "P03_Gargoyle_damage",
+      "P04_Executioner_damage",
+      "P05_NagaWarrior_damage",
+      "PXX_Congratulations",
+      "PXX_Executioner_select",
+      "PXX_Human_intro",
+      "PXX_Human_postgame",
+      "PXX_Human_treasure",
+      "PXX_IslandSearch_failure",
+      "PXX_IslandSearch_success",
+      "PXX_MerchantShip_enter",
+      "PXX_Tavern_drunkard",
+      "PXX_Tavern_round",
+      "PXX_Undead_intro",
+      "PXX_Undead_postgame",
+      "PXX_Undead_treasure",
+      "PXX_Welcome"
+    ],
+    "translated_content_entries": 239,
+    "source_content_entries": 239,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [
+      {
+        "group": "PXX_Executioner_select",
+        "trigger": "LevelPiratesExecutioner01.triggers.on-select-1.",
+        "commands": [
+          "noop-final"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "PXX_Executioner_select",
+        "trigger": "LevelPiratesExecutioner01.triggers.on-select-2.",
+        "commands": [
+          "set-val aof-dlc-pirates-quest-state 9",
+          "goto LevelPiratesExecutioner02"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelPiratesExecutioner02",
+            "content_entries": 8,
+            "exit_commands": []
+          }
+        ]
+      }
+    ],
+    "level_choices": [],
+    "campaign_calls": [
+      {
+        "level": "LevelPirates01",
+        "trigger": "on-init",
+        "group": "PXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelPirates02",
+        "trigger": "on-select-3",
+        "group": "PXX_Human_treasure",
+        "condition": "(${aof-dlc-pirates-quest-state}=='3')AND(${campaign-name}=='humancampaign')"
+      },
+      {
+        "level": "LevelPirates02",
+        "trigger": "on-select-3",
+        "group": "PXX_Undead_treasure",
+        "condition": "(${aof-dlc-pirates-quest-state}=='3')AND(${campaign-name}=='undeadcampaign')"
+      },
+      {
+        "level": "LevelPirates02",
+        "trigger": "on-select-3",
+        "group": "PXX_Tavern_drunkard",
+        "condition": "(${aof-dlc-pirates-quest-state}=='2')"
+      },
+      {
+        "level": "LevelPirates02",
+        "trigger": "on-select-3",
+        "group": "PXX_Human_intro",
+        "condition": "(${aof-dlc-pirates-quest-state}=='1')AND(${campaign-name}=='humancampaign')"
+      },
+      {
+        "level": "LevelPirates02",
+        "trigger": "on-select-3",
+        "group": "PXX_Undead_intro",
+        "condition": "(${aof-dlc-pirates-quest-state}=='1')AND(${campaign-name}=='undeadcampaign')"
+      },
+      {
+        "level": "LevelPirates02",
+        "trigger": "on-select-4",
+        "group": "PXX_Tavern_round",
+        "condition": "${gold}GREATER_EQUAL_100"
+      },
+      {
+        "level": "LevelPirates11",
+        "trigger": "on-init",
+        "group": "PXX_Human_postgame",
+        "condition": "(${aof-dlc-pirates-quest-state}=='9')AND(${campaign-name}=='humancampaign')"
+      },
+      {
+        "level": "LevelPirates11",
+        "trigger": "on-init",
+        "group": "PXX_Undead_postgame",
+        "condition": "(${aof-dlc-pirates-quest-state}=='9')AND(${campaign-name}=='undeadcampaign')"
+      },
+      {
+        "level": "LevelPirates12",
+        "trigger": "on-select-1",
+        "group": "PXX_IslandSearch_failure",
+        "condition": "${pirates-dlc-island-search-available}=='no'"
+      },
+      {
+        "level": "LevelPirates12",
+        "trigger": "on-select-1",
+        "group": "PXX_IslandSearch_success",
+        "condition": "${pirates-dlc-island-search-available}!='no'"
+      },
+      {
+        "level": "LevelPirates18",
+        "trigger": "on-init",
+        "group": "PXX_MerchantShip_enter",
+        "condition": ""
+      },
+      {
+        "level": "LevelPiratesExecutioner01",
+        "trigger": "on-day",
+        "group": "PXX_Executioner_select",
+        "condition": "(${aof-dlc-pirates-quest-state}=='5')AND(${random}%13==0)"
+      },
+      {
+        "level": "LevelPiratesExecutioner02",
+        "trigger": "on-win",
+        "group": "PXX_Congratulations",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [
+      {
+        "board": "P02_Executioner_Dungeon",
+        "group": "P02_Pikeman_death"
+      },
+      {
+        "board": "P03_Jungle_Ruins",
+        "group": "P03_Gargoyle_damage"
+      },
+      {
+        "board": "P04_Executioners",
+        "group": "P04_Executioner_damage"
+      },
+      {
+        "board": "P05_Sea_Guests",
+        "group": "P05_NagaWarrior_damage"
+      }
+    ],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {},
+    "xml_checked_groups": 18,
+    "xml_checked_content_entries": 239,
+    "level_resource": null,
+    "in_game_test": false
+  },
+  "elementalistdlc-conversations": {
+    "complete_groups": [
+      "E01_GargoyleElder_death",
+      "E01_LightningBall_damage",
+      "EXX_IronGolemRiddle_CorrectAnswer",
+      "EXX_IronGolemRiddle_IncorrectAnswer",
+      "EXX_Welcome"
+    ],
+    "translated_content_entries": 18,
+    "source_content_entries": 18,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [],
+    "level_choices": [],
+    "campaign_calls": [
+      {
+        "level": "LevelElementalist01",
+        "trigger": "on-init",
+        "group": "EXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelElementalist05",
+        "trigger": "on-select-1",
+        "group": "EXX_IronGolemRiddle_IncorrectAnswer",
+        "condition": ""
+      },
+      {
+        "level": "LevelElementalist05",
+        "trigger": "on-select-2",
+        "group": "EXX_IronGolemRiddle_CorrectAnswer",
+        "condition": ""
+      },
+      {
+        "level": "LevelElementalist05",
+        "trigger": "on-select-3",
+        "group": "EXX_IronGolemRiddle_IncorrectAnswer",
+        "condition": ""
+      },
+      {
+        "level": "LevelElementalist05",
+        "trigger": "on-select-4",
+        "group": "EXX_IronGolemRiddle_IncorrectAnswer",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [
+      {
+        "board": "E01_Passage_Guardians",
+        "group": "E01_GargoyleElder_death"
+      },
+      {
+        "board": "E01_Passage_Guardians",
+        "group": "E01_LightningBall_damage"
+      }
+    ],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {},
+    "xml_checked_groups": 5,
+    "xml_checked_content_entries": 18,
+    "level_resource": null,
+    "in_game_test": false
+  },
+  "werewolfdlc-conversations": {
+    "complete_groups": [
+      "W01_Footman_death",
+      "W01_Knight_damage",
+      "W02_Dwarves_battle_intro",
+      "W02_Forest_battle_intro",
+      "W02_Knight_death",
+      "W02_Monk_damage",
+      "W02_RoyalGuard_damage",
+      "W03_Arges_death",
+      "W03_Brontes_damage",
+      "W03_Gats_death",
+      "W04_NagaWarrior_damage",
+      "W04_Octopod_death",
+      "W05_Necromancer_death",
+      "W05_Shella_control",
+      "W05_Shella_damage",
+      "W05_Shella_death",
+      "WXX_Dwarves_Gats_death_hint",
+      "WXX_Dwarves_necromancers_hint",
+      "WXX_Forest_Gats_death_hint",
+      "WXX_Forest_necromancers_hint",
+      "WXX_Welcome"
+    ],
+    "translated_content_entries": 130,
+    "source_content_entries": 130,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [],
+    "level_choices": [],
+    "campaign_calls": [
+      {
+        "level": "LevelWerewolf01",
+        "trigger": "on-init",
+        "group": "WXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelWerewolf05a",
+        "trigger": "on-init",
+        "group": "W02_Dwarves_battle_intro",
+        "condition": "(${campaign-name}=='dwarvescampaign')"
+      },
+      {
+        "level": "LevelWerewolf05a",
+        "trigger": "on-init",
+        "group": "W02_Forest_battle_intro",
+        "condition": "(${campaign-name}=='forestcampaign')"
+      },
+      {
+        "level": "LevelWerewolf12",
+        "trigger": "on-exit",
+        "group": "WXX_Forest_Gats_death_hint",
+        "condition": "(${campaign-name}=='forestcampaign')"
+      },
+      {
+        "level": "LevelWerewolf12",
+        "trigger": "on-exit",
+        "group": "WXX_Dwarves_Gats_death_hint",
+        "condition": "(${campaign-name}=='dwarvescampaign')"
+      },
+      {
+        "level": "LevelWerewolf17",
+        "trigger": "on-exit",
+        "group": "WXX_Dwarves_necromancers_hint",
+        "condition": "(${campaign-name}=='dwarvescampaign')"
+      },
+      {
+        "level": "LevelWerewolf17",
+        "trigger": "on-exit",
+        "group": "WXX_Forest_necromancers_hint",
+        "condition": "(${campaign-name}=='forestcampaign')"
+      }
+    ],
+    "board_string_references": [
+      {
+        "board": "W01_Hunters",
+        "group": "W01_Footman_death"
+      },
+      {
+        "board": "W01_Hunters",
+        "group": "W01_Knight_damage"
+      },
+      {
+        "board": "W02_Wolf_in_Distress",
+        "group": "W02_Knight_death"
+      },
+      {
+        "board": "W02_Wolf_in_Distress",
+        "group": "W02_Monk_damage"
+      },
+      {
+        "board": "W02_Wolf_in_Distress",
+        "group": "W02_RoyalGuard_damage"
+      },
+      {
+        "board": "W03_Gats",
+        "group": "W03_Arges_death"
+      },
+      {
+        "board": "W03_Gats",
+        "group": "W03_Brontes_damage"
+      },
+      {
+        "board": "W03_Gats",
+        "group": "W03_Gats_death"
+      },
+      {
+        "board": "W04_Nagas_Temple",
+        "group": "W04_NagaWarrior_damage"
+      },
+      {
+        "board": "W04_Nagas_Temple",
+        "group": "W04_Octopod_death"
+      },
+      {
+        "board": "W05_Reunion_in_Death",
+        "group": "W05_Necromancer_death"
+      },
+      {
+        "board": "W05_Reunion_in_Death",
+        "group": "W05_Shella_control"
+      },
+      {
+        "board": "W05_Reunion_in_Death",
+        "group": "W05_Shella_damage"
+      },
+      {
+        "board": "W05_Reunion_in_Death",
+        "group": "W05_Shella_death"
+      }
+    ],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {},
+    "xml_checked_groups": 21,
+    "xml_checked_content_entries": 130,
+    "level_resource": null,
+    "in_game_test": false
+  },
+  "zombiefrankydlc-conversations": {
+    "complete_groups": [
+      "Z01_Franky_damage",
+      "ZXX_BrainInJar_angela_init_select",
+      "ZXX_BrainInJar_quest1_select",
+      "ZXX_BrainInJar_quest2_select",
+      "ZXX_BrainInJar_quest_accept",
+      "ZXX_BrainInJar_quest_decline",
+      "ZXX_BrainInJar_quest_progress",
+      "ZXX_BrainInJar_search_gain",
+      "ZXX_BrainInJar_zellan_init_select",
+      "ZXX_Congratulations",
+      "ZXX_Intro_angela",
+      "ZXX_Intro_zellan",
+      "ZXX_Library_book_ICT",
+      "ZXX_Library_book_MA",
+      "ZXX_Library_book_OR",
+      "ZXX_Library_book_R",
+      "ZXX_Library_book_STE",
+      "ZXX_Library_book_V",
+      "ZXX_Library_desk_select",
+      "ZXX_Library_shelf_select",
+      "ZXX_Search_failure",
+      "ZXX_Search_success",
+      "ZXX_Welcome",
+      "ZXX_Workshop_puzzlelock_fail",
+      "ZXX_Workshop_puzzlelock_init_select",
+      "ZXX_Workshop_puzzlelock_select",
+      "ZXX_Workshop_puzzlelock_success"
+    ],
+    "translated_content_entries": 238,
+    "source_content_entries": 238,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [
+      {
+        "group": "ZXX_BrainInJar_angela_init_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-1.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 4",
+          "reset-random-levels",
+          "play-conversation ZXX_BrainInJar_quest_accept true",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_angela_init_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-2.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 3",
+          "play-conversation ZXX_BrainInJar_quest_decline true",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_quest1_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-1.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 4",
+          "reset-random-levels",
+          "play-conversation ZXX_BrainInJar_quest_accept true",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_quest1_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-2.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 3",
+          "play-conversation ZXX_BrainInJar_quest_decline true",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_quest2_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-4.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 9",
+          "lock-level LevelZombieFranky02",
+          "remove-items ZombieLegItem 999",
+          "remove-items ZombieHandItem 999",
+          "remove-items ZombieHeartItem 999",
+          "remove-items ZombieMeatItem 999",
+          "remove-items ZombieBrainItem 999",
+          "unlock-achievement BrainInJarAchievement",
+          "goto LevelZombieFranky07a"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky07a",
+            "content_entries": 16,
+            "exit_commands": [
+              "goto LevelZombieFranky07b"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_quest2_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-5.",
+        "commands": [
+          "play-conversation ZXX_BrainInJar_quest_progress",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_quest2_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-20.",
+        "commands": [
+          "give-items-direct ZombieLegItem ZombieHandItem ZombieHeartItem ZombieMeatItem ZombieBrainItem",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_zellan_init_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-1.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 4",
+          "reset-random-levels",
+          "play-conversation ZXX_BrainInJar_quest_accept true",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_BrainInJar_zellan_init_select",
+        "trigger": "LevelZombieFrankyBrainInJar.triggers.on-select-2.",
+        "commands": [
+          "set-val aof4-dlc-zombiefranky-quest-state 3",
+          "play-conversation ZXX_BrainInJar_quest_decline true",
+          "goto LevelZombieFranky06"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky06",
+            "content_entries": 5,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_Library_desk_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-3.",
+        "commands": [
+          "play-conversation ZXX_Library_book_OR true",
+          "play-conversation ZXX_Library_desk_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Library_desk_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-1.",
+        "commands": [
+          "play-conversation ZXX_Library_book_V true",
+          "play-conversation ZXX_Library_desk_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Library_desk_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-2.",
+        "commands": [
+          "play-conversation ZXX_Library_book_ICT true",
+          "play-conversation ZXX_Library_desk_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Library_desk_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-10.",
+        "commands": [
+          "goto LevelZombieFranky03"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky03",
+            "content_entries": 6,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_Library_shelf_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-5.",
+        "commands": [
+          "play-conversation ZXX_Library_book_STE true",
+          "play-conversation ZXX_Library_shelf_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Library_shelf_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-4.",
+        "commands": [
+          "play-conversation ZXX_Library_book_MA true",
+          "play-conversation ZXX_Library_shelf_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Library_shelf_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-6.",
+        "commands": [
+          "play-conversation ZXX_Library_book_R true",
+          "play-conversation ZXX_Library_shelf_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Library_shelf_select",
+        "trigger": "LevelZombieFrankyLibraryBooks.triggers.on-select-10.",
+        "commands": [
+          "goto LevelZombieFranky03"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky03",
+            "content_entries": 6,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_init_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-1.",
+        "commands": [
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String(${puzzle-lock-char-A})).toLowerCase()",
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String.fromCharCode(32))",
+          "exec-trigger */on-function-1"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_init_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-2.",
+        "commands": [
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String(${puzzle-lock-char-B})).toLowerCase()",
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String.fromCharCode(32))",
+          "exec-trigger */on-function-1"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_init_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-3.",
+        "commands": [
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String(${puzzle-lock-char-C})).toLowerCase()",
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String.fromCharCode(32))",
+          "exec-trigger */on-function-1"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_init_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-10.",
+        "commands": [
+          "set-val puzzle-lock-chars",
+          "goto LevelZombieFranky05"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky05",
+            "content_entries": 4,
+            "exit_commands": []
+          }
+        ]
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-1.",
+        "commands": [
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String(${puzzle-lock-char-A})).toLowerCase()",
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String.fromCharCode(32))",
+          "exec-trigger */on-function-1"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-2.",
+        "commands": [
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String(${puzzle-lock-char-B})).toLowerCase()",
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String.fromCharCode(32))",
+          "exec-trigger */on-function-1"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-3.",
+        "commands": [
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String(${puzzle-lock-char-C})).toLowerCase()",
+          "set-val puzzle-lock-chars String(${puzzle-lock-chars}).concat(String.fromCharCode(32))",
+          "exec-trigger */on-function-1"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "ZXX_Workshop_puzzlelock_select",
+        "trigger": "LevelZombieFrankyPuzzleLock.triggers.on-select-10.",
+        "commands": [
+          "set-val puzzle-lock-chars",
+          "goto LevelZombieFranky05"
+        ],
+        "outcomes": [
+          {
+            "level": "LevelZombieFranky05",
+            "content_entries": 4,
+            "exit_commands": []
+          }
+        ]
+      }
+    ],
+    "level_choices": [],
+    "campaign_calls": [
+      {
+        "level": "LevelZombieFranky01",
+        "trigger": "on-init",
+        "group": "ZXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky02",
+        "trigger": "on-init",
+        "group": "ZXX_Intro_angela",
+        "condition": "${hero-Angela-type}!=''"
+      },
+      {
+        "level": "LevelZombieFranky02",
+        "trigger": "on-init",
+        "group": "ZXX_Intro_zellan",
+        "condition": "${hero-Zellan-type}!=''"
+      },
+      {
+        "level": "LevelZombieFranky03",
+        "trigger": "on-select-1",
+        "group": "ZXX_Library_desk_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky03",
+        "trigger": "on-select-2",
+        "group": "ZXX_Library_shelf_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky03",
+        "trigger": "on-select-3",
+        "group": "ZXX_Search_failure",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-1",
+        "group": "ZXX_Library_book_V",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-1",
+        "group": "ZXX_Library_desk_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-2",
+        "group": "ZXX_Library_book_ICT",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-2",
+        "group": "ZXX_Library_desk_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-3",
+        "group": "ZXX_Library_book_OR",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-3",
+        "group": "ZXX_Library_desk_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-4",
+        "group": "ZXX_Library_book_MA",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-4",
+        "group": "ZXX_Library_shelf_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-5",
+        "group": "ZXX_Library_book_STE",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-5",
+        "group": "ZXX_Library_shelf_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-6",
+        "group": "ZXX_Library_book_R",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyLibraryBooks",
+        "trigger": "on-select-6",
+        "group": "ZXX_Library_shelf_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky04",
+        "trigger": "on-select-1",
+        "group": "ZXX_Search_failure",
+        "condition": "${zombiefranky-dlc-experiments-search-available}=='no'"
+      },
+      {
+        "level": "LevelZombieFranky04",
+        "trigger": "on-select-1",
+        "group": "ZXX_Search_success",
+        "condition": "${zombiefranky-dlc-experiments-search-available}!='no'"
+      },
+      {
+        "level": "LevelZombieFrankyPuzzleLock",
+        "trigger": "on-function-1",
+        "group": "ZXX_Workshop_puzzlelock_success",
+        "condition": "(${puzzle-lock-chars}.length>=13)AND(${puzzle-lock-chars}=='master victor')"
+      },
+      {
+        "level": "LevelZombieFrankyPuzzleLock",
+        "trigger": "on-function-1",
+        "group": "ZXX_Workshop_puzzlelock_fail",
+        "condition": "(${puzzle-lock-chars}.length>=13)AND(${puzzle-lock-chars}!='master victor')"
+      },
+      {
+        "level": "LevelZombieFrankyPuzzleLock",
+        "trigger": "on-function-1",
+        "group": "ZXX_Workshop_puzzlelock_init_select",
+        "condition": "(${puzzle-lock-chars}.length==0)"
+      },
+      {
+        "level": "LevelZombieFrankyPuzzleLock",
+        "trigger": "on-function-1",
+        "group": "ZXX_Workshop_puzzlelock_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky06",
+        "trigger": "on-select-1",
+        "group": "ZXX_BrainInJar_angela_init_select",
+        "condition": "(${aof4-dlc-zombiefranky-quest-state}=='2')AND(${hero-Angela-type}!='')"
+      },
+      {
+        "level": "LevelZombieFranky06",
+        "trigger": "on-select-1",
+        "group": "ZXX_BrainInJar_zellan_init_select",
+        "condition": "(${aof4-dlc-zombiefranky-quest-state}=='2')AND(${hero-Zellan-type}!='')"
+      },
+      {
+        "level": "LevelZombieFranky06",
+        "trigger": "on-select-1",
+        "group": "ZXX_BrainInJar_quest1_select",
+        "condition": "(${aof4-dlc-zombiefranky-quest-state}=='3')"
+      },
+      {
+        "level": "LevelZombieFranky06",
+        "trigger": "on-select-1",
+        "group": "ZXX_BrainInJar_quest2_select",
+        "condition": "(${aof4-dlc-zombiefranky-quest-state}=='4')"
+      },
+      {
+        "level": "LevelZombieFranky06",
+        "trigger": "on-select-2",
+        "group": "ZXX_BrainInJar_search_gain",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyBrainInJar",
+        "trigger": "on-select-1",
+        "group": "ZXX_BrainInJar_quest_accept",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyBrainInJar",
+        "trigger": "on-select-2",
+        "group": "ZXX_BrainInJar_quest_decline",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFrankyBrainInJar",
+        "trigger": "on-select-5",
+        "group": "ZXX_BrainInJar_quest_progress",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky09",
+        "trigger": "on-select-1",
+        "group": "ZXX_Congratulations",
+        "condition": ""
+      },
+      {
+        "level": "LevelZombieFranky09",
+        "trigger": "on-select-2",
+        "group": "ZXX_Congratulations",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [
+      {
+        "board": "Z01_Franky",
+        "group": "Z01_Franky_damage"
+      }
+    ],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {},
+    "xml_checked_groups": 27,
+    "xml_checked_content_entries": 238,
+    "level_resource": {
+      "xml_content_entries": 114,
+      "excluded_xml_fields": {},
+      "added_keys_vs_bundled_properties": [
+        "LevelZombieFranky07a.conversations.0.name",
+        "LevelZombieFranky07a.conversations.0.text",
+        "LevelZombieFranky07a.conversations.1.name",
+        "LevelZombieFranky07a.conversations.1.text",
+        "LevelZombieFranky07a.conversations.2.name",
+        "LevelZombieFranky07a.conversations.2.text",
+        "LevelZombieFranky07a.conversations.3.name",
+        "LevelZombieFranky07a.conversations.3.text",
+        "LevelZombieFranky07a.conversations.4.name",
+        "LevelZombieFranky07a.conversations.4.text",
+        "LevelZombieFranky07a.conversations.5.name",
+        "LevelZombieFranky07a.conversations.5.text",
+        "LevelZombieFranky07a.conversations.6.name",
+        "LevelZombieFranky07a.conversations.6.text",
+        "LevelZombieFranky07a.conversations.7.name",
+        "LevelZombieFranky07a.conversations.7.text",
+        "LevelZombieFranky07b.conversations.0.name",
+        "LevelZombieFranky07b.conversations.0.text",
+        "LevelZombieFranky07b.conversations.1.name",
+        "LevelZombieFranky07b.conversations.1.text",
+        "LevelZombieFranky07b.conversations.10.name",
+        "LevelZombieFranky07b.conversations.10.text",
+        "LevelZombieFranky07b.conversations.11.name",
+        "LevelZombieFranky07b.conversations.11.text",
+        "LevelZombieFranky07b.conversations.12.name",
+        "LevelZombieFranky07b.conversations.12.text",
+        "LevelZombieFranky07b.conversations.13.name",
+        "LevelZombieFranky07b.conversations.13.text",
+        "LevelZombieFranky07b.conversations.2.name",
+        "LevelZombieFranky07b.conversations.2.text",
+        "LevelZombieFranky07b.conversations.3.name",
+        "LevelZombieFranky07b.conversations.3.text",
+        "LevelZombieFranky07b.conversations.4.name",
+        "LevelZombieFranky07b.conversations.4.text",
+        "LevelZombieFranky07b.conversations.5.name",
+        "LevelZombieFranky07b.conversations.5.text",
+        "LevelZombieFranky07b.conversations.6.name",
+        "LevelZombieFranky07b.conversations.6.text",
+        "LevelZombieFranky07b.conversations.7.name",
+        "LevelZombieFranky07b.conversations.7.text",
+        "LevelZombieFranky07b.conversations.8.name",
+        "LevelZombieFranky07b.conversations.8.text",
+        "LevelZombieFranky07b.conversations.9.name",
+        "LevelZombieFranky07b.conversations.9.text",
+        "LevelZombieFranky07b.text"
+      ],
+      "retired_keys_vs_bundled_properties": [
+        "LevelZombieFranky07.conversations.0.name",
+        "LevelZombieFranky07.conversations.0.text",
+        "LevelZombieFranky07.conversations.1.name",
+        "LevelZombieFranky07.conversations.1.text",
+        "LevelZombieFranky07.conversations.10.name",
+        "LevelZombieFranky07.conversations.10.text",
+        "LevelZombieFranky07.conversations.11.name",
+        "LevelZombieFranky07.conversations.11.text",
+        "LevelZombieFranky07.conversations.12.name",
+        "LevelZombieFranky07.conversations.12.text",
+        "LevelZombieFranky07.conversations.13.name",
+        "LevelZombieFranky07.conversations.13.text",
+        "LevelZombieFranky07.conversations.2.name",
+        "LevelZombieFranky07.conversations.2.text",
+        "LevelZombieFranky07.conversations.3.name",
+        "LevelZombieFranky07.conversations.3.text",
+        "LevelZombieFranky07.conversations.4.name",
+        "LevelZombieFranky07.conversations.4.text",
+        "LevelZombieFranky07.conversations.5.name",
+        "LevelZombieFranky07.conversations.5.text",
+        "LevelZombieFranky07.conversations.6.name",
+        "LevelZombieFranky07.conversations.6.text",
+        "LevelZombieFranky07.conversations.7.name",
+        "LevelZombieFranky07.conversations.7.text",
+        "LevelZombieFranky07.conversations.8.name",
+        "LevelZombieFranky07.conversations.8.text",
+        "LevelZombieFranky07.conversations.9.name",
+        "LevelZombieFranky07.conversations.9.text",
+        "LevelZombieFranky07.text",
+        "LevelZombieFranky08.triggers.on-battle-task-2.text"
+      ],
+      "changed_keys_vs_bundled_properties": [
+        "LevelZombieFranky08.triggers.on-battle-task-1.text"
+      ]
+    },
+    "in_game_test": false
+  },
+  "newseapeopledlc-conversations": {
+    "complete_groups": [
+      "N01_AirElemental_death",
+      "N01_WaterElemental_death",
+      "N02_FireElemental_damage",
+      "N02_GiantScorpion_death",
+      "N03_Cactus_damage",
+      "N03_EarthElemental_death",
+      "N03_Ifrit_damage",
+      "N04_Fury_death",
+      "N04_Harpy_death",
+      "N05_Helna_damage",
+      "N05_Rurora_damage",
+      "N05_Sidra_damage",
+      "N05_Valkyrie_turn",
+      "N06_Angela_damage",
+      "N07_Harpy_death",
+      "N07_Rurora_damage",
+      "N08_Fury_death",
+      "N08_Lameficent_damage",
+      "NXX_Intro",
+      "NXX_Valkyrie_recruit",
+      "NXX_Welcome"
+    ],
+    "translated_content_entries": 118,
+    "source_content_entries": 118,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [],
+    "level_choices": [
+      {
+        "choice": "LevelNewSeaPeople21.on-select-1",
+        "commands": [
+          "lock-level *",
+          "goto LevelNewSeaPeople21a"
+        ],
+        "outcomes": [
+          "LevelNewSeaPeople21a"
+        ]
+      },
+      {
+        "choice": "LevelNewSeaPeople21.on-select-2",
+        "commands": [
+          "lock-level *",
+          "goto LevelNewSeaPeople23"
+        ],
+        "outcomes": [
+          "LevelNewSeaPeople23"
+        ]
+      }
+    ],
+    "campaign_calls": [
+      {
+        "level": "LevelNewSeaPeople01",
+        "trigger": "on-init",
+        "group": "NXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelNewSeaPeople01",
+        "trigger": "on-exit",
+        "group": "NXX_Intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelNewSeaPeople19",
+        "trigger": "on-exit",
+        "group": "NXX_Valkyrie_recruit",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [
+      {
+        "board": "N01_Sea_Monsters_Beach",
+        "group": "N01_AirElemental_death"
+      },
+      {
+        "board": "N01_Sea_Monsters_Beach",
+        "group": "N01_WaterElemental_death"
+      },
+      {
+        "board": "N02_Desert_Oasis",
+        "group": "N02_FireElemental_damage"
+      },
+      {
+        "board": "N02_Desert_Oasis",
+        "group": "N02_GiantScorpion_death"
+      },
+      {
+        "board": "N03_Ifrit",
+        "group": "N03_Cactus_damage"
+      },
+      {
+        "board": "N03_Ifrit",
+        "group": "N03_EarthElemental_death"
+      },
+      {
+        "board": "N03_Ifrit",
+        "group": "N03_Ifrit_damage"
+      },
+      {
+        "board": "N04_Harpies_Attack",
+        "group": "N04_Fury_death"
+      },
+      {
+        "board": "N04_Harpies_Attack",
+        "group": "N04_Harpy_death"
+      },
+      {
+        "board": "N05_Valkyries_Challenge",
+        "group": "N05_Helna_damage"
+      },
+      {
+        "board": "N05_Valkyries_Challenge",
+        "group": "N05_Rurora_damage"
+      },
+      {
+        "board": "N05_Valkyries_Challenge",
+        "group": "N05_Sidra_damage"
+      },
+      {
+        "board": "N05_Valkyries_Challenge",
+        "group": "N05_Valkyrie_turn"
+      },
+      {
+        "board": "N07_Harpies_Cave",
+        "group": "N07_Harpy_death"
+      },
+      {
+        "board": "N07_Harpies_Cave",
+        "group": "N07_Rurora_damage"
+      },
+      {
+        "board": "N08_Storm_Witch",
+        "group": "N08_Fury_death"
+      },
+      {
+        "board": "N08_Storm_Witch",
+        "group": "N08_Lameficent_damage"
+      }
+    ],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {
+      "N06_Angela_damage": "Dialogue XML and English properties are present, but no exact reference was found in the expansion campaign XML or its eight battle boards. The ghost-cave level assigns VXX_Angela_damage instead; runtime use is unverified."
+    },
+    "xml_checked_groups": 21,
+    "xml_checked_content_entries": 118,
+    "level_resource": {
+      "xml_content_entries": 536,
+      "excluded_xml_fields": {
+        "LevelNewSeaPeopleTriggerClose.location.name": "Hidden control-level label, absent from the canonical English resource.",
+        "LevelNewSeaPeople04.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople09.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople12.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople15.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople18.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople22.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople24.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelNewSeaPeople26.text": "Battle setup summary, absent from the canonical English resource."
+      },
+      "added_keys_vs_bundled_properties": [
+        "LevelNewSeaPeople04.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople09.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople12.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople13.conversations.28.name",
+        "LevelNewSeaPeople13.conversations.28.text",
+        "LevelNewSeaPeople13.conversations.29.name",
+        "LevelNewSeaPeople13.conversations.29.text",
+        "LevelNewSeaPeople15.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople15.triggers.on-battle-task-2.text",
+        "LevelNewSeaPeople18.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople24.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople24.triggers.on-battle-task-2.text",
+        "LevelNewSeaPeople26.triggers.on-battle-task-1.text",
+        "LevelNewSeaPeople26.triggers.on-battle-task-2.text"
+      ],
+      "retired_keys_vs_bundled_properties": [],
+      "changed_keys_vs_bundled_properties": [
+        "LevelNewSeaPeople13.conversations.10.text",
+        "LevelNewSeaPeople13.conversations.13.text",
+        "LevelNewSeaPeople13.conversations.14.text",
+        "LevelNewSeaPeople13.conversations.15.text",
+        "LevelNewSeaPeople13.conversations.16.text",
+        "LevelNewSeaPeople13.conversations.17.text",
+        "LevelNewSeaPeople13.conversations.18.text",
+        "LevelNewSeaPeople13.conversations.19.text",
+        "LevelNewSeaPeople13.conversations.20.text",
+        "LevelNewSeaPeople13.conversations.21.text",
+        "LevelNewSeaPeople13.conversations.22.name",
+        "LevelNewSeaPeople13.conversations.22.text",
+        "LevelNewSeaPeople13.conversations.23.name",
+        "LevelNewSeaPeople13.conversations.23.text",
+        "LevelNewSeaPeople13.conversations.24.name",
+        "LevelNewSeaPeople13.conversations.24.text",
+        "LevelNewSeaPeople13.conversations.25.name",
+        "LevelNewSeaPeople13.conversations.25.text",
+        "LevelNewSeaPeople13.conversations.26.text",
+        "LevelNewSeaPeople13.conversations.27.text",
+        "LevelNewSeaPeople17.text",
+        "LevelNewSeaPeople25.text"
+      ]
+    },
+    "in_game_test": false
+  },
+  "quickfemaleassassindlc-conversations": {
+    "complete_groups": [
+      "QXX_Congratulations",
+      "QXX_Rizza_join_select",
+      "QXX_Rizza_rose",
+      "QXX_Welcome"
+    ],
+    "translated_content_entries": 41,
+    "source_content_entries": 41,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [
+      {
+        "group": "QXX_Rizza_join_select",
+        "trigger": "LevelQuickFemaleAssassinRizzaJoin.triggers.on-select-1.",
+        "commands": [
+          "retrieve-units-cache QUICKFEMALEASSASSINDLC",
+          "clear-units-cache QUICKFEMALEASSASSINDLC",
+          "unlock-achievement RizzaAchievement",
+          "play-conversation QXX_Congratulations",
+          "goto-world-map"
+        ],
+        "outcomes": []
+      },
+      {
+        "group": "QXX_Rizza_join_select",
+        "trigger": "LevelQuickFemaleAssassinRizzaJoin.triggers.on-select-2.",
+        "commands": [
+          "play-conversation QXX_Congratulations",
+          "goto-world-map"
+        ],
+        "outcomes": []
+      }
+    ],
+    "level_choices": [
+      {
+        "choice": "LevelQuickFemaleAssassin17.on-select-1",
+        "commands": [
+          "lock-level *",
+          "give-gold -200",
+          "play-conversation QXX_Rizza_join_select true"
+        ],
+        "outcomes": []
+      },
+      {
+        "choice": "LevelQuickFemaleAssassin17.on-select-2",
+        "commands": [
+          "lock-level *",
+          "retrieve-units-cache QUICKFEMALEASSASSINDLC",
+          "clear-units-cache QUICKFEMALEASSASSINDLC",
+          "goto LevelQuickFemaleAssassin17b"
+        ],
+        "outcomes": [
+          "LevelQuickFemaleAssassin17b"
+        ]
+      },
+      {
+        "choice": "LevelQuickFemaleAssassinRizzaJoin.on-select-1",
+        "commands": [
+          "retrieve-units-cache QUICKFEMALEASSASSINDLC",
+          "clear-units-cache QUICKFEMALEASSASSINDLC",
+          "unlock-achievement RizzaAchievement",
+          "play-conversation QXX_Congratulations",
+          "goto-world-map"
+        ],
+        "outcomes": []
+      },
+      {
+        "choice": "LevelQuickFemaleAssassinRizzaJoin.on-select-2",
+        "commands": [
+          "play-conversation QXX_Congratulations",
+          "goto-world-map"
+        ],
+        "outcomes": []
+      }
+    ],
+    "campaign_calls": [
+      {
+        "level": "LevelQuickFemaleAssassin01",
+        "trigger": "on-exit",
+        "group": "QXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelQuickFemaleAssassin17",
+        "trigger": "on-select-1",
+        "group": "QXX_Rizza_join_select",
+        "condition": "${gold}GREATER_EQUAL_200"
+      },
+      {
+        "level": "LevelQuickFemaleAssassin19",
+        "trigger": "on-exit",
+        "group": "QXX_Rizza_join_select",
+        "condition": ""
+      },
+      {
+        "level": "LevelQuickFemaleAssassinRizzaJoin",
+        "trigger": "on-select-1",
+        "group": "QXX_Congratulations",
+        "condition": ""
+      },
+      {
+        "level": "LevelQuickFemaleAssassinRizzaJoin",
+        "trigger": "on-select-2",
+        "group": "QXX_Congratulations",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {
+      "QXX_Rizza_rose": "Dialogue XML and English text exist, but no explicit trigger reference was found in the expansion campaign or battle boards. Runtime use, including any dynamic seasonal dispatch, is unverified."
+    },
+    "xml_checked_groups": 4,
+    "xml_checked_content_entries": 41,
+    "level_resource": {
+      "xml_content_entries": 293,
+      "excluded_xml_fields": {
+        "LevelQuickFemaleAssassinTriggerClose.location.name": "Hidden control-level label, absent from the canonical English resource.",
+        "LevelQuickFemaleAssassin03.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelQuickFemaleAssassin07.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelQuickFemaleAssassin10.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelQuickFemaleAssassin14.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelQuickFemaleAssassin18.text": "Battle setup summary, absent from the canonical English resource."
+      },
+      "added_keys_vs_bundled_properties": [
+        "LevelQuickFemaleAssassin03.conversations.0.name",
+        "LevelQuickFemaleAssassin03.conversations.0.text",
+        "LevelQuickFemaleAssassin03.conversations.1.name",
+        "LevelQuickFemaleAssassin03.conversations.1.text",
+        "LevelQuickFemaleAssassin03.triggers.on-battle-task-1.text",
+        "LevelQuickFemaleAssassin03.triggers.on-battle-task-2.text",
+        "LevelQuickFemaleAssassin07.triggers.on-battle-task-1.text",
+        "LevelQuickFemaleAssassin07.triggers.on-battle-task-2.text",
+        "LevelQuickFemaleAssassin10.triggers.on-battle-task-1.text",
+        "LevelQuickFemaleAssassin10.triggers.on-battle-task-2.text",
+        "LevelQuickFemaleAssassin14.triggers.on-battle-task-1.text",
+        "LevelQuickFemaleAssassin14.triggers.on-battle-task-2.text",
+        "LevelQuickFemaleAssassin18.triggers.on-battle-task-1.text",
+        "LevelQuickFemaleAssassin18.triggers.on-battle-task-2.text"
+      ],
+      "retired_keys_vs_bundled_properties": [],
+      "changed_keys_vs_bundled_properties": []
+    },
+    "in_game_test": false
+  },
+  "machinewardlc-conversations": {
+    "complete_groups": [
+      "MXX_Brin_conversation_intro",
+      "MXX_Brin_conversation_materials_a",
+      "MXX_Brin_conversation_materials_b",
+      "MXX_Brin_conversation_tools",
+      "MXX_Congratulations",
+      "MXX_Welcome"
+    ],
+    "translated_content_entries": 52,
+    "source_content_entries": 52,
+    "remaining_content_entries": 0,
+    "remaining_groups": [],
+    "image_only_indices_preserved": [],
+    "choice_references": [],
+    "level_choices": [
+      {
+        "choice": "LevelMachineWar05.on-select-1",
+        "commands": [
+          "set-val aof5-dlc-machinewar-tools-quest-state 2",
+          "play-conversation MXX_Brin_conversation_tools true",
+          "goto *"
+        ],
+        "outcomes": [
+          "LevelMachineWar05"
+        ]
+      },
+      {
+        "choice": "LevelMachineWar05.on-select-2",
+        "commands": [
+          "set-val aof5-dlc-machinewar-materials-a-quest-state 2",
+          "play-conversation MXX_Brin_conversation_materials_a true",
+          "goto *"
+        ],
+        "outcomes": [
+          "LevelMachineWar05"
+        ]
+      },
+      {
+        "choice": "LevelMachineWar05.on-select-3",
+        "commands": [
+          "set-val aof5-dlc-machinewar-materials-b-quest-state 2",
+          "play-conversation MXX_Brin_conversation_materials_b true",
+          "goto *"
+        ],
+        "outcomes": [
+          "LevelMachineWar05"
+        ]
+      },
+      {
+        "choice": "LevelMachineWar05.on-select-10",
+        "commands": [
+          "lock-level *",
+          "unlock-level LevelMachineWarBrinWorkshop01",
+          "unlock-level LevelMachineWarAncientCoal01",
+          "unlock-level LevelMachineWarPureIron01",
+          "unlock-level LevelMachineWarDragonSkull01",
+          "goto-world-map"
+        ],
+        "outcomes": []
+      }
+    ],
+    "campaign_calls": [
+      {
+        "level": "LevelMachineWar01",
+        "trigger": "on-exit",
+        "group": "MXX_Welcome",
+        "condition": ""
+      },
+      {
+        "level": "LevelMachineWar05",
+        "trigger": "on-init",
+        "group": "MXX_Brin_conversation_intro",
+        "condition": ""
+      },
+      {
+        "level": "LevelMachineWar05",
+        "trigger": "on-select-1",
+        "group": "MXX_Brin_conversation_tools",
+        "condition": ""
+      },
+      {
+        "level": "LevelMachineWar05",
+        "trigger": "on-select-2",
+        "group": "MXX_Brin_conversation_materials_a",
+        "condition": ""
+      },
+      {
+        "level": "LevelMachineWar05",
+        "trigger": "on-select-3",
+        "group": "MXX_Brin_conversation_materials_b",
+        "condition": ""
+      },
+      {
+        "level": "LevelMachineWarMechanicalDragon04",
+        "trigger": "on-exit",
+        "group": "MXX_Congratulations",
+        "condition": ""
+      }
+    ],
+    "board_string_references": [],
+    "board_check_scope": "Serialized dialogue names only; runtime trigger behavior not tested.",
+    "external_dialogue_archives": {},
+    "source_only_groups": {},
+    "unlinked_groups": {},
+    "xml_checked_groups": 6,
+    "xml_checked_content_entries": 52,
+    "level_resource": {
+      "xml_content_entries": 323,
+      "excluded_xml_fields": {
+        "LevelMachineWarTriggerClose.location.name": "Hidden control-level label, absent from the canonical English resource.",
+        "LevelMachineWar03.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelMachineWarBrinWorkshop02.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelMachineWarDragonSkull02.text": "Battle setup summary, absent from the canonical English resource.",
+        "LevelMachineWarMechanicalDragon02.text": "Battle setup summary, absent from the canonical English resource."
+      },
+      "added_keys_vs_bundled_properties": [
+        "LevelMachineWar03.triggers.on-battle-task-1.text",
+        "LevelMachineWar03.triggers.on-battle-task-2.text",
+        "LevelMachineWarAncientCoal01.triggers.on-battle-task-1.text",
+        "LevelMachineWarAncientCoal01.triggers.on-battle-task-2.text",
+        "LevelMachineWarBrinWorkshop02.triggers.on-battle-task-1.text",
+        "LevelMachineWarBrinWorkshop02.triggers.on-battle-task-2.text",
+        "LevelMachineWarDragonSkull02.triggers.on-battle-task-1.text",
+        "LevelMachineWarDragonSkull02.triggers.on-battle-task-2.text",
+        "LevelMachineWarMechanicalDragon02.triggers.on-battle-task-1.text",
+        "LevelMachineWarMechanicalDragon02.triggers.on-battle-task-2.text",
+        "LevelMachineWarPureIron01.triggers.on-battle-task-1.text",
+        "LevelMachineWarPureIron01.triggers.on-battle-task-2.text"
+      ],
+      "retired_keys_vs_bundled_properties": [],
+      "changed_keys_vs_bundled_properties": []
+    },
+    "in_game_test": false
+  }
+}

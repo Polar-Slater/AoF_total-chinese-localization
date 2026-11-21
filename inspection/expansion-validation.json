@@ -1,0 +1,214 @@
+{
+  "alchemistdlc-conversations": {
+    "translated_content_entries": 275,
+    "source_content_entries": 275,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "AXX_Welcome",
+      "AXX_Human_intro",
+      "AXX_Undead_intro",
+      "AXX_WellOfWishes_intro",
+      "AXX_Well_intro",
+      "AXX_Well_lost",
+      "AXX_ForgottenMine_intro",
+      "AXX_DragonStatue_intro",
+      "AXX_DragonStatue_fail",
+      "AXX_DragonStatue_base",
+      "AXX_DragonStatueSeal_whole",
+      "AXX_DragonStatueVsTalnes_select",
+      "AXX_SeaPortal_intro",
+      "AXX_RedCrab_exit",
+      "A01_ChaosSpawn_damage",
+      "A01_Fiend_death",
+      "A02_Lich_damage",
+      "A02_Skeleton_death",
+      "A02_Spider_damage",
+      "A02_WaterElemental_activation",
+      "A02_WaterElemental_death",
+      "A03_RedCrab_damage",
+      "A03_RedCrab_death",
+      "AOF1_Long_time_no_see",
+      "AOF2_Long_time_no_see",
+      "AOF3_Long_time_no_see",
+      "AOF4_Long_time_no_see",
+      "AOF5_Long_time_no_see",
+      "AOFFREE_Long_time_no_see",
+      "AOFTOTAL_Long_time_no_see"
+    ]
+  },
+  "piratesdlc-conversations": {
+    "translated_content_entries": 239,
+    "source_content_entries": 239,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "PXX_Welcome",
+      "PXX_Human_intro",
+      "PXX_Undead_intro",
+      "PXX_Tavern_drunkard",
+      "PXX_Tavern_round",
+      "PXX_Human_treasure",
+      "PXX_Undead_treasure",
+      "PXX_Human_postgame",
+      "PXX_Undead_postgame",
+      "PXX_IslandSearch_failure",
+      "PXX_IslandSearch_success",
+      "PXX_MerchantShip_enter",
+      "PXX_Executioner_select",
+      "PXX_Congratulations",
+      "P02_Pikeman_death",
+      "P03_Gargoyle_damage",
+      "P04_Executioner_damage",
+      "P05_NagaWarrior_damage"
+    ]
+  },
+  "elementalistdlc-conversations": {
+    "translated_content_entries": 18,
+    "source_content_entries": 18,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "EXX_Welcome",
+      "EXX_IronGolemRiddle_CorrectAnswer",
+      "EXX_IronGolemRiddle_IncorrectAnswer",
+      "E01_GargoyleElder_death",
+      "E01_LightningBall_damage"
+    ]
+  },
+  "werewolfdlc-conversations": {
+    "translated_content_entries": 130,
+    "source_content_entries": 130,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "W01_Footman_death",
+      "W01_Knight_damage",
+      "W02_Dwarves_battle_intro",
+      "W02_Forest_battle_intro",
+      "W02_Knight_death",
+      "W02_Monk_damage",
+      "W02_RoyalGuard_damage",
+      "W03_Arges_death",
+      "W03_Brontes_damage",
+      "W03_Gats_death",
+      "W04_NagaWarrior_damage",
+      "W04_Octopod_death",
+      "W05_Necromancer_death",
+      "W05_Shella_control",
+      "W05_Shella_damage",
+      "W05_Shella_death",
+      "WXX_Dwarves_Gats_death_hint",
+      "WXX_Dwarves_necromancers_hint",
+      "WXX_Forest_Gats_death_hint",
+      "WXX_Forest_necromancers_hint",
+      "WXX_Welcome"
+    ]
+  },
+  "zombiefrankydlc-conversations": {
+    "translated_content_entries": 238,
+    "source_content_entries": 238,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "Z01_Franky_damage",
+      "ZXX_BrainInJar_angela_init_select",
+      "ZXX_BrainInJar_quest1_select",
+      "ZXX_BrainInJar_quest2_select",
+      "ZXX_BrainInJar_quest_accept",
+      "ZXX_BrainInJar_quest_decline",
+      "ZXX_BrainInJar_quest_progress",
+      "ZXX_BrainInJar_search_gain",
+      "ZXX_BrainInJar_zellan_init_select",
+      "ZXX_Congratulations",
+      "ZXX_Intro_angela",
+      "ZXX_Intro_zellan",
+      "ZXX_Library_book_ICT",
+      "ZXX_Library_book_MA",
+      "ZXX_Library_book_OR",
+      "ZXX_Library_book_R",
+      "ZXX_Library_book_STE",
+      "ZXX_Library_book_V",
+      "ZXX_Library_desk_select",
+      "ZXX_Library_shelf_select",
+      "ZXX_Search_failure",
+      "ZXX_Search_success",
+      "ZXX_Welcome",
+      "ZXX_Workshop_puzzlelock_fail",
+      "ZXX_Workshop_puzzlelock_init_select",
+      "ZXX_Workshop_puzzlelock_select",
+      "ZXX_Workshop_puzzlelock_success"
+    ]
+  },
+  "newseapeopledlc-conversations": {
+    "translated_content_entries": 118,
+    "source_content_entries": 118,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "N01_AirElemental_death",
+      "N01_WaterElemental_death",
+      "N02_FireElemental_damage",
+      "N02_GiantScorpion_death",
+      "N03_Cactus_damage",
+      "N03_EarthElemental_death",
+      "N03_Ifrit_damage",
+      "N04_Fury_death",
+      "N04_Harpy_death",
+      "N05_Helna_damage",
+      "N05_Rurora_damage",
+      "N05_Sidra_damage",
+      "N05_Valkyrie_turn",
+      "N06_Angela_damage",
+      "N07_Harpy_death",
+      "N07_Rurora_damage",
+      "N08_Fury_death",
+      "N08_Lameficent_damage",
+      "NXX_Intro",
+      "NXX_Valkyrie_recruit",
+      "NXX_Welcome"
+    ]
+  },
+  "quickfemaleassassindlc-conversations": {
+    "translated_content_entries": 41,
+    "source_content_entries": 41,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "QXX_Congratulations",
+      "QXX_Rizza_join_select",
+      "QXX_Rizza_rose",
+      "QXX_Welcome"
+    ]
+  },
+  "machinewardlc-conversations": {
+    "translated_content_entries": 52,
+    "source_content_entries": 52,
+    "untranslated_content_entries": 0,
+    "complete_groups": [
+      "MXX_Brin_conversation_intro",
+      "MXX_Brin_conversation_materials_a",
+      "MXX_Brin_conversation_materials_b",
+      "MXX_Brin_conversation_tools",
+      "MXX_Congratulations",
+      "MXX_Welcome"
+    ]
+  },
+  "zombiefrankydlc": {
+    "translated_content_entries": 114,
+    "source_content_entries": 114,
+    "untranslated_content_entries": 0,
+    "reference": "Current level XML; bundled properties differ."
+  },
+  "newseapeopledlc": {
+    "translated_content_entries": 536,
+    "source_content_entries": 536,
+    "untranslated_content_entries": 0,
+    "reference": "Current level XML; bundled properties differ."
+  },
+  "quickfemaleassassindlc": {
+    "translated_content_entries": 293,
+    "source_content_entries": 293,
+    "untranslated_content_entries": 0,
+    "reference": "Current level XML; bundled properties differ."
+  },
+  "machinewardlc": {
+    "translated_content_entries": 323,
+    "source_content_entries": 323,
+    "untranslated_content_entries": 0,
+    "reference": "Current level XML; bundled properties differ."
+  }
+}

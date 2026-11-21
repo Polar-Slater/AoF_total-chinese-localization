@@ -1,0 +1,140 @@
+{
+  "date": "2026-11-21",
+  "expansion": "quickfemaleassassindlc",
+  "current_level_content_entries": 293,
+  "current_level_source_content_entries": 293,
+  "text_bearing_levels": 21,
+  "conversation_content_entries": 41,
+  "conversation_source_content_entries": 41,
+  "complete_conversation_groups": 4,
+  "total_new_content_entries": 334,
+  "new_runtime_entries_including_metadata": 338,
+  "old_expansion_level_content_entries": 279,
+  "added_current_keys_vs_old": 14,
+  "changed_current_keys_vs_old": 0,
+  "excluded_internal_xml_fields": {
+    "LevelQuickFemaleAssassinTriggerClose.location.name": "Hidden control-level label, absent from the canonical English resource.",
+    "LevelQuickFemaleAssassin03.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelQuickFemaleAssassin07.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelQuickFemaleAssassin10.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelQuickFemaleAssassin14.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelQuickFemaleAssassin18.text": "Battle setup summary, absent from the canonical English resource."
+  },
+  "current_level_reference_matches_campaign_and_xml": true,
+  "previous_source_files_byte_identical": 81,
+  "previous_runtime_files_byte_identical": 13,
+  "runtime_ascii": true,
+  "xml_checked_groups": 4,
+  "campaign_calls_checked": 5,
+  "dialogue_choice_references_checked": 2,
+  "unlinked_groups": {
+    "QXX_Rizza_rose": "Dialogue XML and English text exist, but no explicit trigger reference was found in the expansion campaign or battle boards. Runtime use, including any dynamic seasonal dispatch, is unverified."
+  },
+  "level_choices_checked": 4,
+  "textless_choice_transit": "LevelQuickFemaleAssassin17b -> LevelQuickFemaleAssassin18",
+  "battle_levels_reviewed": 5,
+  "battle_tasks_reviewed": [
+    {
+      "level": "LevelQuickFemaleAssassin03",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-dwarfmutant-count}=='0')AND(${battle-turn-number}LESS_EQUAL_4)",
+      "commands": [
+        "give-items-direct RingOfAmbushItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin03",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND(${battle-turn-number}LESS_EQUAL_8)",
+      "commands": [
+        "give-items-direct SapphireItem SapphireItem SapphireItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin07",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND(${battle-ally-dead-count}=='0')",
+      "commands": [
+        "give-items-direct PirateBandanaItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin07",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-enemy-type-pirateupgraded-count}=='0')AND(${battle-turn-number}LESS_EQUAL_8)",
+      "commands": [
+        "give-items-direct PiratesKnifeItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin10",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-octopodkraken-count}=='0')AND(${battle-turn-number}LESS_EQUAL_5)",
+      "commands": [
+        "give-items-direct PirateHatItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin10",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND(${battle-ally-dead-count}=='0')",
+      "commands": [
+        "give-items-direct PirateParrotItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin14",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-jellyfishdeep-count}=='0')AND(${battle-turn-number}LESS_EQUAL_5)",
+      "commands": [
+        "give-items-direct MagicalCompassItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin14",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND(${battle-turn-number}LESS_EQUAL_8)",
+      "commands": [
+        "give-items-direct SphereOfMagicItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin18",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-hero-count}=='0')AND(${battle-turn-number}LESS_EQUAL_3)",
+      "commands": [
+        "give-items-direct BattleRuneAxeItem"
+      ]
+    },
+    {
+      "level": "LevelQuickFemaleAssassin18",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-enemy-type-ogre-count}=='0')AND(${battle-turn-number}LESS_EQUAL_4)",
+      "commands": [
+        "give-items-direct GoldBarItem GoldBarItem"
+      ]
+    }
+  ],
+  "sapphire_label_corrected_from_two_to_three_scripted_items": true,
+  "game_scripts_modified": false,
+  "payment_and_recruitment_routes_reviewed": true,
+  "build_and_expansion_checks_passed": true,
+  "java_runtime_entries": 9665,
+  "new_resources_english_fallback_entries": 0,
+  "english_fallback_entries_in_checked_references": 481,
+  "four_font_styles_passed": true,
+  "inventory_fixture_pixels": 497,
+  "inventory_fixture_limit_pixels": 500,
+  "description_utf8_bytes": 3103,
+  "description_bbcode_balanced": true,
+  "installed_runtime_files_match_prior_baseline": true,
+  "installed_files_changed_since_prior_baseline": [
+    "config.xml"
+  ],
+  "installed_config_note": "Config differs from the earlier synchronization record; this translation task did not write installed files. Current config is preserved.",
+  "installed": false,
+  "committed": false,
+  "pushed": false,
+  "steam_uploaded": false,
+  "in_game_test": false
+}
