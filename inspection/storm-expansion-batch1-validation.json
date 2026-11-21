@@ -1,0 +1,136 @@
+{
+  "date": "2026-11-21",
+  "expansion": "newseapeopledlc",
+  "current_level_content_entries": 536,
+  "current_level_source_content_entries": 536,
+  "text_bearing_levels": 30,
+  "conversation_content_entries": 118,
+  "conversation_source_content_entries": 118,
+  "complete_conversation_groups": 21,
+  "total_new_content_entries": 654,
+  "new_runtime_entries_including_metadata": 658,
+  "old_expansion_level_content_entries": 522,
+  "added_current_keys_vs_old": 14,
+  "changed_current_keys_vs_old": 22,
+  "excluded_internal_xml_fields": {
+    "LevelNewSeaPeopleTriggerClose.location.name": "Hidden control-level label, absent from the canonical English resource.",
+    "LevelNewSeaPeople04.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople09.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople12.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople15.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople18.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople22.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople24.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelNewSeaPeople26.text": "Battle setup summary, absent from the canonical English resource."
+  },
+  "current_level_reference_matches_campaign_and_xml": true,
+  "previous_source_files_byte_identical": 79,
+  "previous_runtime_files_byte_identical": 11,
+  "runtime_ascii": true,
+  "xml_checked_groups": 21,
+  "campaign_calls_checked": 3,
+  "board_name_references_checked": 17,
+  "unlinked_groups": {
+    "N06_Angela_damage": "Dialogue XML and English properties are present, but no exact reference was found in the expansion campaign XML or its eight battle boards. The ghost-cave level assigns VXX_Angela_damage instead; runtime use is unverified."
+  },
+  "level_choices_checked": 2,
+  "battle_levels_reviewed": 8,
+  "battle_tasks_reviewed": [
+    {
+      "level": "LevelNewSeaPeople04",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_10)",
+      "commands": [
+        "give-items-direct ImprovedMagicPotionItem ImprovedMagicPotionItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople09",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-race-Elementals-count}=='0')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_7)",
+      "commands": [
+        "give-items-direct DiamondItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople12",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-djinifrit-count}=='0')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_10)",
+      "commands": [
+        "give-item UnderworldSceptreItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople15",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_10)",
+      "commands": [
+        "give-gold 500"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople15",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_6)",
+      "commands": [
+        "give-item RubyItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople18",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_8)",
+      "commands": [
+        "give-item ShardBladeItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople24",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_8)",
+      "commands": [
+        "give-item AdvancedAntidotePotionItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople24",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_5)",
+      "commands": [
+        "give-item HeroismPotionItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople26",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_12)",
+      "commands": [
+        "give-item DiamondItem"
+      ]
+    },
+    {
+      "level": "LevelNewSeaPeople26",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-enemy-type-harpywitch-count}=='0')AND((parseInt(${battle-turn-number})||0)LESS_EQUAL_6)",
+      "commands": [
+        "give-items-direct MeteorArmorItem MeteorHelmetItem"
+      ]
+    }
+  ],
+  "external_vxx_attribute_assignments": 32,
+  "build_and_expansion_checks_passed": true,
+  "java_runtime_entries": 9327,
+  "new_resources_english_fallback_entries": 0,
+  "english_fallback_entries_in_checked_references": 481,
+  "four_font_styles_passed": true,
+  "inventory_fixture_pixels": 497,
+  "inventory_fixture_limit_pixels": 500,
+  "description_utf8_bytes": 3045,
+  "description_bbcode_balanced": true,
+  "installed_mod_inventory_unchanged": true,
+  "installed": false,
+  "committed": false,
+  "pushed": false,
+  "steam_uploaded": false,
+  "in_game_test": false
+}

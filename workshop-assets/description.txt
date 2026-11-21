@@ -1,6 +1,6 @@
 [h1]Age of Fear: Total — 简体中文汉化[/h1]
 [b]开发中 · 部分汉化[/b]
-本模组旨在逐步汉化游戏界面、玩法说明、通用事件及全部战役。当前主消息、通用事件与通用对话文件的正文已译完；独立战役、扩展对白及部分脚本文本仍待汉化，尚非完整汉化。
+游戏版本：v11.0.5
 本模组开发依赖大量AI翻译，并由人工校对。
 
 [h2]使用方法[/h2]
@@ -9,20 +9,19 @@
 [*]打开 Options → Screen → Language。
 [*]选择 [b]Chinese (Simplified) - Test[/b]。
 [/olist]
-语言选项保留英文名称，以避免切换语言前显示方框。未翻译内容会显示英文。
+语言选项保留英文名称。
 
 [h2]总体进度[/h2]
-进度按文本条目统计，不代表字数或全游戏完成度。
+进度按文本条目统计。
 
 [list]
 [*]界面与正文：[b]4,215/4,215（100%）[/b]
 [*]通用事件：[b]2,144/2,144（100%）[/b]
 [*]通用对话：[b]1,019/1,019（100%）[/b]
 [/list]
-通用文本合计：3,163/3,163（100%），仅指两个通用资源文件。其他未翻译内容仍显示英文。
 
 [h2]剧情战役[/h2]
-进度仅指各战役专属文本，不包含共用界面。中文战役名称为暂定译名。
+战役专属文本（不含下方单列的扩展剧情）
 
 [table]
 [tr][th]战役[/th][th]翻译进度[/th][/tr]
@@ -37,45 +36,47 @@
 [/table]
 
 [h2]开放战役[/h2]
-以下为独立的开放战役，各自文本均尚未开始翻译。共用界面汉化可在这些模式中使用。
+以下为独立的开放战役
 
-[list]
-[*]Human Kingdom (Open) / 人类王国
-[*]Undead Legion (Open) / 亡灵军团
-[*]Chaos Demons (Open) / 混沌恶魔
-[*]Greenskins Horde (Open) / 绿皮部落
-[*]Forest Folk (Open) / 森林族群
-[*]Dwarves (Open) / 矮人
-[*]Sea People (Open) / 海族
-[*]Ratmen (Open) / 鼠人
-[*]Cyclops Tribe (Open) / 独眼巨人部落
-[*]Elementals (Open) / 元素生物
-[*]Ikeus (Open) / 伊凯乌斯
-[*]Giants (Open) / 巨人
-[*]Marines (Open) / 海军陆战队
-[*]Pirates (Open) / 海盗
-[*]Shinobi (Open) / 忍者
-[*]Sandworm (Open) / 沙虫
-[/list]
+[table]
+[tr][th]开放战役[/th][th]中文名称[/th][/tr]
+[tr][td]Human Kingdom (Open)[/td][td]人类王国[/td][/tr]
+[tr][td]Undead Legion (Open)[/td][td]亡灵军团[/td][/tr]
+[tr][td]Chaos Demons (Open)[/td][td]混沌恶魔[/td][/tr]
+[tr][td]Greenskins Horde (Open)[/td][td]绿皮部落[/td][/tr]
+[tr][td]Forest Folk (Open)[/td][td]森林族群[/td][/tr]
+[tr][td]Dwarves (Open)[/td][td]矮人[/td][/tr]
+[tr][td]Sea People (Open)[/td][td]海族[/td][/tr]
+[tr][td]Ratmen (Open)[/td][td]鼠人[/td][/tr]
+[tr][td]Cyclops Tribe (Open)[/td][td]独眼巨人部落[/td][/tr]
+[tr][td]Elementals (Open)[/td][td]元素生物[/td][/tr]
+[tr][td]Ikeus (Open)[/td][td]伊凯乌斯[/td][/tr]
+[tr][td]Giants (Open)[/td][td]巨人[/td][/tr]
+[tr][td]Marines (Open)[/td][td]海军陆战队[/td][/tr]
+[tr][td]Pirates (Open)[/td][td]海盗[/td][/tr]
+[tr][td]Shinobi (Open)[/td][td]忍者[/td][/tr]
+[tr][td]Sandworm (Open)[/td][td]沙虫[/td][/tr]
+[/table]
 
 [h2]扩展剧情[/h2]
-以下扩展剧情的专属对话尚待翻译，部分通用关卡文本已计入上方通用事件进度。
+扩展剧情的专属对话分批翻译，部分通用关卡文本已计入上方通用事件进度。
 扩展剧情可整合在主战役或共享地点中，并非全部作为独立战役显示。
 
-[list]
-[*]The Quest for Immortality / 永生之旅
-[*]Pirates! / 海盗！
-[*]The Elementalist / 元素使
-[*]The Blood and Moon / 血与月
-[*]The Victor's Experiment / 维克多的实验
-[*]The Storm Mountain / 风暴山
-[*]The Quick and The Dead / 生者与死者
-[*]War Machine / 战争机器
-[/list]
+[table]
+[tr][th]扩展剧情[/th][th]翻译进度[/th][/tr]
+[tr][td]The Quest for Immortality / 永生之旅[/td][td]独立对话文件275/275条（100%）[/td][/tr]
+[tr][td]Pirates! / 海盗！[/td][td]独立对话文件239/239条（100%）[/td][/tr]
+[tr][td]The Elementalist / 元素使[/td][td]独立对话文件18/18条（100%）[/td][/tr]
+[tr][td]The Blood and Moon / 血与月[/td][td]独立对话文件130/130条（100%）[/td][/tr]
+[tr][td]The Victor's Experiment / 维克多的实验[/td][td]关卡正文114/114条、独立对话238/238条（100%）[/td][/tr]
+[tr][td]The Storm Mountain / 风暴山[/td][td]关卡正文536/536条、独立对话118/118条（100%）[/td][/tr]
+[tr][td]The Quick and The Dead / 生者与死者[/td][td]关卡正文293/293条、独立对话41/41条（100%）[/td][/tr]
+[tr][td]War Machine / 战争机器[/td][td]关卡正文323/323条、独立对话52/52条（100%）[/td][/tr]
+[/table]
 
 [h2]后续计划与反馈[/h2]
 后续将继续完善通用文本与战役汉化。
 
 如发现错译、方框或文字截断，请提供截图、所在界面及所选战役。
 
-[i]进度截至：2026-11-17。战役清单依据当前安装版本资源整理。[/i]
+[i]进度截至：2026-11-21。[/i]

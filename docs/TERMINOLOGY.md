@@ -1926,6 +1926,85 @@
 - Kingdom Patrol的奖励沿用灵魂之铃；Soldiers沿用士兵。Monk标签译作僧侣，克里尔台词中泛称Priest时用祭司；Wight沿用尸妖。
 - “Over my dead body”保留“从我的尸体上踏过去”的说法，以承接幽灵没有身体的笑话；脚踝对话保留原文对往日礼俗的夸张羞耻感，不添加恋情细节。
 
+## 永生之旅独立对白第1批补充
+
+- Talnes＝塔尔尼斯，Krill＝克里尔，Dragon Statue＝巨龙雕像，Note＝提示；`${hero-1-name}` 保留变量。Veteran＝老兵，提示描述单位资历，不泛指经验丰富的玩家。
+- 许愿井 (Well of Wishes) 沿用通用资源译名；crossroads、underground fortress 在本段为普通场所描述，不新增具名地点。
+- “a word”与克里尔的反驳用“说上一句话／早就不止一句”承接，保留他不耐烦的语气。塔尔尼斯对骑士用敬称，叙述保持学究气与夸张自信；“bigger fish to fry”按习语译为更要紧的事。
+- 仪式咒语沿用拟音方式：Venire ventus, senire solus＝维尼雷，文图斯，塞尼雷，索卢斯；Lux perpetua... Elementum recolligo＝卢克斯，佩尔佩图阿……埃莱门图姆，雷科利戈。咒语仅为显示文本，不改脚本。
+- `AXX_DragonStatueSeal_whole` 的提示原文称 Black Dragon Seal，中文保留“黑龙封印”；实际合成给的是 `DragonStatueSealWholeItem`（完整封印），并非献祭结局的 `BlackDragonSealItem`。不把两种道具名称合并，原文差异见 `GAME-BUGS.md` TXT-005。
+
+## 永生之旅独立对白第2批补充
+
+- 本批战斗对白的原文角色名明确为 Marth，沿用玛尔斯；不因键名含 Lich 而改为巫妖。Talnes／Water Elemental／Crab God 沿用塔尔尼斯／水元素／蟹神。
+- “pay for this”先译为“付出代价”，再以酒馆欠账的“一个子儿都没付”承接笑话；house ale／house ladies 分别为店里的麦酒／姑娘们，不删改成人暗示。
+- 原文 motherf... 保留未说完的粗口；水元素的 Bloub 用“咕噜”，紧接的嘲讽重复同一拟声词。蟹钳 Clack 用“咔哒”，蟹神临死的嘶声用“嘶嘶嘶……”。
+
+## 永生之旅独立对白第3批补充
+
+- 回归提示沿用贝尔卡拉（Bel'Kara）、因杜尔夫（Indulf）、莱克莎（Lexa）；Kara作为简称用卡拉。新增暂定人名：Sir Percival＝珀西瓦尔爵士、Gimli＝吉姆利、Dorin＝多林、Erin＝埃林，后续战役翻译时共同复核。
+- Banshee／Skeleton／Zombie／Mermaid／Naga Warrior／Sea Diver／Octopod／Rat Assassin 分别沿用报丧女妖／骷髅／僵尸／美人鱼／娜迦战士／潜海者／章鱼／鼠人刺客。
+- 这些台词直接对玩家说话，保留工作、家庭、游戏等打破第四面墙的表达；不是战役剧情回顾。矮人醉态用停顿和酒嗝表现，不添加地方口音。娜迦用适量“嘶……”表现嘶声。
+- 系列与产品名 Age of Fear、Age of Fear: The Free World、Age of Fear: Total 保留官方英文名；标题不是地名，不另造中文地名。提示正文正常翻译，不把产品名保留误计为英文回退。
+
+## 海盗独立对白第1批补充
+
+- Drunken Sailor＝醉酒水手、Drunkard＝醉汉、Guard＝守卫、Executioner＝刽子手；Captain Red Beard沿用红胡子船长，King William沿用威廉国王，Krill沿用克里尔，英雄名变量原样保留。Lucifer暂译路西法，不据这句对白新增人物身份说明。
+- Black Guard Castle沿用黑卫士城堡 (Black Guard Castle)；普通神秘小岛、码头和大陆不擅自命名。Pirates!扩展标题保留双语，原提示中的Age of Fear: The Undead King GOLD保留，不改写为Total。
+- 船长的“命根子／心爱宝贝”指船，补明指代以免误解为女性角色；jolly roger＝骷髅旗，brig＝双桅横帆船。guard谈到被偷的corsair按上下文译为战船，不译作被偷走的海盗。
+- 醉酒水手和船长采用自然口语，不添加地方口音；克里尔保留蔑视和威胁，心声保留括号。普通财宝不套用界面“资金”。Veteran仍指老兵资历。
+
+## 海盗独立对白第2批补充
+
+- Pikeman＝长枪兵、Elder Gargoyle＝石像鬼长老、Silas＝赛拉斯、Naga Warrior＝娜迦战士，沿用既有术语。原文明确署名Silas的战斗对白保留专名，不替换为刽子手。
+- Puf!按拟声译为“呼！”，不另加动作描述；娜迦的Sss保留“嘶！”。Land-walkers按对陆地种族的泛称译为“陆地上的家伙”，不凭空限定为人类。
+
+## 元素使独立对白第1批补充
+
+- Broken Wing＝折翼、Lightning Ball＝闪电球、Iron Golem＝钢铁魔像、Note＝提示，沿用既有译名。Iron Guards在本句为钢铁守卫的称呼，不擅自改为单位显示名。
+- 魔像的Int-ruder alert沿用通用关卡译法“入、入侵者警报”，保留机械停顿；ELIMINATE沿用“消灭”。Bzzz用“滋滋”，system integrity compromised译为“系统完整性受损”；不增添具体受损部件或玩法效果。
+- Veteran指老兵资历。扩展名称使用《元素使》（The Elementalist）；普通法杖指称不擅自改写为奖励道具名称。
+
+## 血与月独立对白第1批补充
+
+- 沿用冈瑟、谢拉、古尔卡尔、吉尔洛克／吉尔、芬、奈丽、巴尔瓦、阿尔戈斯、布隆忒斯和加茨；角色标签Monk沿用僧侣，对话称呼Holy Father按语境译为神父。
+- 谢拉与冈瑟为夫妻，Honey／my dear用“亲爱的”；冈瑟对谢拉的girl按夫妻亲昵称呼处理，不误指女儿。末句救女儿的呼喊保留中断，不续写原文未说完的话。
+- ROAR沿用“吼——！”，矮人粗直口语不添加地方口音。doggy／wolfy保留狗狗式调侃，不改动物种或名字；sushi按原文明译寿司。
+- 普通marshes仅作沼泽，不擅自补具名地点；本批不新增地名。Necromancy沿用死灵法术，spell在解除控制的语境中译为法术。
+
+## 维克多的实验第1批补充
+
+- Victor＝维克多、Vic＝维克、Victor's Brain＝维克多的大脑、Brain in Jar＝罐中大脑；Franky＝弗兰基、Francis＝弗朗西斯、Dr. Waldman＝瓦尔德曼博士，新增人名暂定。Angela／Zellan沿用安吉拉／泽兰。
+- Fairy Forest沿用地图建议名仙灵森林 (Fairy Forest)；Abandoned Facility＝废弃设施 (Abandoned Facility)。房间标牌Library／Workshop／Experiments／Archive分别为图书室／工坊／实验室／档案室，出现标牌名称时保留英文。普通走廊、屋顶不擅自命名。
+- 书名在选项和正文保持一致并保留英文：Introspective Conversation Topics＝内省对谈话题；Microbial Analysis＝微生物分析；Orthopaedic Rearticulations＝骨科关节复位；Rhochrematics＝罗克雷玛学（暂定音译，不冒称真实学科）；Studies of Tectosphere Empire＝构造圈领域研究（暂译）；Veni, Vidi, Vici＝我来，我见，我征服。
+- 书中医疗和科学片段属于虚构叙事，保留角色的怀疑语气。mind／brain双关用“脑子／长点心”等表达承接；泽兰的构装体、钢铁魔像沿用已有术语。安吉拉的调侃与泽兰的冷静区分处理。
+- Frankenstein作为原文使用的扩展别名保留为《弗兰肯斯坦》（Frankenstein），公开简介仍用The Victor's Experiment。密码字母、${puzzle-lock-chars-label}和三个按钮变量不翻译；不把谜底直接添加到提示中。
+- 雷霆魔杖、特斯拉手枪及五类僵尸材料沿用物品表。正文泛称胳膊等部位遵照原文，不把脚本物品ID改名。
+
+## 风暴山扩展第1批补充
+
+- The Storm Mountain＝风暴山；地点中的Storm Mountain／Storm Mountains均译“风暴山”，括号分别保留各处原英文。Northern Peak＝北峰 (Northern Peak)；Death Lake＝死亡湖 (Death Lake)，不擅自与地图建议中的Dead Lake／死湖合并。
+- Palm Oasis＝棕榈绿洲 (Palm Oasis)；Valkyries’ Settlement＝女武神聚落，资源中的直撇号按原文保留；Ghost Cave＝幽灵洞窟 (Ghost Cave)。地图短标签Message!／Sea Monster／Elders／Harpies!／Storm Witch分别为传讯！／海怪／长老／鹰身女妖来袭！／风暴女巫，并附原英文。
+- Lameficent＝拉梅菲森特（暂定音译）；Rurora／Helna／Sidra沿用露萝拉／赫尔娜／希德拉；Sea Diver Messenger＝潜海者信使。Ifrit、Djinn分别沿用伊弗利特、灯神，不混为同一显示名。
+- Valkyrie＝女武神；Air Elemental＝风元素；Dwarven Ghost＝矮人幽灵。纯净魔力、炼狱权杖、碎晶之刃、高效解毒剂、英勇药剂、陨铁护甲与陨铁头盔沿用物品表。
+- sea monster／seabeast泛指海怪／海兽，幻象揭晓前不提前称作幻影。娜迦的蛋译为“卵”；灯神称神灯为家，安吉拉拿酱汁壶、浇水壶和汤盆挖苦，按语境保留。
+
+## 生者与死者扩展第1批补充
+
+- The Quick and The Dead＝生者与死者；沿用既有扩展标题。Rizza＝莉扎、Buzos＝布佐斯（暂定音译）；原文Level19的Rizzia按同一角色统一为莉扎。
+- Indulf Blackheart＝黑心因杜尔夫；Indulf／Lexa沿用因杜尔夫／莱克莎。Rat Thief＝鼠人窃贼，Dwarf Shopkeeper＝矮人店主，Dwarf Guard＝矮人守卫。鼠人的Grand Sages沿用大贤者，不因复数另造职称。
+- Sorodon＝索罗顿 (Sorodon)、Salty Dog＝咸狗酒馆 (Salty Dog)，沿用既有译名。地图入口Dark Alley＝暗巷 (Dark Alley)、Voyage!＝出海！ (Voyage!)、Onshore Winds＝向岸风 (Onshore Winds)、Land!＝陆地！ (Land!)；以人物命名的地点使用莉扎 (Rizza)。
+- 任务旧名Ring of Ambush的奖励ID为RingOfAmbushItem，当前正文名称为Ring of Rogue，统一使用游荡者戒指。Blink＝闪现；backstab＝背刺；其余海盗装备、魔法罗盘、魔法宝珠及战斗符文斧沿用正文物品表。
+- nest指鼠人的聚居地，译“鼠巢”；man-things按口吻译“人类家伙”。鱼称“小鱼”，重复词保留急切语气，不用刻意方言。玫瑰对白保留“姑……雌性”的中途改口，不补原文没有的节日名称或日期。
+
+## 战争机器扩展第1批补充
+
+- War Machine＝战争机器；Brin＝布林、Brin Brass-mane＝布林·铜鬃（暂定人名）。工具包的BB保留原姓名首字母。Bartender＝酒保；Dwarven Engineer＝矮人工程师。
+- Brin's Workshop＝布林的工坊 (Brin's Workshop)，叙述中小写workshop的英文形式也按原文保留。Sorodon／Shadowmarsh分别沿用索罗顿／暗影沼泽，并附原英文；以人名、材料或单位命名的地图标签同样附原英文。
+- Pure Iron＝纯铁，Ancient Coal＝远古煤炭，Dragon's Skull／Dragon Skull＝龙之颅骨。Clockwork Dragon＝发条巨龙；Ghost Dragon角色标签为幽灵龙，Dracolich单位／任务名为龙巫妖，分别沿用已有显示名。
+- Elixir of Switness为源文拼写，按SpeedPotionItem统一为迅捷灵药；Potion of Elemental Protection按ResistancePotionItem统一为元素防护药剂。其余任务奖励沿用物品表。
+- I TOLD YOU SO!统一为“我早就说过了！”，保留莱克莎反复挖苦的语气。BB、图片索引、任务状态与跳转标识不翻译；不把剧情中的“一天”“剩余材料”扩写为额外计时或返还规则。
+
 ## 后续术语整理
 
 1. 回查已覆盖的单位、种族和场景名称，重点审核暂定译名和游戏中的显示长度；保持同族群、升级单位的命名一致。

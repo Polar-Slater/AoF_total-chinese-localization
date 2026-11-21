@@ -35,6 +35,8 @@ def main():
                                      'file': str(destination.relative_to(root)),
                                      'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest()})
     (root / 'source/manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')
+    from inspection.expansion_levels import extract_current_levels
+    extract_current_levels(args.game, root)
     if args.font:
         from prepare_font import prepare_font
         target = root / 'pilot-mod/com/aof/resource/text/font/noto-sans-sc.ttf'

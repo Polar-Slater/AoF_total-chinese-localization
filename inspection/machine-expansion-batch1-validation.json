@@ -1,0 +1,197 @@
+{
+  "date": "2026-11-21",
+  "expansion": "machinewardlc",
+  "current_level_content_entries": 323,
+  "current_level_source_content_entries": 323,
+  "text_bearing_levels": 20,
+  "conversation_content_entries": 52,
+  "conversation_source_content_entries": 52,
+  "complete_conversation_groups": 6,
+  "total_new_content_entries": 375,
+  "new_runtime_entries_including_metadata": 379,
+  "old_expansion_level_content_entries": 311,
+  "added_current_keys_vs_old": 12,
+  "changed_current_keys_vs_old": 0,
+  "excluded_internal_xml_fields": {
+    "LevelMachineWarTriggerClose.location.name": "Hidden control-level label, absent from the canonical English resource.",
+    "LevelMachineWar03.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelMachineWarBrinWorkshop02.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelMachineWarDragonSkull02.text": "Battle setup summary, absent from the canonical English resource.",
+    "LevelMachineWarMechanicalDragon02.text": "Battle setup summary, absent from the canonical English resource."
+  },
+  "current_level_reference_matches_campaign_and_xml": true,
+  "previous_source_files_byte_identical": 83,
+  "previous_runtime_files_byte_identical": 15,
+  "runtime_ascii": true,
+  "xml_checked_groups": 6,
+  "campaign_calls_checked": 6,
+  "level_choices_checked": 4,
+  "image_only_level_indices_preserved": [
+    "LevelMachineWarBrinWorkshop01.conversations.7"
+  ],
+  "battle_levels_reviewed": 6,
+  "battle_tasks_reviewed": [
+    {
+      "level": "LevelMachineWar03",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-over}=='true')AND(${battle-turn-number}LESS_EQUAL_5)",
+      "commands": [
+        "give-items-direct SilverBarItem SilverBarItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWar03",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND(${battle-ally-dead-count}=='0')",
+      "commands": [
+        "give-items-direct TeethMaceItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarBrinWorkshop02",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-irongolem-count}=='0')AND(${battle-turn-number}LESS_EQUAL_8)",
+      "commands": [
+        "give-items-direct AmuletOfNightItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarBrinWorkshop02",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND(${battle-ally-dead-count}LESS_EQUAL_2)",
+      "commands": [
+        "give-items-direct SpeedPotionItem SpeedPotionItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarPureIron01",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-chaoshydra-count}=='0')",
+      "commands": [
+        "give-items-direct AmuletOfChaosItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarPureIron01",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-enemy-race-Elementals-count}=='0')AND(${battle-turn-number}LESS_EQUAL_6)",
+      "commands": [
+        "give-items-direct RubyItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarAncientCoal01",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-corruptedgiantspider-count}=='0')AND(${battle-turn-number}LESS_EQUAL_5)",
+      "commands": [
+        "give-items-direct AdvancedAntidotePotionItem AdvancedAntidotePotionItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarAncientCoal01",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')",
+      "commands": [
+        "give-items-direct GoldBarItem GoldBarItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarDragonSkull02",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-ghostdragon-count}=='0')",
+      "commands": [
+        "give-items-direct CatAmuletItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarDragonSkull02",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')",
+      "commands": [
+        "give-items-direct RingOfAntiMagicItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarMechanicalDragon02",
+      "trigger": "on-battle-task-1",
+      "condition": "(${battle-enemy-type-mechanicaldragon-count}=='0')",
+      "commands": [
+        "give-items-direct ResistancePotionItem ResistancePotionItem"
+      ]
+    },
+    {
+      "level": "LevelMachineWarMechanicalDragon02",
+      "trigger": "on-battle-task-2",
+      "condition": "(${battle-over}=='true')AND(${battle-ally-dead-count}=='0')",
+      "commands": [
+        "give-items-direct GoldBarItem RubyItem"
+      ]
+    }
+  ],
+  "material_gate_commands_reviewed": [
+    {
+      "level": "LevelMachineWarPureIron01",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "lock-level LevelMachineWarBrinWorkshop01"
+    },
+    {
+      "level": "LevelMachineWarPureIron01",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "lock-level LevelMachineWarBrinWorkshop04"
+    },
+    {
+      "level": "LevelMachineWarPureIron01",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "unlock-level LevelMachineWarBrinWorkshop05"
+    },
+    {
+      "level": "LevelMachineWarAncientCoal01",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "lock-level LevelMachineWarBrinWorkshop01"
+    },
+    {
+      "level": "LevelMachineWarAncientCoal01",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "lock-level LevelMachineWarBrinWorkshop04"
+    },
+    {
+      "level": "LevelMachineWarAncientCoal01",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "unlock-level LevelMachineWarBrinWorkshop05"
+    },
+    {
+      "level": "LevelMachineWarDragonSkull02",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "lock-level LevelMachineWarBrinWorkshop01"
+    },
+    {
+      "level": "LevelMachineWarDragonSkull02",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "lock-level LevelMachineWarBrinWorkshop04"
+    },
+    {
+      "level": "LevelMachineWarDragonSkull02",
+      "condition": "(${item-DragonSkullItem-count}GREATER_THAN_0)AND(${item-AncientCoalItem-count}GREATER_THAN_0)AND(${item-PureIronItem-count}GREATER_THAN_0)",
+      "command": "unlock-level LevelMachineWarBrinWorkshop05"
+    }
+  ],
+  "tool_route_prerequisite_absent_from_material_gate": true,
+  "antidote_label_corrected_from_three_to_two_scripted_items": true,
+  "game_scripts_modified": false,
+  "material_removal_and_final_unit_reward_reviewed": true,
+  "build_and_expansion_checks_passed": true,
+  "java_runtime_entries": 10044,
+  "new_resources_english_fallback_entries": 0,
+  "english_fallback_entries_in_checked_references": 481,
+  "four_font_styles_passed": true,
+  "inventory_fixture_pixels": 497,
+  "inventory_fixture_limit_pixels": 500,
+  "description_utf8_bytes": 3161,
+  "description_bbcode_balanced": true,
+  "installed_mod_matches_start_of_batch_snapshot": true,
+  "installed": false,
+  "committed": false,
+  "pushed": false,
+  "steam_uploaded": false,
+  "in_game_test": false
+}

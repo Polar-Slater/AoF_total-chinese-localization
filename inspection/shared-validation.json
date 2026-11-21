@@ -177,7 +177,7 @@
   ],
   "total_translated_content_entries": 3163,
   "total_source_content_entries": 3163,
-  "total_runtime_entries_all_files": 7598,
+  "total_runtime_entries_all_files": 10044,
   "checks": [
     "complete shared events and shared conversations",
     "complete selected event families and declared choices",
